@@ -1,9 +1,10 @@
 import pandas as pd
+import pickle
 
 url = 'https://api.ttss.pl/vehicles/trams/'
 dfs = pd.read_html(url)
 
-print(len(dfs))
+#print(len(dfs))
 
 #for table in range(len(dfs)):
 #  print(dfs[table])
@@ -12,10 +13,10 @@ vbLine = dfs[0]
 vbType = dfs[1]
 vbTtss = dfs[2]
 
-print("vehicles by line :")
-print(vbLine)
+#print("vehicles by line :")
+#print(vbLine)
 
-print(vbLine.info())
+#print(vbLine.info())
 
 d = {
   '1': ['RF306','RF317','RF318','RF322','RF326','RF327','RF329','HK457','HK459'],
@@ -39,6 +40,5 @@ d = {
   '72': [ 'HL406', 'HL413', 'HL416', 'HL426', 'HL439', 'RP633']
   }
 
-df_lines = pd.DataFrame(data=d)
-
-df_lines.to_pickle("/ToIgnore/Lines.pkl")  
+with open("ToIgnore/tramLines.pkl", 'wb') as fi:
+    pickle.dump(d, fi)
