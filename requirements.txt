@@ -1,11 +1,12 @@
 beautifulsoup4==4.12.2
+flake8==6.1.0
+geopandas==0.14.0
 html5lib==1.1
 lxml==4.9.3
-numpy==1.26.1
-pandas==2.1.1
-geopandas==0.14.0
 matplotlib==3.8.0
+numpy==1.26.1
 osmnx==1.7.0
+pandas==2.1.1
 pip==23.3
 python-dateutil==2.8.2
 pytz==2023.3.post1
