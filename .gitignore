@@ -1,0 +1,12 @@
+#   Project
+/data/
+/docs/
+/cache/
+/images/
+
+#   IDE
+/.idea/
+/.vscode/
+
+#   Other
+/.pytest_cache/
