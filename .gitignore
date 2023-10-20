@@ -1,0 +1,7 @@
+#   Project
+/data/
+/docs/
+
+#   IDE
+/.idea/
+/.vscode/
