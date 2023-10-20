@@ -1,8 +1,8 @@
 #   Project
 /data/
 /docs/
-/cache/
-/images/
+/cache/*
+/images/*
 
 #   IDE
 /.idea/
