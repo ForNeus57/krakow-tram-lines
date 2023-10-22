@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Tuple
 
 import pandas as pd
 
@@ -23,11 +24,16 @@ class TramModelsData:
     @classmethod
     def from_url(cls, path: Path = DEFAULT_TRAM_MODELS_SAVE_PATH, url: str = URL_TRAM_MODELS) -> TramModelsData:
         data = pd.read_html(url)
-        vehicles_by_line = cls.preprocess_vehicles_by_line(data[0])
-        vehicles_by_line.to_pickle(f"{path}/vehicles_by_line.pkl")
         vehicles_by_type = cls.preprocess_vehicles_by_type(data[1])
+        vehicles_by_ttss, vehicles_by_line = cls.preprocess_vehicles_by_ttss(data[2])
+
+        vehicles_by_type = pd.merge(vehicles_by_ttss, vehicles_by_type, on="id", how="left")
+        vehicles_by_type = vehicles_by_type[["id", "tram_depo_code_x", "tram_code_x", "name"]]
+        vehicles_by_type.columns = ["id", "tram_depo_code", "tram_code", "name"]
+        vehicles_by_ttss.drop(columns=["tram_depo_code", "tram_code"], inplace=True)
+
+        vehicles_by_line.to_pickle(f"{path}/vehicles_by_line.pkl")
         vehicles_by_type.to_pickle(f"{path}/vehicles_by_type.pkl")
-        vehicles_by_ttss = cls.preprocess_vehicles_by_ttss(data[2])
         vehicles_by_ttss.to_pickle(f"{path}/vehicles_by_ttss.pkl")
         return cls(vehicles_by_line, vehicles_by_type, vehicles_by_ttss, path, url)
 
@@ -80,15 +86,17 @@ class TramModelsData:
         for idx, row in vehicles_by_type[0].items():
             for item in row:
                 new_data.loc[len(new_data)] = {tram_id_column_name: item, train_name_column_name: idx}
+
+        new_data['tram_depo_code'] = new_data['id'].apply(lambda x: str(x)[0]).astype(str)
+        new_data['tram_code'] = new_data['id'].apply(lambda x: str(x)[1]).astype(str)
+        new_data['id'] = new_data['id'].apply(lambda x: str(x)[2:]).astype(int)
         return new_data
 
     @classmethod
-    def preprocess_vehicles_by_ttss(cls, vehicles_by_ttss: pd.DataFrame) -> pd.DataFrame:
-        missing_data = '?'
-
+    def preprocess_vehicles_by_ttss(cls, vehicles_by_ttss: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
         def change_column_names(x: str) -> str:
-            value = re.sub(r'[^\w\s-]', '', x.lower())
-            return re.sub(r'[-\s]+', '-', value).strip('-_')
+            value = re.sub(r'[^\w\s_]', '', x.lower())
+            return re.sub(r'[_\s]+', '_', value).strip('_')
 
         vehicles_by_ttss.columns = [change_column_names(col) for col in vehicles_by_ttss.columns]
         # TODO: merge into one
@@ -101,9 +109,15 @@ class TramModelsData:
         vehicles_by_ttss['longitude'] = vehicles_by_ttss['position'].apply(lambda x: x[1]).astype(float)
 
         vehicles_by_ttss['line'] = vehicles_by_ttss['line'].apply(lambda x: str(x).split(" "))
-        vehicles_by_ttss['line_name'] = vehicles_by_ttss['line'].apply(lambda x: ' '.join(x[1:]))
+        vehicles_by_ttss['direction'] = vehicles_by_ttss['line'].apply(lambda x: ' '.join(x[1:]))
         vehicles_by_ttss['line'] = vehicles_by_ttss['line'].apply(lambda x: x[0]).astype(int)
         vehicles_by_ttss.drop('position', axis=1, inplace=True)
-        print(vehicles_by_ttss.to_string())
-        print(len(vehicles_by_ttss))
-        return vehicles_by_ttss
+        vehicles_by_ttss['id'] = vehicles_by_ttss['vehicle'].apply(lambda x: str(x)[2:]).astype(int)
+        vehicles_by_ttss['tram_depo_code'] = vehicles_by_ttss['vehicle'].apply(lambda x: str(x)[0]).astype(str)
+        vehicles_by_ttss['tram_code'] = vehicles_by_ttss['vehicle'].apply(lambda x: str(x)[1]).astype(str)
+        vehicles_by_ttss.drop('vehicle', axis=1, inplace=True)
+
+        lines = vehicles_by_ttss[['line']].drop_duplicates()
+        lines.sort_values(axis=0, by=['line'], ascending=True, inplace=True)
+
+        return vehicles_by_ttss, lines
