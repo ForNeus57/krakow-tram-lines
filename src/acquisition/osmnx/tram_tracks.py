@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import osmnx as ox
 from networkx import MultiDiGraph
 from geopandas import GeoDataFrame

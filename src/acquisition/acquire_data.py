@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from src.acquisition.web.tram_models import TramModelsData
+from src.acquisition.web.tram_time_table import TramTimeTableData
 
 
 def acquire(caching_path: Path) -> None:
@@ -9,7 +10,7 @@ def acquire(caching_path: Path) -> None:
     :return:
     """
     models = TramModelsData.from_url(caching_path)
-    print(models.vehicles_by_line.to_string())
+    # TramTimeTableData.from_url(models)    DOESN'T WORK!
 
 
 def cash_data(path: Path) -> None:
