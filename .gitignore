@@ -1,7 +1,4 @@
 #   Project
-__pycache__/
-*.py[cod]
-*$py.class
 /data/generated/
 /docs/
 /cache/
