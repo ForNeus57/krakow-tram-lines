@@ -1,32 +1,26 @@
 from __future__ import annotations
 
-import re
 from dataclasses import dataclass
-from pathlib import Path
-from typing import Tuple
 
 import pandas as pd
 from pathlib import Path
 
-from constants import  TRAM_NAME_LENGTH, DEFAULT_TRAM_MODELS_SAVE_PATH, TRAM_MODELS_ATTRIBUTES
+from src.acquisition.web.constants import TRAM_NAME_LENGTH, DEFAULT_TRAM_MODELS_SAVE_PATH
+from src.acquisition.web.tram_models import change_column_names
 
-# I 
-# HATE
-# PATHS
-#DEFAULT_TRAM_MODELS_SAVE_PATH = Path('./data/generated/data/')
-#TRAM_MODELS_ATTRIBUTES = r'~/data/Tramwaje_dane_modeli.xlsx'
 
 @dataclass(frozen=True)
 class TramModelsAttributesData:
     """
 
     """
+    data: pd.DataFrame
     path: Path = DEFAULT_TRAM_MODELS_SAVE_PATH
-    excel: str = TRAM_MODELS_ATTRIBUTES
 
     @classmethod
-    def from_excel(cls, path: Path = DEFAULT_TRAM_MODELS_SAVE_PATH, excel: str = excel) -> TramModelsAttributesData:
-        data = pd.read_excel('data/Tramwaje_dane_modeli.xlsx')
+    def from_excel(cls, path: Path = DEFAULT_TRAM_MODELS_SAVE_PATH) -> TramModelsAttributesData:
+        # TODO fix path
+        data = pd.read_excel(r"./data/Tramwaje_dane_modeli.xlsx")
 
         data = data.fillna(0)
 
@@ -47,7 +41,8 @@ class TramModelsAttributesData:
         data['Moc silnika'] = data['Moc silnika'].astype(float)
         data['Średnica kół tocznych'] = data['Średnica kół tocznych'].astype(float)
 
+        data.columns = [change_column_names(col) for col in data.columns]
+
         data.to_pickle(f"{path}/vehicles_types.pkl")
 
-TramModelsAttributesData.from_excel(DEFAULT_TRAM_MODELS_SAVE_PATH, TRAM_MODELS_ATTRIBUTES)
-
+        return cls(data, Path(f"{path}/vehicles_types.pkl"))

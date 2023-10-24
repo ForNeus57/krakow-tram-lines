@@ -7,7 +7,12 @@ from typing import Tuple
 
 import pandas as pd
 
-from constants import URL_TRAM_MODELS, TRAM_NAME_LENGTH, DEFAULT_TRAM_MODELS_SAVE_PATH
+from src.acquisition.web.constants import URL_TRAM_MODELS, TRAM_NAME_LENGTH, DEFAULT_TRAM_MODELS_SAVE_PATH
+
+
+def change_column_names(x: str) -> str:
+    value = re.sub(r'[^\w\s_]', '', x.lower())
+    return re.sub(r'[_\s]+', '_', value).strip('_')
 
 
 @dataclass(frozen=True)
@@ -94,9 +99,6 @@ class TramModelsData:
 
     @classmethod
     def preprocess_vehicles_by_ttss(cls, vehicles_by_ttss: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
-        def change_column_names(x: str) -> str:
-            value = re.sub(r'[^\w\s_]', '', x.lower())
-            return re.sub(r'[_\s]+', '_', value).strip('_')
 
         vehicles_by_ttss.columns = [change_column_names(col) for col in vehicles_by_ttss.columns]
         # TODO: merge into one

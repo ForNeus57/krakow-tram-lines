@@ -1,5 +1,6 @@
 #   Project
-/data/generated/
+/data/generated/data/*[^.][^m][^d]
+/data/generated/images/*[^.][^m][^d]
 /docs/
 /cache/
 /images/*
