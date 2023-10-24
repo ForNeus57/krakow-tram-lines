@@ -7,3 +7,4 @@ class Parser:
 
 
     def feed_input(self, content: str) -> List[str]:
+        pass

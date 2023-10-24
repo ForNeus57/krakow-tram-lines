@@ -4,7 +4,7 @@ from dataclasses import dataclass
 import pandas as pd
 
 from src.acquisition.web.tram_models import TramModelsData
-from src.acquisition.web.constraints import URL_TRAM_TIME_TABLE
+from src.acquisition.web.constants import URL_TRAM_TIME_TABLE
 
 
 @dataclass(frozen=True)

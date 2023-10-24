@@ -7,7 +7,7 @@ from typing import Tuple
 
 import pandas as pd
 
-from src.acquisition.web.constraints import URL_TRAM_MODELS, TRAM_NAME_LENGTH, DEFAULT_TRAM_MODELS_SAVE_PATH
+from constants import URL_TRAM_MODELS, TRAM_NAME_LENGTH, DEFAULT_TRAM_MODELS_SAVE_PATH
 
 
 @dataclass(frozen=True)

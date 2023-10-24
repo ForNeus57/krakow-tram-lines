@@ -7,6 +7,8 @@ URL_TRAM_TIME_TABLE = r'./cache/Rozkłady jazdy Miejskie Przedsiębiorstwo Komun
 
 TRAM_NAME_LENGTH = 5
 
+TRAM_MODELS_ATTRIBUTES = r'~/data/Tramwaje_dane_modeli.xlsx'
+
 PARSER_REGEX = r'''
 <table style=" vertical-align: top; ">
     <tbody>

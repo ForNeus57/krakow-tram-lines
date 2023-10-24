@@ -2,7 +2,7 @@ import osmnx as ox
 from networkx import MultiDiGraph
 from geopandas import GeoDataFrame
 
-from src.acquisition.osmnx.constraints import LOCATION
+from src.acquisition.osmnx.constants import LOCATION
 
 
 class TramTracksData:
