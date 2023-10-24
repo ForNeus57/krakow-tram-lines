@@ -5,7 +5,7 @@ from dataclasses import dataclass
 import pandas as pd
 from pathlib import Path
 
-from src.acquisition.web.constants import TRAM_NAME_LENGTH, DEFAULT_TRAM_MODELS_SAVE_PATH
+from src.acquisition.web.constants import TRAM_NAME_LENGTH, DEFAULT_EXCEL_INPUT_PATH
 from src.acquisition.web.tram_models import change_column_names
 
 
@@ -14,13 +14,12 @@ class TramModelsAttributesData:
     """
 
     """
-    data: pd.DataFrame
-    path: Path = DEFAULT_TRAM_MODELS_SAVE_PATH
+    model_attributes: pd.DataFrame
+    excel_path: Path = DEFAULT_EXCEL_INPUT_PATH
 
     @classmethod
-    def from_excel(cls, path: Path = DEFAULT_TRAM_MODELS_SAVE_PATH) -> TramModelsAttributesData:
-        # TODO fix path
-        data = pd.read_excel(r"./data/Tramwaje_dane_modeli.xlsx")
+    def from_excel(cls, excel_path: Path = DEFAULT_EXCEL_INPUT_PATH) -> TramModelsAttributesData:
+        data = pd.read_excel(excel_path)
 
         data = data.fillna(0)
 
@@ -43,6 +42,4 @@ class TramModelsAttributesData:
 
         data.columns = [change_column_names(col) for col in data.columns]
 
-        data.to_pickle(f"{path}/vehicles_types.pkl")
-
-        return cls(data, Path(f"{path}/vehicles_types.pkl"))
+        return cls(data, excel_path)

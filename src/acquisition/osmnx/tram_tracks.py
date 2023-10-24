@@ -1,6 +1,5 @@
 import osmnx as ox
 from networkx import MultiDiGraph
-from geopandas import GeoDataFrame
 
 from src.acquisition.osmnx.constants import LOCATION
 
@@ -14,6 +13,3 @@ class TramTracksData:
 def get_train_track_graph() -> MultiDiGraph:
     return ox.graph_from_place(LOCATION, custom_filter=r'["railway"~"tram"]')
 
-
-def get_tram_stops() -> GeoDataFrame:
-    return ox.features_from_place(LOCATION, tags={'railway': 'tram_stop'})

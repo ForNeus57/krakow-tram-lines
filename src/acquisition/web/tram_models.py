@@ -7,7 +7,7 @@ from typing import Tuple
 
 import pandas as pd
 
-from src.acquisition.web.constants import URL_TRAM_MODELS, TRAM_NAME_LENGTH, DEFAULT_TRAM_MODELS_SAVE_PATH
+from src.acquisition.web.constants import URL_TRAM_MODELS, TRAM_NAME_LENGTH
 
 
 def change_column_names(x: str) -> str:
@@ -23,11 +23,10 @@ class TramModelsData:
     vehicles_by_line: pd.DataFrame
     vehicles_by_type: pd.DataFrame
     vehicles_in_ttss: pd.DataFrame
-    path: Path = DEFAULT_TRAM_MODELS_SAVE_PATH
     url: str = URL_TRAM_MODELS
 
     @classmethod
-    def from_url(cls, path: Path = DEFAULT_TRAM_MODELS_SAVE_PATH, url: str = URL_TRAM_MODELS) -> TramModelsData:
+    def from_url(cls, url: str = URL_TRAM_MODELS) -> TramModelsData:
         data = pd.read_html(url)
         vehicles_by_type = cls.preprocess_vehicles_by_type(data[1])
         vehicles_by_ttss, vehicles_by_line = cls.preprocess_vehicles_by_ttss(data[2])
@@ -37,17 +36,14 @@ class TramModelsData:
         vehicles_by_type.columns = ["id", "tram_depo_code", "tram_code", "name"]
         vehicles_by_ttss.drop(columns=["tram_depo_code", "tram_code"], inplace=True)
 
-        vehicles_by_line.to_pickle(f"{path}/vehicles_by_line.pkl")
-        vehicles_by_type.to_pickle(f"{path}/vehicles_by_type.pkl")
-        vehicles_by_ttss.to_pickle(f"{path}/vehicles_by_ttss.pkl")
-        return cls(vehicles_by_line, vehicles_by_type, vehicles_by_ttss, path, url)
+        return cls(vehicles_by_line, vehicles_by_type, vehicles_by_ttss, url)
 
     @classmethod
-    def from_disk(cls, path: Path = DEFAULT_TRAM_MODELS_SAVE_PATH) -> TramModelsData:
+    def from_disk(cls, path: Path) -> TramModelsData:
         vehicles_by_line: pd.DataFrame = pd.read_pickle(f"{path}/vehicles_by_line.pkl")
         vehicles_by_type: pd.DataFrame = pd.read_pickle(f"{path}/vehicles_by_type.pkl")
         vehicles_in_ttss: pd.DataFrame = pd.read_pickle(f"{path}/vehicles_by_ttss.pkl")
-        return cls(vehicles_by_line, vehicles_by_type, vehicles_in_ttss, path)
+        return cls(vehicles_by_line, vehicles_by_type, vehicles_in_ttss)
 
     @staticmethod
     def split_tram_names(x):
