@@ -7,8 +7,9 @@ import osmnx as ox
 
 from src.acquisition.osmnx.constants import LOCATION
 
+from networkx import MultiDiGraph
 
-@dataclass(frozen=True)
+@dataclass(init=True)
 class TramStopsData:
     """
         #TODO: Docstring for TramTimeTableData
@@ -20,3 +21,6 @@ class TramStopsData:
         stops = ox.features_from_place(LOCATION, tags={'railway': 'tram_stop'})
 
         return cls(stops)
+
+def get_train_stops_gdf() -> gpd.GeoDataFrame:
+    return ox.features_from_place(LOCATION, tags={'railway': 'tram_stop'})
