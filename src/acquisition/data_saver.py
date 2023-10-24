@@ -8,7 +8,7 @@ from src.acquisition.constants import DEFAULT_SAVE_PATH
 
 
 @dataclass(frozen=True)
-class DataSever:
+class DataSaver:
     """
 
     """
@@ -23,4 +23,4 @@ class DataSever:
             for attribute, value in arg.__dict__.items():
                 # Make match case for performance
                 if isinstance(value, pd.DataFrame) or isinstance(value, gpd.GeoDataFrame):
-                    value.to_pickle(self.save_path.joinpath(attribute + DataSever.pickle_extension))
+                    value.to_pickle(self.save_path.joinpath(attribute + DataSaver.pickle_extension))

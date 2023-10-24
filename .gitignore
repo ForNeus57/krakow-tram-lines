@@ -1,5 +1,5 @@
 #   Project
-/data/generated/*
+/data/generated/
 /docs/
 /cache/
 /images/*
