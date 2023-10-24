@@ -11,8 +11,9 @@ def visualize_osmnx_graph(g: MultiDiGraph, path: Path) -> None:
     ox.plot_graph(g, filepath=str(path), figsize=TRAM_TRACKS_IMAGE_SIZE, node_size=0, edge_linewidth=1,
                   edge_color=LINE_COLOR, save=True)
 
+
 def visualize_tram_stops() -> None:
-    with open('gsd.txt', 'r') as file:
+    with open('./data/generated/data/gsd.txt', 'r') as file:
         data = [line.split() for line in file]
 
     data = [(float(x), float(y)) for x, y in data]
@@ -22,7 +23,7 @@ def visualize_tram_stops() -> None:
     plt.scatter(x, y, marker='o', color='r')
     plt.axis('off')
     plt.savefig('data/generated/images/tram_stops.png', bbox_inches='tight', pad_inches=0, dpi=300)
-    #plt.show()
+    # plt.show()
 
     '''
     TA CZĘŚĆ KODU MA ODPOWIADAĆ ZA NAKŁADANIE SIĘ OBRAZKÓW, ALE NA RAZIE NIE DZIAŁA
