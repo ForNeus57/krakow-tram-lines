@@ -1,7 +1,10 @@
 #   Project
-/data/
+__pycache__/
+*.py[cod]
+*$py.class
+/data/generated/
 /docs/
-/cache/*
+/cache/
 /images/*
 
 #   IDE
@@ -10,3 +13,4 @@
 
 #   Other
 /.pytest_cache/
+*.tmp
