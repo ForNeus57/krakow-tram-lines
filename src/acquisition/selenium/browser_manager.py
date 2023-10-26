@@ -38,7 +38,9 @@ class BrowserManager:
 
         if not os.path.exists(download_path):
             wget.download(self.url, out=str(self.driver_path))
+
+        if not os.path.exists(self.driver_path.joinpath(r"chromedriver-win64")):
             with ZipFile(download_path, 'r') as zip_object:
                 zip_object.extractall(self.driver_path)
 
-        return Path(self.driver_path.joinpath(r"chromedriver-win64"))
+        return self.driver_path.joinpath(r"chromedriver-win64")

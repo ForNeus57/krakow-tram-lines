@@ -14,6 +14,7 @@ class DataSaver:
     """
     save_path: Path = DEFAULT_SAVE_PATH
     pickle_extension: ClassVar[str] = ".pkl"
+    excel_extension: ClassVar[str] = ".xlsx"
 
     def create_save_directories(self):
         Path(self.save_path).mkdir(parents=True, exist_ok=True)
@@ -23,4 +24,4 @@ class DataSaver:
             for attribute, value in arg.__dict__.items():
                 # Make match case for performance
                 if isinstance(value, pd.DataFrame) or isinstance(value, gpd.GeoDataFrame):
-                    value.to_pickle(self.save_path.joinpath(attribute + DataSaver.pickle_extension))
+                    value.to_excel(self.save_path.joinpath(attribute + DataSaver.excel_extension))
