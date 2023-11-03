@@ -95,14 +95,11 @@ class TramModelsData:
 
     @classmethod
     def preprocess_vehicles_by_ttss(cls, vehicles_by_ttss: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
-
         vehicles_by_ttss.columns = [change_column_names(col) for col in vehicles_by_ttss.columns]
-        # TODO: merge into one
         vehicles_by_ttss.drop(vehicles_by_ttss[vehicles_by_ttss["line"].str.contains(r'\?') |
                                                vehicles_by_ttss["vehicle"].str.contains(r'\?')].index,
                               inplace=True, axis=0)
         vehicles_by_ttss['position'] = vehicles_by_ttss['position'].apply(lambda x: str(x).split(","))
-        # TODO: Check if this precision is sufficient
         vehicles_by_ttss['latitude'] = vehicles_by_ttss['position'].apply(lambda x: x[0]).astype(float)
         vehicles_by_ttss['longitude'] = vehicles_by_ttss['position'].apply(lambda x: x[1]).astype(float)
 

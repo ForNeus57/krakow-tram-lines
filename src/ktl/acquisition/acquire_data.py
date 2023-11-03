@@ -11,7 +11,6 @@ from ktl.acquisition.selenium.latency_data import LatencyData
 from ktl.acquisition.selenium.browser_manager import BrowserManager
 from ktl.acquisition.web.tram_model_attributes_data import TramModelsAttributesData
 from ktl.acquisition.web.tram_models import TramModelsData
-from ktl.acquisition.web.tram_time_table import TramTimeTableData
 from ktl.visualisation.images.osmnx import visualize_osmnx_graph
 
 

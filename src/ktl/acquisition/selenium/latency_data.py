@@ -1,3 +1,6 @@
+"""
+Webscraper made with Selenium lib to get the latency data from the website of the public transport
+"""
 from __future__ import annotations
 
 import datetime
@@ -19,10 +22,17 @@ from ktl.acquisition.selenium.constants import URL_TO_LATENCY_DATA
 
 @dataclass(frozen=True)
 class LatencyData:
+    """
+    Class that represents the latency data.
+    One public attribute that is a pandas DataFrame with the latency data.
+    """
     latency: pd.DataFrame
 
     @classmethod
     def from_selenium(cls, browser: WebDriver, stops: gpd.GeoSeries, url: str = URL_TO_LATENCY_DATA) -> LatencyData:
+        """
+        Custom data constructor that uses Selenium to retrieve data about the latency of the trams.
+        """
         browser.get(url)
         stops = cls.normalize_stops_data(stops)
         latency = pd.DataFrame(
@@ -37,10 +47,18 @@ class LatencyData:
 
     @classmethod
     def normalize_stops_data(cls, stops: gpd.GeoSeries) -> gpd.GeoSeries:
+        """
+        Class method that is used to normalize stops data.
+        I.e. make it so that we do not have Lubicz 01, but instead we have Lubicz.
+        Website used for web-scraping accepts that format.
+        """
         return stops.apply(lambda x: x[:len(x) - 3] if x[len(x) - 1].isdigit() else x).drop_duplicates()
 
     @classmethod
     def get_stop_data(cls, browser: WebDriver, stop: str) -> List[List[str]]:
+        """
+
+        """
         xpath: str = r'//*[@id="isg2_search_panel_container"]/div/form/div/input'
         elem = browser.find_element(by=By.XPATH, value=xpath)
         elem.send_keys(stop, Keys.RETURN)
