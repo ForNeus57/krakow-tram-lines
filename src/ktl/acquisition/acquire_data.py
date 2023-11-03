@@ -21,7 +21,7 @@ def acquire(caching_path: Path) -> None:
     :return:
     """
     models = TramModelsData.from_url()
-    time_table = TramTimeTableData.from_url(models)
+    # time_table = TramTimeTableData.from_url(models)
     models_data = TramModelsAttributesData.from_excel()
     tracks = TramTracksData.from_api()
     stops = TramStopsData.from_api()
@@ -31,7 +31,7 @@ def acquire(caching_path: Path) -> None:
 
     # Saving data to pickle
     ds = DataSaver(caching_path)
-    ds.save_data(models, time_table, models_data, stops, latency)
+    ds.save_data(models, models_data, stops, latency)
 
     Path("./data/generated/images").mkdir(parents=True, exist_ok=True)
     visualize_osmnx_graph(tracks.tram_tracks, Path("./data/generated/images/tram_tracks.png"))
