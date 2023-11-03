@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 /data/generated/
-/docs/
+/docs/build/
 /cache/
 /images/*
 /src/ktl.egg-info
