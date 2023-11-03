@@ -6,6 +6,9 @@ __pycache__/
 /docs/
 /cache/
 /images/*
+/src/ktl.egg-info
+.coverage
+.tox
 
 #   IDE
 /.idea/

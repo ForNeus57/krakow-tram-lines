@@ -1,3 +1,7 @@
+"""
+Set of constants used in selenium module.
+"""
+
 from pathlib import Path
 
 URL_TO_DOWNLOAD_DRIVER: str = (r'https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/win64'

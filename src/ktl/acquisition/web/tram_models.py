@@ -7,7 +7,7 @@ from typing import Tuple
 
 import pandas as pd
 
-from src.acquisition.web.constants import URL_TRAM_MODELS, TRAM_NAME_LENGTH
+from ktl.acquisition.web.constants import URL_TRAM_MODELS, TRAM_NAME_LENGTH
 
 
 def change_column_names(x: str) -> str:

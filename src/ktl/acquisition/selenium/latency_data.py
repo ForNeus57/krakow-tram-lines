@@ -2,11 +2,9 @@ from __future__ import annotations
 
 import datetime
 import time
-from pathlib import Path
 from dataclasses import dataclass
 from typing import List
 
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -14,7 +12,7 @@ from selenium.common.exceptions import NoSuchElementException
 import pandas as pd
 import geopandas as gpd
 
-from src.acquisition.selenium.constants import URL_TO_LATENCY_DATA
+from ktl.acquisition.selenium.constants import URL_TO_LATENCY_DATA
 
 
 @dataclass(frozen=True)
@@ -30,9 +28,10 @@ class LatencyData:
         stops.drop_duplicates(inplace=True)
 
         latency = pd.DataFrame(
-            columns=['line', 'tram_direction', 'estimated_time_of_arrival', 'stop', 'measurement_time'])
+            columns=['line', 'tram_direction', 'estimated_time_of_arrival', 'stop', 'measurement_time']
+        )
 
-        for idx, stop in stops.items():
+        for _, stop in stops.items():  # The first element of the tuple is the index, which we don't need.
             for row in cls.get_stop_data(browser, stop):
                 latency.loc[len(latency)] = row
 

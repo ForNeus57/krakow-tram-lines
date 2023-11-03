@@ -1,4 +1,8 @@
+from ktl.acquisition.osmnx.tram_stops import TramStopsData
+
+
 def test_greater():
+    TramStopsData.from_api()
     num = 100
     assert num >= 100
 

@@ -1,12 +1,11 @@
 from __future__ import annotations
-
 from dataclasses import dataclass
-
-import pandas as pd
 from pathlib import Path
 
-from src.acquisition.web.constants import TRAM_NAME_LENGTH, DEFAULT_EXCEL_INPUT_PATH
-from src.acquisition.web.tram_models import change_column_names
+import pandas as pd
+
+from ktl.acquisition.web.constants import DEFAULT_EXCEL_INPUT_PATH
+from ktl.acquisition.web.tram_models import change_column_names
 
 
 @dataclass(frozen=True)
