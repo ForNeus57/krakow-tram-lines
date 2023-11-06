@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from ktl.acquisition.web.constants import DEFAULT_EXCEL_INPUT_PATH
-from ktl.acquisition.web.tram_models import change_column_names
+from ktl.acquisition.data.web.constants import DEFAULT_EXCEL_INPUT_PATH
+from ktl.acquisition.data.web.helpers import change_column_names
 
 
 @dataclass(frozen=True)

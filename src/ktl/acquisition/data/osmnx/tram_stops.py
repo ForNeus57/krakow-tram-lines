@@ -8,7 +8,7 @@ from dataclasses import dataclass
 import geopandas as gpd
 import osmnx as ox
 
-from ktl.acquisition.osmnx.constants import LOCATION
+from ktl.acquisition.data.osmnx.constants import LOCATION
 
 
 @dataclass(init=True)

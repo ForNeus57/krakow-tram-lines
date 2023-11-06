@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw
 from networkx import MultiDiGraph
 
 from ktl.visualisation.images.constants import TRAM_TRACKS_IMAGE_SIZE, LINE_COLOR
-from ktl.acquisition.osmnx.tram_stops import TramStopsData
+from ktl.acquisition.data.osmnx.tram_stops import TramStopsData
 
 
 def visualize_osmnx_graph(g: MultiDiGraph, path: Path) -> None:

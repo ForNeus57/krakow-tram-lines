@@ -11,7 +11,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.webdriver import WebDriver
 
-from ktl.acquisition.selenium.constants import DRIVER_DOWNLOAD_PATH, URL_TO_DOWNLOAD_DRIVER
+from ktl.acquisition.data.selenium.constants import DRIVER_DOWNLOAD_PATH, URL_TO_DOWNLOAD_DRIVER
 
 
 class BrowserManager:

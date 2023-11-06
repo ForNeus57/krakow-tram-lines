@@ -7,7 +7,7 @@ from dataclasses import dataclass
 import osmnx as ox
 from networkx import MultiDiGraph
 
-from ktl.acquisition.osmnx.constants import LOCATION
+from ktl.acquisition.data.osmnx.constants import LOCATION
 
 
 @dataclass(frozen=True)

@@ -3,8 +3,8 @@ from dataclasses import dataclass
 
 import pandas as pd
 
-from ktl.acquisition.web.tram_models import TramModelsData
-from ktl.acquisition.web.constants import URL_TRAM_TIME_TABLE
+from ktl.acquisition.data.web.tram_models import TramModelsData
+from ktl.acquisition.data.web.constants import URL_TRAM_TIME_TABLE
 
 
 @dataclass(frozen=True)

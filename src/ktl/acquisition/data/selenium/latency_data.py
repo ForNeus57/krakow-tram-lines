@@ -1,5 +1,5 @@
 """
-Webscraper made with Selenium lib to get the latency data from the website of the public transport
+Webscraper made with Selenium lib to get the latency data from the website of the public transport.
 """
 from __future__ import annotations
 
@@ -17,7 +17,7 @@ from selenium.common.exceptions import NoSuchElementException, ElementNotInterac
 import pandas as pd
 import geopandas as gpd
 
-from ktl.acquisition.selenium.constants import URL_TO_LATENCY_DATA
+from ktl.acquisition.data.selenium.constants import URL_TO_LATENCY_DATA
 
 
 @dataclass(frozen=True)
@@ -57,14 +57,14 @@ class LatencyData:
     @classmethod
     def get_stop_data(cls, browser: WebDriver, stop: str) -> List[List[str]]:
         """
-
+        Method that is used to get data using selenium.
         """
+        timeout: int = 10
+
         xpath: str = r'//*[@id="isg2_search_panel_container"]/div/form/div/input'
+        cls.await_element_on_browser(browser, timeout, xpath)
         elem = browser.find_element(by=By.XPATH, value=xpath)
         elem.send_keys(stop, Keys.RETURN)
-        full_data: List[List[str]] = []
-
-        timeout: int = 10
 
         xpath: str = r'//*[@id="autocomplete"]/li[2]/div/div/a'
         cls.await_element_on_browser(browser, timeout, xpath)
@@ -73,6 +73,7 @@ class LatencyData:
         table_body = browser.find_element(by=By.TAG_NAME, value="tbody")
         table_rows = table_body.find_elements(by=By.TAG_NAME, value="tr")
 
+        full_data: List[List[str]] = []
         for row in table_rows:
             try:
                 table_data = row.find_elements(by=By.TAG_NAME, value="td")
@@ -94,7 +95,13 @@ class LatencyData:
         return full_data if full_data is not None else []
 
     @classmethod
-    def await_element_on_browser(cls, browser: WebDriver, timeout: int, xpath: str):
+    def await_element_on_browser(cls, browser: WebDriver, timeout: int, xpath: str) -> None:
+        """
+        Method that is used to wait for an element to appear on the browser.
+        :param browser: Webdriver that is used to browse the web.
+        :param timeout: Timeout in seconds after which the method will throw an exception.
+        :param xpath:   Xpath of the element that we are waiting for.
+        """
         driver_wait = WebDriverWait(browser,
                                     timeout,
                                     ignored_exceptions=[NoSuchElementException, ElementNotInteractableException,

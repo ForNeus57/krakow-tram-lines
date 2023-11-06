@@ -1,18 +1,18 @@
+"""
+This module contains the class for acquiring data about tram models from the website
+(https://api.ttss.pl/vehicles/trams/).
+"""
+
 from __future__ import annotations
 
-import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Tuple
 
 import pandas as pd
 
-from ktl.acquisition.web.constants import URL_TRAM_MODELS, TRAM_NAME_LENGTH
-
-
-def change_column_names(x: str) -> str:
-    value = re.sub(r'[^\w\s_]', '', x.lower())
-    return re.sub(r'[_\s]+', '_', value).strip('_')
+from ktl.acquisition.data.web.constants import URL_TRAM_MODELS, TRAM_NAME_LENGTH
+from ktl.acquisition.data.web.helpers import change_column_names
 
 
 @dataclass(frozen=True)

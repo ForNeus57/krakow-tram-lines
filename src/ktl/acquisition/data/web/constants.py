@@ -1,3 +1,7 @@
+"""
+Constants used in web acquisition module.
+"""
+
 from pathlib import Path
 
 URL_TRAM_MODELS = r'https://api.ttss.pl/vehicles/trams/'
