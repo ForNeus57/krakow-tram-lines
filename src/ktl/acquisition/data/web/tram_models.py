@@ -6,28 +6,27 @@ This module contains the class for acquiring data about tram models from the web
 from __future__ import annotations
 
 from dataclasses import dataclass
-from pathlib import Path
 from typing import Tuple
 
 import pandas as pd
 
-from ktl.acquisition.data.web.constants import URL_TRAM_MODELS, TRAM_NAME_LENGTH
+from ktl.acquisition.data.web.constants import TRAM_NAME_LENGTH
 from ktl.acquisition.data.web.helpers import change_column_names
+from ktl.acquisition.data.web.options import WebscrapingOptions
 
 
 @dataclass(frozen=True)
-class TramModelsData:
+class ModelsData:
     """
 
     """
     vehicles_by_line: pd.DataFrame
     vehicles_by_type: pd.DataFrame
     vehicles_in_ttss: pd.DataFrame
-    url: str = URL_TRAM_MODELS
 
     @classmethod
-    def from_url(cls, url: str = URL_TRAM_MODELS) -> TramModelsData:
-        data = pd.read_html(url)
+    def from_url(cls, options: WebscrapingOptions) -> ModelsData:
+        data = pd.read_html(options.ttss_data_source_url)
         vehicles_by_type = cls.preprocess_vehicles_by_type(data[1])
         vehicles_by_ttss, vehicles_by_line = cls.preprocess_vehicles_by_ttss(data[2])
 
@@ -36,14 +35,7 @@ class TramModelsData:
         vehicles_by_type.columns = ["id", "tram_depo_code", "tram_code", "name"]
         vehicles_by_ttss.drop(columns=["tram_depo_code", "tram_code"], inplace=True)
 
-        return cls(vehicles_by_line, vehicles_by_type, vehicles_by_ttss, url)
-
-    @classmethod
-    def from_disk(cls, path: Path) -> TramModelsData:
-        vehicles_by_line: pd.DataFrame = pd.read_pickle(f"{path}/vehicles_by_line.pkl")
-        vehicles_by_type: pd.DataFrame = pd.read_pickle(f"{path}/vehicles_by_type.pkl")
-        vehicles_in_ttss: pd.DataFrame = pd.read_pickle(f"{path}/vehicles_by_ttss.pkl")
-        return cls(vehicles_by_line, vehicles_by_type, vehicles_in_ttss)
+        return cls(vehicles_by_line, vehicles_by_type, vehicles_by_ttss)
 
     @staticmethod
     def split_tram_names(x):
@@ -61,7 +53,7 @@ class TramModelsData:
         line_number_column_name = "line"
         new_data = pd.DataFrame(data=None, columns=[tram_id_column_name, line_number_column_name])
 
-        for idx, row in vehicles_by_line.apply(TramModelsData.split_tram_names).items():
+        for idx, row in vehicles_by_line.apply(ModelsData.split_tram_names).items():
             if not idx.isnumeric():
                 continue
             for item in row:
@@ -77,7 +69,7 @@ class TramModelsData:
         :return:
         """
         vehicles_by_type.drop(1, inplace=True, axis=1)
-        vehicles_by_type[2] = vehicles_by_type[2].apply(TramModelsData.split_tram_names)
+        vehicles_by_type[2] = vehicles_by_type[2].apply(ModelsData.split_tram_names)
         vehicles_by_type.set_index(vehicles_by_type[0], inplace=True)
         vehicles_by_type[0] = vehicles_by_type[2]
         vehicles_by_type.drop(2, inplace=True, axis=1)

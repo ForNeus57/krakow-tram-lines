@@ -18,6 +18,7 @@ import pandas as pd
 import geopandas as gpd
 
 from ktl.acquisition.data.selenium.constants import URL_TO_LATENCY_DATA
+from ktl.acquisition.data.selenium.options import SeleniumOptions
 
 
 @dataclass(frozen=True)
@@ -29,11 +30,11 @@ class LatencyData:
     latency: pd.DataFrame
 
     @classmethod
-    def from_selenium(cls, browser: WebDriver, stops: gpd.GeoSeries, url: str = URL_TO_LATENCY_DATA) -> LatencyData:
+    def from_selenium(cls, browser: WebDriver, stops: gpd.GeoSeries, options: SeleniumOptions) -> LatencyData:
         """
         Custom data constructor that uses Selenium to retrieve data about the latency of the trams.
         """
-        browser.get(url)
+        browser.get(options.latency_data_source_url)
         stops = cls.normalize_stops_data(stops)
         latency = pd.DataFrame(
             columns=['line', 'tram_direction', 'estimated_time_of_arrival', 'stop', 'measurement_time']

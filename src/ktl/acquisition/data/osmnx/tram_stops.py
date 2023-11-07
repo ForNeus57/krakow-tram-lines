@@ -8,21 +8,21 @@ from dataclasses import dataclass
 import geopandas as gpd
 import osmnx as ox
 
-from ktl.acquisition.data.osmnx.constants import LOCATION
+from ktl.acquisition.data.osmnx.options import OSMNXOptions
 
 
 @dataclass(init=True)
-class TramStopsData:
+class StopsData:
     """
         #TODO: Docstring for TramTimeTableData
     """
     tram_stops: gpd.GeoDataFrame
 
     @classmethod
-    def from_api(cls, location: str = LOCATION) -> TramStopsData:
+    def from_api(cls, options: OSMNXOptions) -> StopsData:
         """
         Custom data constructor that uses OSMNX API to retrieve data about tram stops locations and characteristics.
         """
-        stops = ox.features_from_place(location, tags={'railway': 'tram_stop'})
+        stops = ox.features_from_place(options.get_location(), tags=options.tram_stop_tags)
 
         return cls(stops)
