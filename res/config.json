@@ -9,7 +9,7 @@
     "tram_tracks_custom_filter": "['railway'~'tram']"
   },
   "selenium": {
-    "driver_download_url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/win64/chromedriver-win64.zip",
+    "driver_download_url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.105/win64/chromedriver-win64.zip",
     "driver_download_path": "./cache/chromedriver-win64.zip",
     "driver_executable": "chromedriver.exe",
     "latency_data_source_url": "http://www.ttss.krakow.pl/",

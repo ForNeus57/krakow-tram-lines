@@ -20,14 +20,14 @@ class DriverDownloader:
         """
         Method that downloads drivers based on if the correct files exist in a directory.
         """
-        Path.mkdir(Path(os.path.dirname(self.download_path)).joinpath(self.download_path.stem),
+        Path.mkdir(Path(os.path.dirname(os.path.dirname(self.download_path))),
                    parents=True, exist_ok=True)
 
-        #   Download drivers
+        # Download drivers
         if not os.path.exists(self.download_path):
-            wget.download(self.download_url, out=str(self.driver_path))
+            wget.download(self.download_url, out=str(self.download_path))
 
         #   Unzip the downloaded file into an executable.
         if not os.path.exists(Path(os.path.dirname(self.download_path)).joinpath(self.download_path.stem)):
             with ZipFile(self.download_path, 'r') as zip_object:
-                zip_object.extractall(self.driver_path)
+                zip_object.extractall(Path(os.path.dirname(self.download_path)))
