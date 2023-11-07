@@ -9,8 +9,8 @@ from pathlib import Path
 import pandas as pd
 import geopandas as gpd
 
-from ktl.acquisition.constants import DEFAULT_SAVE_PATH
 from ktl.acquisition.data.package import Package
+from ktl.acquisition.data.saver_info import SavingInfo
 
 
 @dataclass(frozen=True)
@@ -19,7 +19,7 @@ class Saver:
     Class that saves data to disk.
     """
     data: Package
-    save_path: Path = DEFAULT_SAVE_PATH
+    save_info: SavingInfo
     pickle_extension: ClassVar[str] = ".pkl"
     excel_extension: ClassVar[str] = ".xlsx"
 
@@ -27,7 +27,7 @@ class Saver:
         """
         Method that creates necessary paths so that it will be able to save data.
         """
-        Path(self.save_path).mkdir(parents=True, exist_ok=True)
+        Path(self.save_info.save_path).mkdir(parents=True, exist_ok=True)
 
     def save(self, *args) -> None:
         """
@@ -40,4 +40,4 @@ class Saver:
             for attribute, value in arg.__dict__.items():
                 # Make match case for performance
                 if isinstance(value, (pd.DataFrame, gpd.GeoDataFrame)):
-                    value.to_pickle(self.save_path.joinpath(attribute + Saver.excel_extension))
+                    value.to_pickle(self.save_info.save_path.joinpath(attribute + Saver.excel_extension))
