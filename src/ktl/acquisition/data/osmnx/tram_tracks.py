@@ -7,21 +7,20 @@ from dataclasses import dataclass
 import osmnx as ox
 from networkx import MultiDiGraph
 
-from ktl.acquisition.data.osmnx.constants import LOCATION
+from ktl.acquisition.data.osmnx.options import OSMNXOptions
 
 
 @dataclass(frozen=True)
-class TramTracksData:
+class TracksData:
     """
-    Class that ..... # TODO docstring
     """
     tram_tracks: MultiDiGraph
 
     @classmethod
-    def from_api(cls, location: str = LOCATION) -> TramTracksData:
+    def from_api(cls, options: OSMNXOptions) -> TracksData:
         """
         Custom constructor that retrieves data from OSMNX API and packs it into a MultiDiGraph object
         """
-        tracks = ox.graph_from_place(location, custom_filter=r'["railway"~"tram"]')
+        tracks = ox.graph_from_place(options.get_location(), custom_filter=options.tram_tracks_custom_filter)
 
         return cls(tracks)

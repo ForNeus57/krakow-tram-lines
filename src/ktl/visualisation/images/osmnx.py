@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw
 from networkx import MultiDiGraph
 
 from ktl.visualisation.images.constants import TRAM_TRACKS_IMAGE_SIZE, LINE_COLOR
-from ktl.acquisition.data.osmnx.tram_stops import TramStopsData
+from ktl.acquisition.data.osmnx.tram_stops import StopsData
 
 
 def visualize_osmnx_graph(g: MultiDiGraph, path: Path) -> None:
@@ -16,7 +16,7 @@ def visualize_osmnx_graph(g: MultiDiGraph, path: Path) -> None:
 
 
 def generate_stops_data():  # wiem, ze nie powinno byc to w mainie, przeniose to w sr - robcio
-    stops: TramStopsData = TramStopsData.from_api()
+    stops: StopsData = StopsData.from_api()
 
     g: gpd.GeoDataFrame = stops.tram_stops
 

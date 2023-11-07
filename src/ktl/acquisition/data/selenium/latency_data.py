@@ -10,14 +10,12 @@ from typing import List
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import NoSuchElementException, ElementNotInteractableException, \
-    StaleElementReferenceException
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
 import pandas as pd
 import geopandas as gpd
 
-from ktl.acquisition.data.selenium.constants import URL_TO_LATENCY_DATA
+from ktl.acquisition.data.selenium.drivers.browser_manager import BrowserManager
+from ktl.acquisition.data.selenium.options import SeleniumOptions
 
 
 @dataclass(frozen=True)
@@ -29,11 +27,11 @@ class LatencyData:
     latency: pd.DataFrame
 
     @classmethod
-    def from_selenium(cls, browser: WebDriver, stops: gpd.GeoSeries, url: str = URL_TO_LATENCY_DATA) -> LatencyData:
+    def from_selenium(cls, browser: WebDriver, stops: gpd.GeoSeries, options: SeleniumOptions) -> LatencyData:
         """
         Custom data constructor that uses Selenium to retrieve data about the latency of the trams.
         """
-        browser.get(url)
+        browser.get(options.latency_data_source_url)
         stops = cls.normalize_stops_data(stops)
         latency = pd.DataFrame(
             columns=['line', 'tram_direction', 'estimated_time_of_arrival', 'stop', 'measurement_time']
@@ -62,12 +60,12 @@ class LatencyData:
         timeout: int = 10
 
         xpath: str = r'//*[@id="isg2_search_panel_container"]/div/form/div/input'
-        cls.await_element_on_browser(browser, timeout, xpath)
+        BrowserManager.await_element_on_browser(browser, timeout, xpath)
         elem = browser.find_element(by=By.XPATH, value=xpath)
         elem.send_keys(stop, Keys.RETURN)
 
         xpath: str = r'//*[@id="autocomplete"]/li[2]/div/div/a'
-        cls.await_element_on_browser(browser, timeout, xpath)
+        BrowserManager.await_element_on_browser(browser, timeout, xpath)
         browser.find_element(by=By.XPATH, value=xpath).click()
 
         table_body = browser.find_element(by=By.TAG_NAME, value="tbody")
@@ -87,28 +85,9 @@ class LatencyData:
                 continue
 
         xpath: str = r'//*[@id="isg2_search_panel_header"]/a'
-        cls.await_element_on_browser(browser, timeout, xpath)
+        BrowserManager.await_element_on_browser(browser, timeout, xpath)
         browser.find_element(by=By.XPATH, value=xpath).click()
 
         elem.clear()
 
         return full_data if full_data is not None else []
-
-    @classmethod
-    def await_element_on_browser(cls, browser: WebDriver, timeout: int, xpath: str) -> None:
-        """
-        Method that is used to wait for an element to appear on the browser.
-        :param browser: Webdriver that is used to browse the web.
-        :param timeout: Timeout in seconds after which the method will throw an exception.
-        :param xpath:   Xpath of the element that we are waiting for.
-        """
-        driver_wait = WebDriverWait(browser,
-                                    timeout,
-                                    ignored_exceptions=[NoSuchElementException, ElementNotInteractableException,
-                                                        StaleElementReferenceException])
-        driver_wait.until(
-            ec.presence_of_element_located((By.XPATH, xpath))
-        )
-        driver_wait.until(
-            ec.element_to_be_clickable((By.XPATH, xpath))
-        )

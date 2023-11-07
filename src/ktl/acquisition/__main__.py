@@ -21,7 +21,7 @@ def main() -> None:
     parser: ConfigParser = ConfigParser(argv)
     config: Config = parser.parse()
 
-    # package: Package = Receiver(config.info).receive()
+    package: Package = Receiver(config.info).receive()
     # saver = Saver(package, config.saving_info)
     # saver.save()
 

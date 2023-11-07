@@ -1,11 +1,12 @@
 from ktl.acquisition.acquire.info import Info
 from ktl.acquisition.data.package import Package
-from ktl.acquisition.data.osmnx.tram_stops import TramStopsData
-from ktl.acquisition.data.osmnx.tram_tracks import TramTracksData
-from ktl.acquisition.data.selenium.browser_manager import BrowserManager
+from ktl.acquisition.data.osmnx.tram_stops import StopsData
+from ktl.acquisition.data.osmnx.tram_tracks import TracksData
+from ktl.acquisition.data.selenium.drivers.browser_manager import BrowserManager
 from ktl.acquisition.data.selenium.latency_data import LatencyData
-from ktl.acquisition.data.web.tram_model_attributes_data import TramModelsAttributesData
-from ktl.acquisition.data.web.tram_models import TramModelsData
+from ktl.acquisition.data.selenium.time_table_data import TimeTableData
+from ktl.acquisition.data.web.tram_model_attributes_data import ModelsAttributesData
+from ktl.acquisition.data.web.tram_models import ModelsData
 
 
 class Receiver:
@@ -14,13 +15,21 @@ class Receiver:
         self.info = info
 
     def receive(self) -> Package:
-        models = TramModelsData.from_url()
-        # time_table = TramTimeTableData.from_url(models)
-        models_data = TramModelsAttributesData.from_excel()
-        tracks = TramTracksData.from_api()
-        stops = TramStopsData.from_api()
+        # Data from OSMNX
+        tracks = TracksData.from_api(self.info.osmnx_options)
+        stops = StopsData.from_api(self.info.osmnx_options)
 
-        with BrowserManager() as bm:
-            latency = LatencyData.from_selenium(bm.browser, stops.tram_stops['name'])
+        # Data from webscraping
+        models = ModelsData.from_url(self.info.webscraping_options)
 
-        return None
+        # Data from excel
+        models_attributes = ModelsAttributesData.from_excel(self.info.excel_options)
+
+        # Data from Selenium
+        with BrowserManager(self.info.selenium_options) as bm:
+            # Temporarily doesn't work
+            # latency = LatencyData.from_selenium(bm.browser, stops.tram_stops['name'], self.info.selenium_options)
+            time_table = TimeTableData.from_selenium(bm.browser, self.info.selenium_options)
+            time_table.time_table.to_excel('time_table.xlsx')
+
+        return Package()

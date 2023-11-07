@@ -1,24 +1,22 @@
 from __future__ import annotations
 from dataclasses import dataclass
-from pathlib import Path
 
 import pandas as pd
 
-from ktl.acquisition.data.web.constants import DEFAULT_EXCEL_INPUT_PATH
+from ktl.acquisition.data.excel.options import ExcelOptions
 from ktl.acquisition.data.web.helpers import change_column_names
 
 
 @dataclass(frozen=True)
-class TramModelsAttributesData:
+class ModelsAttributesData:
     """
 
     """
     model_attributes: pd.DataFrame
-    excel_path: Path = DEFAULT_EXCEL_INPUT_PATH
 
     @classmethod
-    def from_excel(cls, excel_path: Path = DEFAULT_EXCEL_INPUT_PATH) -> TramModelsAttributesData:
-        data = pd.read_excel(excel_path)
+    def from_excel(cls, options: ExcelOptions) -> ModelsAttributesData:
+        data = pd.read_excel(options.tram_models_attributes_source_sheet_path)
 
         data = data.fillna(0)
 
@@ -41,4 +39,4 @@ class TramModelsAttributesData:
 
         data.columns = [change_column_names(col) for col in data.columns]
 
-        return cls(data, excel_path)
+        return cls(data)

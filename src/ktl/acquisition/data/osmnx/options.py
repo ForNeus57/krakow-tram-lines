@@ -8,5 +8,11 @@ class OSMNXOptions:
     .. seealse:: ./res/config.json
     """
     _: KW_ONLY
+    city: str
+    voivodeship: str
+    country: str
     tram_stop_tags: dict[str, str]
     tram_tracks_custom_filter: str
+
+    def get_location(self) -> str:
+        return f"{self.city}, {self.voivodeship}, {self.country}"
