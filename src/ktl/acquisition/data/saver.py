@@ -1,10 +1,10 @@
 """
 DataSaver class for saving data to disk.
 """
-
 from dataclasses import dataclass
 from typing import ClassVar
 from pathlib import Path
+import os
 
 import pandas as pd
 import geopandas as gpd
@@ -27,17 +27,49 @@ class Saver:
         """
         Method that creates necessary paths so that it will be able to save data.
         """
-        Path(self.save_info.save_path).mkdir(parents=True, exist_ok=True)
+        match self.save_info.format:
+            case 'both':
+                self.save_info.save_path.joinpath('pickle').mkdir(parents=True, exist_ok=True)
+                self.save_info.save_path.joinpath('excel').mkdir(parents=True, exist_ok=True)
 
-    def save(self, *args) -> None:
+            case 'excel':
+                self.save_info.save_path.joinpath('excel').mkdir(parents=True, exist_ok=True)
+
+            case 'pickle':
+                self.save_info.save_path.joinpath('pickle').mkdir(parents=True, exist_ok=True)
+
+    def save(self) -> None:
         """
         Method that accepts data objects and iterates over their object attributes.
         Then if it is a pandas dataframe or geopandas dataframe it saves all the files to pickle of specified path.
         """
+        if self.save_info.force_save:
+            os.rmdir(self.save_info.save_path)
+        elif os.path.exists(self.save_info.save_path):
+            return
+
         self.create_save_directories()
 
-        for arg in args:
-            for attribute, value in arg.__dict__.items():
+        for _, package_element in self.data.__dict__.items():
+            for attribute, value in package_element.__dict__.items():
                 # Make match case for performance
                 if isinstance(value, (pd.DataFrame, gpd.GeoDataFrame)):
-                    value.to_pickle(self.save_info.save_path.joinpath(attribute + Saver.excel_extension))
+                    match self.save_info.format:
+                        case 'both':
+                            value.to_pickle(self.save_info.save_path
+                                            .joinpath("pickle")
+                                            .joinpath(attribute + Saver.pickle_extension))
+                            value.to_excel(self.save_info.save_path
+                                           .joinpath("excel")
+                                           .joinpath(attribute + Saver.excel_extension))
+
+                        case 'excel':
+                            value.to_excel(self.save_info.save_path
+                                           .joinpath("excel")
+                                           .joinpath(attribute + Saver.excel_extension))
+
+                        case 'pickle':
+                            value.to_pickle(self.save_info.save_path
+                                            .joinpath("pickle")
+                                            .joinpath(attribute + Saver.pickle_extension))
+

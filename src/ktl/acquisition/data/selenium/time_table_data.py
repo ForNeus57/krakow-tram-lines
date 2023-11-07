@@ -1,18 +1,11 @@
 from __future__ import annotations
-
-import time
 from dataclasses import dataclass
-from datetime import datetime
-from typing import List
+from io import StringIO
 
 import pandas as pd
-from selenium.common import StaleElementReferenceException, NoSuchElementException, ElementNotInteractableException
-from selenium.webdriver import Keys
-from selenium.webdriver.remote.webelement import WebElement
-from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.remote.webelement import WebElement
 
 from ktl.acquisition.data.selenium.drivers.browser_manager import BrowserManager
 from ktl.acquisition.data.selenium.options import SeleniumOptions
@@ -63,11 +56,11 @@ class TimeTableData:
             element.click()
             BrowserManager.await_element_on_browser(browser, 10, "/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table")
             table = browser.find_element(by=By.XPATH, value="/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table")
-            df = pd.read_html(table.get_attribute('outerHTML'))[1]
+            df = pd.read_html(StringIO(table.get_attribute('outerHTML')))[1]
             df.insert(0, 'order', range(len(df)))
             df['line'] = line_number
-            df['stop_name'] = df[0]
-            df = df[['line', 'order', 'stop_name']]
+            df['name'] = df[0]
+            df = df[['line', 'order', 'name']]
             time_table = pd.concat([time_table, df])
 
         return time_table
@@ -75,17 +68,7 @@ class TimeTableData:
     @classmethod
     def set_start(cls, browser: WebDriver) -> None:
         xpath: str = r'/html/body/table/tbody/tr/td/table/tbody/tr[1]/td/table[1]/tbody/tr[3]/td/a[1]'
-        # driver_wait = WebDriverWait(browser,
-        #                             10,
-        #                             ignored_exceptions=[NoSuchElementException, ElementNotInteractableException,
-        #                                                 StaleElementReferenceException])
-        # driver_wait.until(
-        #     (browser.execute_script("return document.readyState") == "complete")
-        # )
         browser.find_element(by=By.XPATH, value=xpath).click()
 
         xpath: str = r'/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table/tbody/tr[2]/td/table/tbody/tr[1]/td[1]/a'
-        # driver_wait.until(
-        #     ec.presence_of_element_located((By.XPATH, xpath))
-        # )
         browser.find_element(by=By.XPATH, value=xpath).click()

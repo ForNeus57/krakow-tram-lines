@@ -1,5 +1,8 @@
+from ktl.aggregation.create_json_lines import save_json_to_file
+
+
 def main() -> None:
-    print("Hello, World!")
+    save_json_to_file()
 
 
 if __name__ == "__main__":

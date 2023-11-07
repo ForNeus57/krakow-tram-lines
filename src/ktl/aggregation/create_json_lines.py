@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pandas as pd
 import json
 import re
@@ -5,8 +7,8 @@ import re
 #eeh, wziąć po prostu time_table i zjoinować do niego geometry z tram stops?
 
 def create_json():
-    df_stops = pd.read_excel('data/tram_stops.xlsx')
-    df_time = pd.read_excel('data/time_table.xlsx')
+    df_stops = pd.read_excel('data/generated/excel/tram_stops.xlsx')
+    df_time = pd.read_excel('data/generated/excel/time_table.xlsx')
     merged = pd.merge(df_stops, df_time, on='name', how='inner')
     
 
@@ -62,11 +64,12 @@ json_data = create_json()
 def save_json_to_file():
     json_string = create_json()
 
-    with open('data/generated/tram_stops.json', 'w', encoding='utf-8') as f:
+    Path('data/generated/json/').mkdir(exist_ok=True, parents=True)
+
+    with open('data/generated/json/tram_stops.json', 'w', encoding='utf-8') as f:
         f.write(json_string)
 
     json_to_txt()
 
 
-save_json_to_file()
 

@@ -69,6 +69,6 @@ class ConfigParser:
 
         info_file_scanner: InfoFileScanner = InfoFileScanner(*args.config)
         info: Info = info_file_scanner.scan()
-        saving_info: SavingInfo = SavingInfo(args.save_path, args.force_data_save, args.output_format)
+        saving_info: SavingInfo = SavingInfo(*args.save_path, args.force_data_save, args.output_format)
 
         return Config(info, saving_info)
