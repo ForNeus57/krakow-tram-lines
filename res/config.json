@@ -1,0 +1,25 @@
+{
+  "osmnx": {
+    "city": "Krakow",
+    "voivodeship": "Lesser Poland",
+    "country": "Poland",
+    "tram_stop_tags": {
+      "railway": "tram_stop"
+    },
+    "tram_tracks_custom_filter": "['railway'~'tram']"
+  },
+  "selenium": {
+    "driver_download_url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.105/win64/chromedriver-win64.zip",
+    "driver_download_path": "./cache/chromedriver-win64.zip",
+    "driver_executable": "chromedriver.exe",
+    "latency_data_source_url": "http://www.ttss.krakow.pl/",
+    "time_table_data_source_url": "http://rozklady.mpk.krakow.pl/"
+  },
+  "webscraping": {
+    "ttss_data_source_url": "https://api.ttss.pl/vehicles/trams/"
+  },
+  "excel": {
+    "tram_models_attributes_source_sheet_path": "data/Tramwaje_dane_modeli.xlsx",
+    "tram_models_filling_missing_source_sheet_path": "data/Tramwaje_modele.xlsx"
+  }
+}
