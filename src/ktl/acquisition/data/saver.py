@@ -1,6 +1,7 @@
 """
 DataSaver class for saving data to disk.
 """
+import shutil
 from dataclasses import dataclass
 from typing import ClassVar
 from pathlib import Path
@@ -44,7 +45,7 @@ class Saver:
         Then if it is a pandas dataframe or geopandas dataframe it saves all the files to pickle of specified path.
         """
         if self.save_info.force_save:
-            os.rmdir(self.save_info.save_path)
+            shutil.rmtree(self.save_info.save_path, ignore_errors=True)
         elif os.path.exists(self.save_info.save_path):
             return
 
