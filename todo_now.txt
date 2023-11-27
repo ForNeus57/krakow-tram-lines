@@ -1,0 +1,20 @@
+
+1.
+Zapisać obiekt tracks z metody from_api do jakiegoś pickle -> tracks.pkl
+ścieżka acquisition/data/osmnx/tram_tracks.py
+
+
+2.
+W aggregation stworzyć nowy plik py, wczytać obiekt z pickla, wczytać tram_stops.pkl
+
+dla każdego tracku liczyć ścieżkę tym co dominik w stacku przesłał, wyliczyć, podłączyć
+
+może trzeba będzie dodać bibloteki do requirements.txt, i przeładować projekt
+
+'''
+pip install -e .
+'''
+3.
+Zaktualizować Gessant(żesą) co ostatnio stworzyłem o te tracki, zostawić to x, y kurwa już jak jest, ale robię nowe
+
+ścieżka między n-tym przystankiem na linii a n+1-tym przystankiem, czyli ostatni nie będzie miał, to można jakieś bool is_last()

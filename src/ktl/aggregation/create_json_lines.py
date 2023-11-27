@@ -4,7 +4,6 @@ import pandas as pd
 import json
 import re
 
-#eeh, wziąć po prostu time_table i zjoinować do niego geometry z tram stops?
 
 def create_json():
     df_stops = pd.read_excel('data/generated/excel/tram_stops.xlsx')
