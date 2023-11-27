@@ -8,6 +8,7 @@ from ktl.acquisition.acquire.receiver import Receiver
 from ktl.acquisition.config import ConfigParser, Config
 from ktl.acquisition.data.package import Package
 from ktl.acquisition.data.saver import Saver
+from ktl.acquisition.data.osmnx.tram_tracks import TracksData
 
 
 def main() -> None:
@@ -24,6 +25,7 @@ def main() -> None:
     package: Package = Receiver(config.info).receive()
     saver = Saver(package, config.saving_info)
     saver.save()
+    TracksData.from_api(config.osmnx_options)
 
 
 if __name__ == "__main__":
