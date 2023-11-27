@@ -12,19 +12,19 @@ CREATE TABLE "tram_stops" (
 );
 
 CREATE TABLE "time_table" (
-  "id" int PRIMARY KEY,
   "line" integer,
   "name" varchar(50),
   "stop_number" integer,
-  "order" integer
+  "order" integer,
+  PRIMARY KEY ("line", "name")
 );
 
 CREATE TABLE "departures" (
-  "id" int,
+  "line" integer,
+  "name" varchar(50) PRIMARY KEY,
   "direction" order,
-  "is_inorder" bool,
-  "hour" integer,
-  "minute" integer
+  "hour" float64,
+  "minute" float64
 );
 
 CREATE TABLE "vehicles_by_line" (
@@ -78,8 +78,6 @@ ALTER TABLE "time_table" ADD FOREIGN KEY ("name") REFERENCES "tram_stops" ("name
 
 ALTER TABLE "time_table" ADD FOREIGN KEY ("stop_number") REFERENCES "tram_stops" ("stop_number");
 
-ALTER TABLE "time_table" ADD FOREIGN KEY ("id") REFERENCES "departures" ("id");
-
 ALTER TABLE "time_table" ADD FOREIGN KEY ("line") REFERENCES "vehicles_by_line" ("line");
 
 ALTER TABLE "vehicles_by_ttss" ADD FOREIGN KEY ("line") REFERENCES "vehicles_by_line" ("line");
@@ -91,3 +89,7 @@ ALTER TABLE "vehicles_by_type" ADD FOREIGN KEY ("name") REFERENCES "model_attrib
 ALTER TABLE "latency" ADD FOREIGN KEY ("line") REFERENCES "vehicles_by_line" ("line");
 
 ALTER TABLE "latency" ADD FOREIGN KEY ("stop") REFERENCES "tram_stops" ("name");
+
+ALTER TABLE "departures" ADD FOREIGN KEY ("line") REFERENCES "time_table" ("line");
+
+ALTER TABLE "departures" ADD FOREIGN KEY ("name") REFERENCES "time_table" ("name");
