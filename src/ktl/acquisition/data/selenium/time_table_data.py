@@ -56,28 +56,28 @@ class TimeTableData:
 
         cls.set_start(browser)
 
-        parent: WebElement = browser.find_element(by=By.XPATH,
-                                                  value="/html/body/table/tbody/tr/td/table/tbody/tr/td[1]/table[1]/tbody/tr[3]/td")
-
-        links = parent.find_elements(by=By.TAG_NAME, value="*")
-
-        size = len(links)
-
-        for idx in range(size):
-            element = browser.find_element(by=By.XPATH,
-                                           value=f"/html/body/table/tbody/tr/td/table/tbody/tr/td[1]/table[1]/tbody/tr[3]/td/a[{idx + 1}]")
-            line_number = element.text.strip()
-            element.click()
-            BrowserManager.await_element_on_browser(browser, 10,
-                                                    "/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table")
-            table = browser.find_element(by=By.XPATH,
-                                         value="/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table")
-            df = pd.read_html(StringIO(table.get_attribute('outerHTML')))[1]
-            df.insert(0, 'order', range(len(df)))
-            df['line'] = line_number
-            df['name'] = df[0]
-            df = df[['line', 'order', 'name']]
-            time_table = pd.concat([time_table, df])
+        # parent: WebElement = browser.find_element(by=By.XPATH,
+        #                                           value="/html/body/table/tbody/tr/td/table/tbody/tr/td[1]/table[1]/tbody/tr[3]/td")
+        #
+        # links = parent.find_elements(by=By.TAG_NAME, value="*")
+        #
+        # size = len(links)
+        #
+        # for idx in range(size):
+        #     element = browser.find_element(by=By.XPATH,
+        #                                    value=f"/html/body/table/tbody/tr/td/table/tbody/tr/td[1]/table[1]/tbody/tr[3]/td/a[{idx + 1}]")
+        #     line_number = element.text.strip()
+        #     element.click()
+        #     BrowserManager.await_element_on_browser(browser, 10,
+        #                                             "/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table")
+        #     table = browser.find_element(by=By.XPATH,
+        #                                  value="/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table")
+        #     df = pd.read_html(StringIO(table.get_attribute('outerHTML')))[1]
+        #     df.insert(0, 'order', range(len(df)))
+        #     df['line'] = line_number
+        #     df['name'] = df[0]
+        #     df = df[['line', 'order', 'name']]
+        #     time_table = pd.concat([time_table, df])
 
         return time_table
 

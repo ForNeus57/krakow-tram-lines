@@ -38,7 +38,9 @@ def merge_xslx_data_to_from_ttss() -> None:
             continue
         stops.sort_values(by=['order'], inplace=True, ascending=True)
         first_stop: str = str(stops.iloc[0]['name'])
-        prev_absolute_time: float = departures.where(departures['name'] == first_stop).dropna().where(departures['line'] == line).dropna().iloc[0]['absolute']
+        prev_absolute_time: float = \
+        departures.where(departures['name'] == first_stop).dropna().where(departures['line'] == line).dropna().iloc[0][
+            'absolute']
 
         for _, stop in stops.iterrows():
             stop_name: str = str(stop['name'])
@@ -49,8 +51,8 @@ def merge_xslx_data_to_from_ttss() -> None:
             suitable_hours.sort_values(by=['hour', 'minute'], inplace=True)
 
             if suitable_hours.size == 0:
-                break
-            idx = suitable_hours.iloc[0].index
+                continue
+            idx = suitable_hours.index.values[0]
             prev_absolute_time = suitable_hours.iloc[0]['absolute']
             out[id].append((stop_name, suitable_hours.iloc[0]['hour'], suitable_hours.iloc[0]['minute']))
             departures.drop([idx], inplace=True)
@@ -60,14 +62,13 @@ def merge_xslx_data_to_from_ttss() -> None:
         for _, stop in stops.iterrows():
             stop_name: str = str(stop['name'])
             suitable_hours = departures.where(departures['name'] == stop_name).dropna()
-            print(suitable_hours.to_string())
             suitable_hours = suitable_hours.where(suitable_hours['line'] == line).dropna()
             suitable_hours = suitable_hours.where(suitable_hours['direction'] == 'END_START').dropna()
             suitable_hours = suitable_hours.where(suitable_hours['absolute'] > prev_absolute_time).dropna()
             suitable_hours.sort_values(by=['absolute'], inplace=True)
             if suitable_hours.size == 0:
-                break
-            idx = suitable_hours.index[0]
+                continue
+            idx = suitable_hours.index.values[0]
             prev_absolute_time = suitable_hours.iloc[0]['absolute']
             out[id].append((stop_name, suitable_hours.iloc[0]['hour'], suitable_hours.iloc[0]['minute']))
             departures.drop([idx], inplace=True)
