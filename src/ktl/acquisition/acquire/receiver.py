@@ -23,7 +23,7 @@ class Receiver:
         models = ModelsData.from_url(self.info.webscraping_options)
 
         # Data from excel
-        models_attributes = ModelsAttributesData.from_excel(self.info.excel_options)
+        # models_attributes = ModelsAttributesData.from_excel(self.info.excel_options)
 
         # Data from Selenium
         with BrowserManager(self.info.selenium_options) as bm:
@@ -31,4 +31,4 @@ class Receiver:
             # Temporarily doesn't work
             # latency = LatencyData.from_selenium(bm.browser, stops.tram_stops['name'], self.info.selenium_options)
 
-            return Package(tracks, stops, models, models_attributes, time_table, LatencyData(None))
+            return Package(tracks, stops, models, ModelsAttributesData(None), time_table, LatencyData(None))
