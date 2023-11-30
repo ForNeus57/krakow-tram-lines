@@ -20,7 +20,7 @@ time_table_pickle = pd.read_pickle('data/generated/pickle/time_table.pkl')
 people_list = []
 
 class SimulatePeople:
-  time = 7 * 60
+  time =  0
   probability = 0.03
   stops = []
 
@@ -86,27 +86,25 @@ def main():
     stops.append(Stop(stop_id, stop_name, people_waiting))
 
   
-  # print(stops)
 
-
-  print(get_train_stops_from_line(time_table_pickle, '1'))
-
-  simulate_people = SimulatePeople(700, 0.03, stops)
+  simulate_people = SimulatePeople(7 * 60, 0.03, stops)
   simulate_people.run()
 
   people_list_encoded = []
   for person in people_list:
     person_encoded = {
       "id": person.id,
-      "name": person.name.encode('unicode_escape').decode(),
-      "start_stop": person.start_stop.encode('unicode_escape').decode(),
-      "end_stop": person.end_stop.encode('unicode_escape').decode(),
+      "name": person.name,
+      "start_stop": person.start_stop,
+      "end_stop": person.end_stop,
       "line": person.line,
       "time": person.time
     }
     people_list_encoded.append(person_encoded)
 
+  print(people_list_encoded)
   people_json = json.dumps(people_list_encoded, indent=4, ensure_ascii=False)
+  print(people_json[:1000])
 
   with open('data/generated/json/people.json', 'w', encoding='utf-8') as file:
     file.write(people_json)
