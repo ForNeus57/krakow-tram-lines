@@ -1,12 +1,13 @@
 '''
-wczytać data/generated/pickle/tram_stops.pkl
+using   data/generated/pickle/tram_stops.pkl
         data/generated/pickle/time_table.pkl
 
 w pętli po czasie
   dla każdego przystanku        
     dla przystanku biorę losową linię, z niej wybieram losowy przystanek i sprawdzam czy jest po nim, jak tak to wpisujemy go dla generowanego person jako tram_stop
-
-
+TODO
+  - person generateNames() eng i pl DONE name_mode = 'en'/'pl' w generate_people(), generate_name(), Person()
+  - wypisać które przystanki wywalają błędy DONE erroring_stops.json w data/generated/json
 '''
 from ktl.model.people import Person, generate_people
 from ktl.model.stops import Stop
@@ -18,6 +19,7 @@ import pandas as pd
 tram_stops_pickle = pd.read_pickle('data/generated/pickle/tram_stops.pkl')
 time_table_pickle = pd.read_pickle('data/generated/pickle/time_table.pkl')
 people_list = []
+erroring_stops = []
 
 class SimulatePeople:
   time =  0
@@ -56,6 +58,7 @@ class SimulatePeople:
           people_list.append(person)
         except Exception as e:
           print(f'Error generating person: {e}')
+          erroring_stops.append(stop.stop_name)
 
       # something something add people to tram that's not implemented yet, take them off the stop
 
@@ -85,11 +88,11 @@ def main():
     people_waiting = []
     stops.append(Stop(stop_id, stop_name, people_waiting))
 
-  
-
+  # run the simulation
   simulate_people = SimulatePeople(7 * 60, 0.03, stops)
   simulate_people.run()
 
+  # save people to json PROPERLY ENCODING THEM
   people_list_encoded = []
   for person in people_list:
     person_encoded = {
@@ -101,38 +104,18 @@ def main():
       "time": person.time
     }
     people_list_encoded.append(person_encoded)
-
-  print(people_list_encoded)
   people_json = json.dumps(people_list_encoded, indent=4, ensure_ascii=False)
-  print(people_json[:1000])
 
   with open('data/generated/json/people.json', 'w', encoding='utf-8') as file:
     file.write(people_json)
 
-#DEBBUGING
-  # time = 700
-  # print(f'time: {time}')
-  # stop = choice(stops)
-  # print(f'stop: {stop}, name: {stop.stop_name}')
-  # person = Person()
-  # print(f'person: {person}')
-  # person.start_stop = stop.stop_name
-  # print(f'person: {person}')
-  # line = choice(get_line_list_from_train_stops(time_table_pickle, stop.stop_name))
-  # print(f'line: {line}')
-  # try:
-  #   end_stop = choice(get_train_stops_from_line(time_table_pickle, f'{line}'))
-  # except Exception as e:
-  #   print(f'Error generating person: {e}')
-  # print(f'end_stop: {end_stop}')
-  # person.end_stop = end_stop
-  # person.line = line
-  # person.time = time
-  # stop.people_waiting.append(person)
-  # print(f'person: {person}')
-#DEBBUGING
 
-
+  # save erroring stops to json, beforehand removing duplicates
+  global erroring_stops 
+  erroring_stops = list(dict.fromkeys(erroring_stops))
+  erroring_stops_json = json.dumps(erroring_stops, indent=4, ensure_ascii=False)
+  with open('data/generated/json/erroring_stops.json', 'w', encoding='utf-8') as file:
+    file.write(erroring_stops_json)
 
 
 if __name__ == '__main__':
