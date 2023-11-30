@@ -1,11 +1,25 @@
-from random import random
+from random import random, choice
 import json
 class Person:
   id = None
-  def __init__(self):
+  def __init__(self, start_stop = '' , end_stop = '' , line = None, time = 0):
     self.id = Person.generate_id()
     self.name = Person.generate_name()
+    self.start_stop = start_stop
+    self.end_stop = end_stop
+    self.line = line
+    self.time = time
 
+  def __dict__(self):
+    return {
+      'id': self.id,
+      'name': self.name,
+      'start_stop': self.start_stop,
+      'end_stop': self.end_stop,
+      'line': self.line,
+      'time': self.time
+    }
+  
   @staticmethod
   def generate_id():
     if Person.id is None:
@@ -31,7 +45,7 @@ class Person:
       return f"{first_name} {middle_name}"
     
   def __repr__(self):
-    return f"Person({self.name})"
+    return f"Person({self.id}, {self.name}, {self.start_stop}, {self.end_stop}, {self.line}, {self.time})"
 
 def generate_people(probability, range):
   people = []
@@ -40,14 +54,7 @@ def generate_people(probability, range):
       people.append(Person())
   return people
 
-def main():
-  people = generate_people(0.5, range(100))
-  for person in people:
-    print(person.name)
-
-  # check the number of names in files names_info/names.json /first_names and /middle_names
 
 
 
-if __name__ == '__main__':
-  main()
+
