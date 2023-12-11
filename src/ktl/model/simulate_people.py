@@ -61,6 +61,7 @@ class SimulatePeople:
                     person.end_stop = end_stop
                     person.line = line
                     person.time = self.time
+                    person.direction = direction
 
                     # do kalsy perason dodać kierunek ---- direction
 
@@ -125,7 +126,8 @@ def main():
             "start_stop": person.start_stop,
             "end_stop": person.end_stop,
             "line": person.line,
-            "time": person.time
+            "time": person.time,
+            "direction": person.direction
         }
         people_list_encoded.append(person_encoded)
     people_json = json.dumps(people_list_encoded, indent=4, ensure_ascii=False)
