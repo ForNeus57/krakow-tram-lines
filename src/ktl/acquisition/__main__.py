@@ -25,7 +25,7 @@ def main() -> None:
     package: Package = Receiver(config.info).receive()
     saver = Saver(package, config.saving_info)
     saver.save()
-    TracksData.from_api(config.osmnx_options)
+    TracksData.from_api(config.info.osmnx_options)
 
 
 if __name__ == "__main__":
