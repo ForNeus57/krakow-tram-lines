@@ -14,12 +14,14 @@ from ktl.model.stops import Stop
 from random import random, choice
 import json
 import pandas as pd
+from ktl.model.probability import *
 
 
 tram_stops_pickle = pd.read_pickle('data/generated/pickle/tram_stops.pkl')
 time_table_pickle = pd.read_pickle('data/generated/pickle/time_table.pkl')
 people_list = []
 erroring_stops = []
+errors_generating_people = 0
 
 class SimulatePeople:
   time =  0
@@ -32,14 +34,14 @@ class SimulatePeople:
     self.stops = stops
     
   def time_step(self):
-    global time_table_pickle, tram_stops_pickle, people_list
+    global time_table_pickle, tram_stops_pickle, people_list, errors_generating_people, erroring_stops
     self.time += 1
 
     print(f'time: {self.time}')  
     for stop in self.stops:
       number_of_people = 0
-      if random() < self.probability:
-        number_of_people = 1 # will modify later
+      if random() < tram_probability(self.time):
+        number_of_people = 1 # will modify later, maybe not.
       for person in range(number_of_people):
         try:
           person = Person()
@@ -58,6 +60,7 @@ class SimulatePeople:
           people_list.append(person)
         except Exception as e:
           print(f'Error generating person: {e}')
+          errors_generating_people += 1
           erroring_stops.append(stop.stop_name)
 
       # something something add people to tram that's not implemented yet, take them off the stop
@@ -65,7 +68,7 @@ class SimulatePeople:
   def run(self):
     while self.time < 20*60:
       self.time_step()
-    print('simulation ended')
+    print('simulation ended', f'errors generating people: {errors_generating_people}')
 
 #wrzucasz przystanek, dostajesz liste linii
 def get_line_list_from_train_stops(df, tram_name):
@@ -92,7 +95,7 @@ def main():
   simulate_people = SimulatePeople(7 * 60, 0.03, stops)
   simulate_people.run()
 
-  # save people to json PROPERLY ENCODING THEM
+  # save people to json
   people_list_encoded = []
   for person in people_list:
     person_encoded = {
