@@ -41,8 +41,14 @@ def merge_xslx_data_to_from_ttss() -> None:
         prev_absolute_time: int = \
             departures[(departures['name'] == first_stop) & (departures['line'] == line)].iloc[0]['absolute']
 
+        # print(stops.to_string())
+
         while True:
             found = False
+
+            stops: pd.DataFrame = time_table[(time_table['line'] == line) & (time_table['direction'] == mode)]
+            stops = stops.sort_values(by=['order'], ascending=True)
+
             for _, stop in stops.iterrows():
                 stop_name: str = stop['stop_name']
                 # print(stop_name)
@@ -50,8 +56,8 @@ def merge_xslx_data_to_from_ttss() -> None:
                                                            (departures['line'] == line) &
                                                            (departures['direction'] == mode) &
                                                            (departures['absolute'] > prev_absolute_time)]
-                                                .sort_values(by=['hour', 'minute'], ascending=True))
-                if not len(suitable_hours) > 0:
+                                                .sort_values(by=['absolute'], ascending=True))
+                if len(suitable_hours) == 0:
                     found = False
                     break
 
@@ -72,8 +78,8 @@ def merge_xslx_data_to_from_ttss() -> None:
                                                            (departures['line'] == line) &
                                                            (departures['direction'] == reversed_mode) &
                                                            (departures['absolute'] > prev_absolute_time)]
-                                                .sort_values(by=['hour', 'minute'], ascending=True))
-                if not len(suitable_hours) > 0:
+                                                .sort_values(by=['absolute'], ascending=True))
+                if len(suitable_hours) == 0:
                     found = False
                     break
 
@@ -84,6 +90,8 @@ def merge_xslx_data_to_from_ttss() -> None:
 
             if not found:
                 break
+
+            # print(out)
 
     save_data(result, out)
 
