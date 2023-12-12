@@ -15,7 +15,7 @@ def merge_xslx_data_to_from_ttss() -> None:
 
     result = prepare_tram_trains_data(vehicles_type, attributes, lines)
 
-    out: dict[str, List[Tuple[str, int, int]]] = {}
+    out: dict[str, List[Tuple[str, int, int, str]]] = {}
     start_time: int = 7
     end_time: int = 19
 
@@ -64,7 +64,7 @@ def merge_xslx_data_to_from_ttss() -> None:
                 found = True
                 prev_absolute_time = suitable_hours.iloc[0]['absolute']
                 departures.drop(index=suitable_hours.index[0], axis=0, inplace=True)
-                out[identifier].append((stop_name, suitable_hours.iloc[0]['hour'], suitable_hours.iloc[0]['minute']))
+                out[identifier].append((stop_name, suitable_hours.iloc[0]['hour'], suitable_hours.iloc[0]['minute'], mode))
 
             if not found:
                 break
@@ -86,7 +86,7 @@ def merge_xslx_data_to_from_ttss() -> None:
                 found = True
                 prev_absolute_time = suitable_hours.iloc[0]['absolute']
                 departures.drop(index=suitable_hours.index[0], axis=0, inplace=True)
-                out[identifier].append((stop_name, suitable_hours.iloc[0]['hour'], suitable_hours.iloc[0]['minute']))
+                out[identifier].append((stop_name, suitable_hours.iloc[0]['hour'], suitable_hours.iloc[0]['minute'], reversed_mode))
 
             if not found:
                 break
