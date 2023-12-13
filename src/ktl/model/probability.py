@@ -11,8 +11,6 @@ def tram_probability (time):
   amplitude1 = 0.3
   amplitude2 = 0.3
   amplitude_mean = (amplitude1 + amplitude2) / 2
-  time_start = 7 * 60
-  time_end = 20 * 60 - 1
   rush_1 = 8 * 60
   rush_2 = 16 * 60
   baseline = two_peak_normal_distribution(time, rush_1, rush_2, 0.3, 0.3, 100, 100)
@@ -26,3 +24,9 @@ def display_probability():
   x_to_time = lambda x: f'{math.floor(x / 60)}:{x % 60}'
   plt.plot(x, y)
   plt.show()
+
+def main():
+  display_probability()
+
+if __name__ == '__main__':
+  main()
