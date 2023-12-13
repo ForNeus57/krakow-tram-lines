@@ -15,83 +15,83 @@ def merge_xslx_data_to_from_ttss() -> None:
 
     result = prepare_tram_trains_data(vehicles_type, attributes, lines)
 
-    out: dict[str, List[Tuple[str, int, int]]] = {}
+    out: dict[str, List[Tuple[str, int, int, str]]] = {}
     start_time: int = 7
     end_time: int = 19
 
-    def helper(x):
-        return re.sub(r' \d{2}$', '', x)
+    mode: str = 'START_END'
+    reversed_mode: str = 'END_START'
 
     departures = departures.where(start_time <= departures['hour']).dropna()
     departures = departures.where(departures['hour'] <= end_time).dropna()
     departures['absolute'] = departures.apply(lambda x: x['hour'] * 60 + x['minute'], axis=1).astype(int)
-    departures['name'] = departures['name'].apply(lambda x: re.sub(r' \d{2}$', '', x))
 
     for _, row in result.iterrows():
         identifier: str = str(row['id'])
         line: str = str(row['line'])
         out[identifier] = []
 
-        stops: pd.DataFrame = time_table[(time_table['line'] == line)]
+        stops: pd.DataFrame = time_table[(time_table['line'] == line) & (time_table['direction'] == mode)]
         if len(stops) == 0:
             continue
         stops = stops.sort_values(by=['order'], ascending=True)
-        stops['name'] = stops['name'].apply(lambda x: re.sub(r' \d{2}$', '', x))
 
-        first_stop: str = str(stops.iloc[0]['name'])
-
-        mode: str = 'START_END'
-        reversed_mode: str = 'END_START'
+        first_stop: str = str(stops.iloc[0]['stop_name'])
 
         prev_absolute_time: int = \
             departures[(departures['name'] == first_stop) & (departures['line'] == line)].iloc[0]['absolute']
 
+        # print(stops.to_string())
+
         while True:
             found = False
-            for _, stop in stops.iloc[:-1].iterrows():
-                stop_name: str = stop['name']
+
+            stops: pd.DataFrame = time_table[(time_table['line'] == line) & (time_table['direction'] == mode)]
+            stops = stops.sort_values(by=['order'], ascending=True)
+
+            for _, stop in stops.iterrows():
+                stop_name: str = stop['stop_name']
                 # print(stop_name)
                 suitable_hours: pd.DataFrame = (departures[(departures['name'] == stop_name) &
                                                            (departures['line'] == line) &
                                                            (departures['direction'] == mode) &
                                                            (departures['absolute'] > prev_absolute_time)]
-                                                .sort_values(by=['hour', 'minute'], ascending=True))
-                if not len(suitable_hours) > 0:
+                                                .sort_values(by=['absolute'], ascending=True))
+                if len(suitable_hours) == 0:
                     found = False
                     break
 
                 found = True
                 prev_absolute_time = suitable_hours.iloc[0]['absolute']
                 departures.drop(index=suitable_hours.index[0], axis=0, inplace=True)
-                out[identifier].append((stop_name, suitable_hours.iloc[0]['hour'], suitable_hours.iloc[0]['minute']))
+                out[identifier].append((stop_name, suitable_hours.iloc[0]['hour'], suitable_hours.iloc[0]['minute'], mode))
 
             if not found:
                 break
 
-            # print('AAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+            stops: pd.DataFrame = time_table[(time_table['line'] == line) & (time_table['direction'] == reversed_mode)]
 
-            for _, stop in stops.sort_values(by=['order'], ascending=False).iloc[:-1, :].iterrows():
-                stop_name: str = stop['name']
+            for _, stop in stops.sort_values(by=['order'], ascending=True).iterrows():
+                stop_name: str = stop['stop_name']
                 # print(stop_name)
                 suitable_hours: pd.DataFrame = (departures[(departures['name'] == stop_name) &
                                                            (departures['line'] == line) &
                                                            (departures['direction'] == reversed_mode) &
                                                            (departures['absolute'] > prev_absolute_time)]
-                                                .sort_values(by=['hour', 'minute'], ascending=True))
-                if not len(suitable_hours) > 0:
+                                                .sort_values(by=['absolute'], ascending=True))
+                if len(suitable_hours) == 0:
                     found = False
                     break
 
                 found = True
                 prev_absolute_time = suitable_hours.iloc[0]['absolute']
                 departures.drop(index=suitable_hours.index[0], axis=0, inplace=True)
-                out[identifier].append((stop_name, suitable_hours.iloc[0]['hour'], suitable_hours.iloc[0]['minute']))
-                # print(identifier, out[identifier])
-
-            # print('BBBBBBBBBBBBBBBBBBBBBBBB')
+                out[identifier].append((stop_name, suitable_hours.iloc[0]['hour'], suitable_hours.iloc[0]['minute'], reversed_mode))
 
             if not found:
                 break
+
+            # print(out)
 
     save_data(result, out)
 
@@ -111,7 +111,7 @@ def prepare_tram_trains_data(vehicles_type: pd.DataFrame,
 
 
 def save_data(trains_data: pd.DataFrame, trains_schedule_data: dict[str, List[Tuple[str, int, int]]]) -> None:
-    trains_data.to_json("./data/generated/json/vehicles_full_data.json", orient="records", force_ascii=False)
+    trains_data.to_json("./data/generated/json/vehicles_full_data.json", orient="records", force_ascii=False, indent=4)
 
     with open("./data/generated/json/vehicles_arrival_times.json", "w", encoding="utf-8") as output_file:
         json.dump(trains_schedule_data, output_file, indent=4, ensure_ascii=False)
