@@ -2,13 +2,14 @@ from random import random, choice
 import json
 class Person:
   id = None
-  def __init__(self, start_stop = '' , end_stop = '' , line = None, time = 0, name_mode='en'):
+  def __init__(self, start_stop = '' , end_stop = '' , line = None, time = 0, direction = 0, name_mode='en'):
     self.id = Person.generate_id()
     self.name = Person.generate_name(name_mode)
     self.start_stop = start_stop
     self.end_stop = end_stop
     self.line = line
     self.time = time
+    self.direction = direction
 
   def __dict__(self):
     return {
@@ -17,7 +18,8 @@ class Person:
       'start_stop': self.start_stop,
       'end_stop': self.end_stop,
       'line': self.line,
-      'time': self.time
+      'time': self.time,
+      'direction': self.direction
     }
   
   @staticmethod

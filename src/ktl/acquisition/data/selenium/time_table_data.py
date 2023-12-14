@@ -2,6 +2,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from enum import Enum, auto
 from io import StringIO
+from typing import Tuple
 
 import pandas as pd
 from selenium.webdriver.chrome.webdriver import WebDriver
@@ -35,60 +36,29 @@ class TimeTableData:
         """
         browser.get(options.time_table_data_source_url)
 
-        time_table = cls.get_time_table_data(browser)
+        cls.set_start(browser)
 
-        departures = cls.get_time_table_departures(browser, time_table)
+        time_table, departures = cls.get_time_table_departures(browser)
+
+        print(time_table.to_string())
 
         return cls(time_table, departures)
 
     @classmethod
-    def get_time_table_data(cls, browser: WebDriver) -> pd.DataFrame:
-        """
-
-        :param browser:
-        :return:
-        """
-
-        time_table = pd.DataFrame(columns=[
-            'line',
-            'name',
-        ])
-
-        cls.set_start(browser)
-
-        # parent: WebElement = browser.find_element(by=By.XPATH,
-        #                                           value="/html/body/table/tbody/tr/td/table/tbody/tr/td[1]/table[1]/tbody/tr[3]/td")
-        #
-        # links = parent.find_elements(by=By.TAG_NAME, value="*")
-        #
-        # size = len(links)
-        #
-        # for idx in range(size):
-        #     element = browser.find_element(by=By.XPATH,
-        #                                    value=f"/html/body/table/tbody/tr/td/table/tbody/tr/td[1]/table[1]/tbody/tr[3]/td/a[{idx + 1}]")
-        #     line_number = element.text.strip()
-        #     element.click()
-        #     BrowserManager.await_element_on_browser(browser, 10,
-        #                                             "/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table")
-        #     table = browser.find_element(by=By.XPATH,
-        #                                  value="/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table")
-        #     df = pd.read_html(StringIO(table.get_attribute('outerHTML')))[1]
-        #     df.insert(0, 'order', range(len(df)))
-        #     df['line'] = line_number
-        #     df['name'] = df[0]
-        #     df = df[['line', 'order', 'name']]
-        #     time_table = pd.concat([time_table, df])
-
-        return time_table
-
-    @classmethod
-    def get_time_table_departures(cls, browser: WebDriver, time_table: pd.DataFrame) -> pd.DataFrame:
-        hours = pd.DataFrame(columns=[
+    def get_time_table_departures(cls, browser: WebDriver) -> Tuple[pd.DataFrame, pd.DataFrame]:
+        hours: pd.DataFrame = pd.DataFrame(columns=[
             'line',
             'name',
             'direction',
             'hour',
             'minute',
+        ])
+
+        time_table: pd.DataFrame = pd.DataFrame(columns=[
+            'line',
+            'stop_name',
+            'order',
+            'direction',
         ])
 
         parent: WebElement = browser.find_element(by=By.XPATH,
@@ -106,18 +76,20 @@ class TimeTableData:
             BrowserManager.await_element_on_browser(browser, 10,
                                                     "/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td/table/tbody/tr[1]/td/table/tbody/tr/td[3]")
 
-            direction_links_parent: WebElement = browser.find_element(by=By.XPATH, value="/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td/table/tbody/tr[1]/td/table/tbody/tr/td[3]")
+            direction_links_parent: WebElement = browser.find_element(by=By.XPATH,
+                                                                      value="/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td/table/tbody/tr[1]/td/table/tbody/tr/td[3]")
 
             directions = direction_links_parent.find_elements(by=By.TAG_NAME, value="a")
 
             for direction_index in range(len(directions)):
                 direction_link = browser.find_element(by=By.XPATH,
-                                               value=f"/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td/table/tbody/tr[1]/td/table/tbody/tr/td[3]/a[{direction_index + 1}]")
+                                                      value=f"/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td/table/tbody/tr[1]/td/table/tbody/tr/td[3]/a[{direction_index + 1}]")
                 direction_link.click()
                 BrowserManager.await_element_on_browser(browser, 10,
-                                                    "/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table/tbody/tr[2]/td/table")
+                                                        "/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table/tbody/tr[2]/td/table")
 
-                stop_parent: WebElement = browser.find_element(by=By.XPATH, value="/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table/tbody/tr[2]/td/table/tbody")
+                stop_parent: WebElement = browser.find_element(by=By.XPATH,
+                                                               value="/html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table/tbody/tr[2]/td/table/tbody")
 
                 stops = stop_parent.find_elements(by=By.TAG_NAME, value="tr")
 
@@ -137,9 +109,12 @@ class TimeTableData:
                     for i, row in df.iterrows():
                         if i not in (0, len(df[1]) - 2, len(df[1]) - 1) and str(row[1]) != 'nan':
                             for minute in str(row[1]).split(' '):
-                                hours.loc[len(hours)] = [line_number, stop_text, str(Direction(direction_index)), int(row[0]), int(minute[:2])]
+                                hours.loc[len(hours)] = [line_number, stop_text, str(Direction(direction_index)),
+                                                         int(row[0]), int(minute[:2])]
 
-        return hours
+                    time_table.loc[len(time_table)] = [line_number, stop_text, stop_index, str(Direction(direction_index))]
+
+        return time_table, hours
 
     @classmethod
     def set_start(cls, browser: WebDriver) -> None:
