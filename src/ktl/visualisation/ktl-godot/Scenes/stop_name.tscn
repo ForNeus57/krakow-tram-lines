@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmnsu4tgq6itf"]
+
+[ext_resource type="Script" path="res://Scripts/stop_name.gd" id="1_4nk0q"]
+
+[node name="Stop_name" type="Label"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1319.0
+offset_bottom = -883.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "Rondo Grzegórzeckie"
+script = ExtResource("1_4nk0q")
