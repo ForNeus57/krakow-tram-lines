@@ -8,12 +8,12 @@ def two_peak_normal_distribution(x, x1, x2, amplitude1, amplitude2, sigma1=1, si
   return peak1 + peak2
 
 def tram_probability (time):
-  amplitude1 = 0.3
-  amplitude2 = 0.3
+  amplitude1 = 0.5
+  amplitude2 = 0.5
   amplitude_mean = (amplitude1 + amplitude2) / 2
   rush_1 = 8 * 60
   rush_2 = 16 * 60
-  baseline = two_peak_normal_distribution(time, rush_1, rush_2, 0.3, 0.3, 100, 100)
+  baseline = two_peak_normal_distribution(time, rush_1, rush_2, 0.5, 0.5, 100, 100)
   result = np.power(baseline / amplitude_mean, 0.8) * amplitude_mean 
   
   return result

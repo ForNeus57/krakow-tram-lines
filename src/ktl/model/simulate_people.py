@@ -63,7 +63,7 @@ class SimulatePeople:
                     person.time = self.time
                     person.direction = direction
 
-                    # do kalsy perason dodać kierunek ---- direction
+                    # do klasy perason dodać kierunek ---- direction
 
                     stop.people_waiting.append(person)
                     print(f'person: {person}')
