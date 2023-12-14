@@ -1,0 +1,4619 @@
+[
+    {
+        "id": 0,
+        "name": "Leonora Gualterio",
+        "start_stop": "TAURON Arena Kraków Wieczysta 01",
+        "end_stop": "Rzemieślnicza 02",
+        "line": "10",
+        "time": 421,
+        "direction": "END_START"
+    },
+    {
+        "id": 1,
+        "name": "Neysa Sissie",
+        "start_stop": "Nowy Kleparz 02",
+        "end_stop": "Teatr Słowackiego 02",
+        "line": "44",
+        "time": 421,
+        "direction": "END_START"
+    },
+    {
+        "id": 2,
+        "name": "Sascha Aubry",
+        "start_stop": "Ćwiklińskiej 01",
+        "end_stop": "Teligi 01",
+        "line": "49",
+        "time": 423,
+        "direction": "END_START"
+    },
+    {
+        "id": 3,
+        "name": "Ann-Marie Abbey",
+        "start_stop": "Politechnika 03",
+        "end_stop": "św. Wawrzyńca 02",
+        "line": "19",
+        "time": 425,
+        "direction": "START_END"
+    },
+    {
+        "id": 4,
+        "name": "Jojo Bhatt",
+        "start_stop": "Borsucza 01",
+        "end_stop": "Łagiewniki 04",
+        "line": "17",
+        "time": 425,
+        "direction": "START_END"
+    },
+    {
+        "id": 7,
+        "name": "Daria Sherilyn",
+        "start_stop": "Dworzec Towarowy 03",
+        "end_stop": "Stary Kleparz 03",
+        "line": "18",
+        "time": 429,
+        "direction": "END_START"
+    },
+    {
+        "id": 8,
+        "name": "Harmonie Ilysa",
+        "start_stop": "Bieńczycka 02",
+        "end_stop": "Muzeum Lotnictwa Polskiego 01",
+        "line": "52",
+        "time": 429,
+        "direction": "START_END"
+    },
+    {
+        "id": 9,
+        "name": "Goldia Halda",
+        "start_stop": "Kombinat 03",
+        "end_stop": "Dunikowskiego 01",
+        "line": "21",
+        "time": 430,
+        "direction": "START_END"
+    },
+    {
+        "id": 10,
+        "name": "Anett Josselyn",
+        "start_stop": "Stella-Sawickiego 02",
+        "end_stop": "Rondo Czyżyńskie 02",
+        "line": "10",
+        "time": 431,
+        "direction": "START_END"
+    },
+    {
+        "id": 11,
+        "name": "Oralie Topper",
+        "start_stop": "Rondo Mogilskie 04",
+        "end_stop": "Kuklińskiego 02",
+        "line": "20",
+        "time": 431,
+        "direction": "START_END"
+    },
+    {
+        "id": 12,
+        "name": "Bernie Min",
+        "start_stop": "Rondo Matecznego 02",
+        "end_stop": "Głowackiego 01",
+        "line": "8",
+        "time": 433,
+        "direction": "START_END"
+    },
+    {
+        "id": 13,
+        "name": "Barbette Ginni",
+        "start_stop": "Brama nr 4 01",
+        "end_stop": "Łagiewniki SKA 02",
+        "line": "10",
+        "time": 434,
+        "direction": "END_START"
+    },
+    {
+        "id": 14,
+        "name": "Kippie Hennebery",
+        "start_stop": "Filharmonia 01",
+        "end_stop": "Podgórze SKA 02",
+        "line": "13",
+        "time": 434,
+        "direction": "START_END"
+    },
+    {
+        "id": 15,
+        "name": "Asia Jorgan",
+        "start_stop": "Plac Wolnica 02",
+        "end_stop": "Plac Centralny im. R.Reagana 04",
+        "line": "10",
+        "time": 434,
+        "direction": "END_START"
+    },
+    {
+        "id": 16,
+        "name": "Tuesday Hillie Volnay",
+        "start_stop": "Krowodrza Górka P+R 01",
+        "end_stop": "Ruczaj 02",
+        "line": "18",
+        "time": 434,
+        "direction": "START_END"
+    },
+    {
+        "id": 17,
+        "name": "Darda Juan",
+        "start_stop": "Stella-Sawickiego 02",
+        "end_stop": "Rondo Piastowskie 02",
+        "line": "9",
+        "time": 435,
+        "direction": "START_END"
+    },
+    {
+        "id": 18,
+        "name": "Susie Godding",
+        "start_stop": "Teatr Variété 02",
+        "end_stop": "Orzeszkowej 01",
+        "line": "22",
+        "time": 435,
+        "direction": "END_START"
+    },
+    {
+        "id": 19,
+        "name": "Adiana Mosley",
+        "start_stop": "Stradom 03",
+        "end_stop": "Solvay 01",
+        "line": "22",
+        "time": 438,
+        "direction": "END_START"
+    },
+    {
+        "id": 20,
+        "name": "Lind Elfont",
+        "start_stop": "Bratysławska 02",
+        "end_stop": "Szpital Narutowicza 02",
+        "line": "5",
+        "time": 439,
+        "direction": "END_START"
+    },
+    {
+        "id": 21,
+        "name": "Brandais Siskind",
+        "start_stop": "Ruczaj 01",
+        "end_stop": "Dauna 01",
+        "line": "11",
+        "time": 439,
+        "direction": "START_END"
+    },
+    {
+        "id": 22,
+        "name": "Viv Brause",
+        "start_stop": "Brożka 01",
+        "end_stop": "Kurdwanów P+R 03",
+        "line": "11",
+        "time": 439,
+        "direction": "END_START"
+    },
+    {
+        "id": 23,
+        "name": "Minette Birmingham",
+        "start_stop": "Kapelanka 01",
+        "end_stop": "Rondo 308. Dywizjonu 02",
+        "line": "22",
+        "time": 439,
+        "direction": "END_START"
+    },
+    {
+        "id": 24,
+        "name": "Mia Hosea",
+        "start_stop": "Rondo Mogilskie 02",
+        "end_stop": "Batorego 02",
+        "line": "4",
+        "time": 442,
+        "direction": "END_START"
+    },
+    {
+        "id": 25,
+        "name": "Jerrylee Mack Plunkett",
+        "start_stop": "Kurdwanów P+R 10",
+        "end_stop": "Klimeckiego 01",
+        "line": "50",
+        "time": 442,
+        "direction": "START_END"
+    },
+    {
+        "id": 26,
+        "name": "Yvonne Leschen",
+        "start_stop": "Prokocim Szpital 02",
+        "end_stop": "Szpital Narutowicza 01",
+        "line": "3",
+        "time": 443,
+        "direction": "START_END"
+    },
+    {
+        "id": 27,
+        "name": "Dottie Ned",
+        "start_stop": "Siewna Wiadukt 02",
+        "end_stop": "Plac Wszystkich Świętych 02",
+        "line": "18",
+        "time": 445,
+        "direction": "END_START"
+    },
+    {
+        "id": 28,
+        "name": "Sherye Car",
+        "start_stop": "Mistrzejowice 01",
+        "end_stop": "Miśnieńska 02",
+        "line": "9",
+        "time": 446,
+        "direction": "START_END"
+    },
+    {
+        "id": 29,
+        "name": "Tonie Janot",
+        "start_stop": "Borsucza 02",
+        "end_stop": "Ruczaj 01",
+        "line": "11",
+        "time": 446,
+        "direction": "START_END"
+    },
+    {
+        "id": 30,
+        "name": "Thomasina Rubin",
+        "start_stop": "Cichy Kącik 01",
+        "end_stop": "Oleandry 02",
+        "line": "20",
+        "time": 447,
+        "direction": "END_START"
+    },
+    {
+        "id": 32,
+        "name": "Delila Herold Auberbach",
+        "start_stop": "Rondo Grunwaldzkie 02",
+        "end_stop": "Stary Kleparz 02",
+        "line": "18",
+        "time": 448,
+        "direction": "START_END"
+    },
+    {
+        "id": 33,
+        "name": "Jammie Ohl",
+        "start_stop": "Stradom 01",
+        "end_stop": "Piasta Kołodzieja 01",
+        "line": "52",
+        "time": 448,
+        "direction": "START_END"
+    },
+    {
+        "id": 34,
+        "name": "Jo Solly Shipman",
+        "start_stop": "Rondo 308. Dywizjonu 01",
+        "end_stop": "Plac Inwalidów 02",
+        "line": "14",
+        "time": 449,
+        "direction": "END_START"
+    },
+    {
+        "id": 35,
+        "name": "Collie An",
+        "start_stop": "Biprostal 02",
+        "end_stop": "DH Wanda 01",
+        "line": "14",
+        "time": 449,
+        "direction": "END_START"
+    },
+    {
+        "id": 36,
+        "name": "Christi Isacco",
+        "start_stop": "Kombinat 03",
+        "end_stop": "Stary Kleparz 01",
+        "line": "44",
+        "time": 450,
+        "direction": "START_END"
+    },
+    {
+        "id": 37,
+        "name": "Vida Agnes",
+        "start_stop": "Lubicz 01",
+        "end_stop": "Oleandry 01",
+        "line": "20",
+        "time": 450,
+        "direction": "START_END"
+    },
+    {
+        "id": 38,
+        "name": "Margette Calida",
+        "start_stop": "Dworzec Płaszów Estakada 02",
+        "end_stop": "Klimeckiego 01",
+        "line": "50",
+        "time": 450,
+        "direction": "START_END"
+    },
+    {
+        "id": 39,
+        "name": "Bernardina Lurline",
+        "start_stop": "Krowodrza Górka P+R 02",
+        "end_stop": "Cmentarz Podgórski 01",
+        "line": "3",
+        "time": 450,
+        "direction": "END_START"
+    },
+    {
+        "id": 40,
+        "name": "Ange Biddy",
+        "start_stop": "Rzemieślnicza 01",
+        "end_stop": "Łagiewniki ZUS 01",
+        "line": "10",
+        "time": 451,
+        "direction": "START_END"
+    },
+    {
+        "id": 41,
+        "name": "Bettina Vale Moonier",
+        "start_stop": "Batorego 01",
+        "end_stop": "Uniwersytet Pedagogiczny 01",
+        "line": "13",
+        "time": 451,
+        "direction": "START_END"
+    },
+    {
+        "id": 42,
+        "name": "Denyse Stefanac",
+        "start_stop": "Dworzec Towarowy 02",
+        "end_stop": "Rondo Grzegórzeckie 02",
+        "line": "17",
+        "time": 452,
+        "direction": "END_START"
+    },
+    {
+        "id": 43,
+        "name": "Maighdiln Deppy",
+        "start_stop": "Cmentarz Podgórski 02",
+        "end_stop": "Witosa 02",
+        "line": "24",
+        "time": 454,
+        "direction": "START_END"
+    },
+    {
+        "id": 45,
+        "name": "Joly Adore",
+        "start_stop": "Witosa 01",
+        "end_stop": "Grota-Roweckiego 01",
+        "line": "11",
+        "time": 455,
+        "direction": "START_END"
+    },
+    {
+        "id": 46,
+        "name": "Emyle Palm Henrik",
+        "start_stop": "Borsucza 02",
+        "end_stop": "Chmieleniec 01",
+        "line": "17",
+        "time": 455,
+        "direction": "END_START"
+    },
+    {
+        "id": 47,
+        "name": "Kellie Hamo",
+        "start_stop": "Urzędnicza 01",
+        "end_stop": "Limanowskiego 02",
+        "line": "13",
+        "time": 457,
+        "direction": "START_END"
+    },
+    {
+        "id": 48,
+        "name": "Melinda Cherise",
+        "start_stop": "Rzemieślnicza 01",
+        "end_stop": "Borsucza 02",
+        "line": "17",
+        "time": 461,
+        "direction": "END_START"
+    },
+    {
+        "id": 49,
+        "name": "Emalia Madge",
+        "start_stop": "Teligi 02",
+        "end_stop": "Cmentarz Podgórski 02",
+        "line": "3",
+        "time": 461,
+        "direction": "START_END"
+    },
+    {
+        "id": 50,
+        "name": "Keelia Carny",
+        "start_stop": "Urzędnicza 01",
+        "end_stop": "Plac Inwalidów 01",
+        "line": "4",
+        "time": 463,
+        "direction": "START_END"
+    },
+    {
+        "id": 51,
+        "name": "Judith Ziagos",
+        "start_stop": "Lipińskiego 01",
+        "end_stop": "Szwedzka 01",
+        "line": "52",
+        "time": 463,
+        "direction": "END_START"
+    },
+    {
+        "id": 52,
+        "name": "Bert Brenza",
+        "start_stop": "Szpital Narutowicza 02",
+        "end_stop": "Gromadzka 01",
+        "line": "50",
+        "time": 469,
+        "direction": "START_END"
+    },
+    {
+        "id": 54,
+        "name": "Nicole Varrian",
+        "start_stop": "Sanktuarium Bożego Miłosierdzia 01",
+        "end_stop": "Białoprądnicka 02",
+        "line": "50",
+        "time": 471,
+        "direction": "END_START"
+    },
+    {
+        "id": 55,
+        "name": "Janeta Clemmy",
+        "start_stop": "Dworcowa 01",
+        "end_stop": "Uniwersytet Pedagogiczny 02",
+        "line": "24",
+        "time": 472,
+        "direction": "END_START"
+    },
+    {
+        "id": 57,
+        "name": "Hermia Janey",
+        "start_stop": "Bronowice 01",
+        "end_stop": "Prokocim Szpital 01",
+        "line": "13",
+        "time": 472,
+        "direction": "END_START"
+    },
+    {
+        "id": 58,
+        "name": "Yvonne Edgar",
+        "start_stop": "Giedroycia 01",
+        "end_stop": "Rondo Matecznego 02",
+        "line": "10",
+        "time": 473,
+        "direction": "END_START"
+    },
+    {
+        "id": 60,
+        "name": "Shelagh Genet",
+        "start_stop": "Starowiślna 04",
+        "end_stop": "Borsucza 01",
+        "line": "22",
+        "time": 474,
+        "direction": "END_START"
+    },
+    {
+        "id": 61,
+        "name": "Dollie Jennee",
+        "start_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 03",
+        "end_stop": "Krowodrza Górka P+R 02",
+        "line": "5",
+        "time": 475,
+        "direction": "END_START"
+    },
+    {
+        "id": 63,
+        "name": "Lydie Melva",
+        "start_stop": "Kampus UJ 01",
+        "end_stop": "Norymberska 01",
+        "line": "52",
+        "time": 475,
+        "direction": "END_START"
+    },
+    {
+        "id": 64,
+        "name": "Prisca Nile",
+        "start_stop": "św. Gertrudy 02",
+        "end_stop": "Plac Wszystkich Świętych 02",
+        "line": "13",
+        "time": 476,
+        "direction": "END_START"
+    },
+    {
+        "id": 65,
+        "name": "Hedy Dulcle",
+        "start_stop": "Rondo Hipokratesa 01",
+        "end_stop": "Miśnieńska 01",
+        "line": "9",
+        "time": 477,
+        "direction": "END_START"
+    },
+    {
+        "id": 66,
+        "name": "Gertrude Vilhelmina",
+        "start_stop": "Piaski Nowe 01",
+        "end_stop": "Bociana 02",
+        "line": "50",
+        "time": 477,
+        "direction": "START_END"
+    },
+    {
+        "id": 67,
+        "name": "Agnella Kit Monro",
+        "start_stop": "Koksochemia 02",
+        "end_stop": "Plac Centralny im. R.Reagana 02",
+        "line": "21",
+        "time": 477,
+        "direction": "START_END"
+    },
+    {
+        "id": 68,
+        "name": "Orsola Flemming Kiona",
+        "start_stop": "Białucha 02",
+        "end_stop": "Ćwiklińskiej 01",
+        "line": "9",
+        "time": 478,
+        "direction": "START_END"
+    },
+    {
+        "id": 69,
+        "name": "Leoline Rogozen",
+        "start_stop": "Rondo Hipokratesa 01",
+        "end_stop": "Dunikowskiego 01",
+        "line": "52",
+        "time": 480,
+        "direction": "START_END"
+    },
+    {
+        "id": 71,
+        "name": "Bennie Yoko",
+        "start_stop": "Rondo Czyżyńskie 01",
+        "end_stop": "Plac Wolnica 02",
+        "line": "10",
+        "time": 486,
+        "direction": "END_START"
+    },
+    {
+        "id": 72,
+        "name": "Vikki Oralle",
+        "start_stop": "Borek Fałęcki 01",
+        "end_stop": "Struga 01",
+        "line": "22",
+        "time": 487,
+        "direction": "START_END"
+    },
+    {
+        "id": 73,
+        "name": "Rivkah Lull",
+        "start_stop": "Filharmonia 03",
+        "end_stop": "Uniwersytet Pedagogiczny 02",
+        "line": "8",
+        "time": 487,
+        "direction": "END_START"
+    },
+    {
+        "id": 74,
+        "name": "Blinny Gallagher Claus",
+        "start_stop": "Brama nr 5 02",
+        "end_stop": "Plac Centralny im. R.Reagana 02",
+        "line": "21",
+        "time": 491,
+        "direction": "START_END"
+    },
+    {
+        "id": 76,
+        "name": "Vina Avigdor",
+        "start_stop": "Bieńczycka 01",
+        "end_stop": "Biprostal 01",
+        "line": "14",
+        "time": 494,
+        "direction": "START_END"
+    },
+    {
+        "id": 77,
+        "name": "Katey Lagasse",
+        "start_stop": "Łagiewniki SKA 01",
+        "end_stop": "Rondo Grzegórzeckie 04",
+        "line": "50",
+        "time": 498,
+        "direction": "START_END"
+    },
+    {
+        "id": 78,
+        "name": "Christine Thier",
+        "start_stop": "Rondo Mogilskie 05",
+        "end_stop": "Borsucza 01",
+        "line": "17",
+        "time": 499,
+        "direction": "START_END"
+    },
+    {
+        "id": 79,
+        "name": "Yolanthe Shewchuk",
+        "start_stop": "Zajezdnia Nowa Huta 01",
+        "end_stop": "Uniwersytet Pedagogiczny 01",
+        "line": "4",
+        "time": 499,
+        "direction": "START_END"
+    },
+    {
+        "id": 80,
+        "name": "Gelya Royal",
+        "start_stop": "Giedroycia 02",
+        "end_stop": "Struga 02",
+        "line": "21",
+        "time": 500,
+        "direction": "START_END"
+    },
+    {
+        "id": 81,
+        "name": "Hermine Laflam",
+        "start_stop": "Łagiewniki 05",
+        "end_stop": "Miodowa 01",
+        "line": "17",
+        "time": 501,
+        "direction": "END_START"
+    },
+    {
+        "id": 82,
+        "name": "Lanae Boarer",
+        "start_stop": "Cmentarz Podgórski 01",
+        "end_stop": "Plac Inwalidów 02",
+        "line": "24",
+        "time": 502,
+        "direction": "END_START"
+    },
+    {
+        "id": 83,
+        "name": "Avis Antons",
+        "start_stop": "Biprostal 02",
+        "end_stop": "Stary Kleparz 02",
+        "line": "4",
+        "time": 503,
+        "direction": "END_START"
+    },
+    {
+        "id": 84,
+        "name": "Noami Els",
+        "start_stop": "Solvay 01",
+        "end_stop": "Kapelanka 01",
+        "line": "22",
+        "time": 504,
+        "direction": "END_START"
+    },
+    {
+        "id": 85,
+        "name": "Charo Kellie",
+        "start_stop": "Rondo Czyżyńskie 02",
+        "end_stop": "Bieżanowska 01",
+        "line": "9",
+        "time": 504,
+        "direction": "START_END"
+    },
+    {
+        "id": 86,
+        "name": "Hollyanne Crosse",
+        "start_stop": "DH Wanda 01",
+        "end_stop": "Piasta Kołodzieja 01",
+        "line": "21",
+        "time": 505,
+        "direction": "START_END"
+    },
+    {
+        "id": 87,
+        "name": "Bernice Krauss",
+        "start_stop": "Teatr Słowackiego 02",
+        "end_stop": "Bronowice 01",
+        "line": "14",
+        "time": 505,
+        "direction": "END_START"
+    },
+    {
+        "id": 88,
+        "name": "Gilemette Codie Nestor",
+        "start_stop": "Podgórze SKA 01",
+        "end_stop": "św. Wawrzyńca 01",
+        "line": "3",
+        "time": 505,
+        "direction": "END_START"
+    },
+    {
+        "id": 89,
+        "name": "Miriam Joellen",
+        "start_stop": "Wlotowa 01",
+        "end_stop": "Batorego 02",
+        "line": "13",
+        "time": 507,
+        "direction": "END_START"
+    },
+    {
+        "id": 90,
+        "name": "Sybille Flan",
+        "start_stop": "Bieżanowska 02",
+        "end_stop": "Nowy Prokocim 02",
+        "line": "3",
+        "time": 509,
+        "direction": "START_END"
+    },
+    {
+        "id": 91,
+        "name": "Clare Antipus",
+        "start_stop": "TAURON Arena Kraków al. Pokoju 02",
+        "end_stop": "Rondo Czyżyńskie 04",
+        "line": "14",
+        "time": 509,
+        "direction": "START_END"
+    },
+    {
+        "id": 92,
+        "name": "Alvina Franzoni",
+        "start_stop": "Łagiewniki ZUS 01",
+        "end_stop": "Rzemieślnicza 01",
+        "line": "10",
+        "time": 513,
+        "direction": "START_END"
+    },
+    {
+        "id": 93,
+        "name": "Meara Horatius",
+        "start_stop": "Starowiślna 02",
+        "end_stop": "Dauna 01",
+        "line": "24",
+        "time": 514,
+        "direction": "END_START"
+    },
+    {
+        "id": 94,
+        "name": "Janel Ernest",
+        "start_stop": "Turowicza 02",
+        "end_stop": "Nowosądecka 01",
+        "line": "11",
+        "time": 514,
+        "direction": "START_END"
+    },
+    {
+        "id": 95,
+        "name": "Julita Grimes",
+        "start_stop": "Kurdwanów P+R 03",
+        "end_stop": "Politechnika 03",
+        "line": "50",
+        "time": 514,
+        "direction": "END_START"
+    },
+    {
+        "id": 96,
+        "name": "Pollyanna Ewens",
+        "start_stop": "AWF 02",
+        "end_stop": "Cystersów 02",
+        "line": "5",
+        "time": 515,
+        "direction": "START_END"
+    },
+    {
+        "id": 97,
+        "name": "Nadeen Sochor",
+        "start_stop": "Politechnika 04",
+        "end_stop": "Brożka 02",
+        "line": "17",
+        "time": 515,
+        "direction": "END_START"
+    },
+    {
+        "id": 98,
+        "name": "Lyndell Halima",
+        "start_stop": "Rondo Hipokratesa 02",
+        "end_stop": "Kobierzyńska 01",
+        "line": "52",
+        "time": 518,
+        "direction": "END_START"
+    },
+    {
+        "id": 99,
+        "name": "Sydelle Narcis",
+        "start_stop": "AWF 02",
+        "end_stop": "Rondo Mogilskie 01",
+        "line": "44",
+        "time": 519,
+        "direction": "START_END"
+    },
+    {
+        "id": 100,
+        "name": "Romonda Jennee",
+        "start_stop": "Ofiar Dąbia 01",
+        "end_stop": "Rondo Czyżyńskie 03",
+        "line": "1",
+        "time": 520,
+        "direction": "END_START"
+    },
+    {
+        "id": 101,
+        "name": "Verena Aloisia",
+        "start_stop": "Wesele 01",
+        "end_stop": "Dauna 02",
+        "line": "24",
+        "time": 525,
+        "direction": "START_END"
+    },
+    {
+        "id": 102,
+        "name": "Lindie Etienne Corkhill",
+        "start_stop": "Kurdwanów P+R 10",
+        "end_stop": "Suche Stawy 01",
+        "line": "10",
+        "time": 527,
+        "direction": "END_START"
+    },
+    {
+        "id": 103,
+        "name": "Kalindi Leboff",
+        "start_stop": "Os. Złotego Wieku 02",
+        "end_stop": "Os. Na Skarpie 01",
+        "line": "16",
+        "time": 529,
+        "direction": "START_END"
+    },
+    {
+        "id": 104,
+        "name": "Joscelin Jarrow",
+        "start_stop": "Plac Inwalidów 02",
+        "end_stop": "Bronowice 02",
+        "line": "24",
+        "time": 530,
+        "direction": "END_START"
+    },
+    {
+        "id": 105,
+        "name": "Dyanna Elnora",
+        "start_stop": "Starowiślna 01",
+        "end_stop": "Kobierzyńska 02",
+        "line": "52",
+        "time": 530,
+        "direction": "START_END"
+    },
+    {
+        "id": 106,
+        "name": "Marlene Aldin",
+        "start_stop": "Witosa 01",
+        "end_stop": "Cmentarz Podgórski 01",
+        "line": "24",
+        "time": 531,
+        "direction": "END_START"
+    },
+    {
+        "id": 107,
+        "name": "Valma Conant Preciosa",
+        "start_stop": "Lipska 02",
+        "end_stop": "Rondo Mogilskie 02",
+        "line": "49",
+        "time": 531,
+        "direction": "START_END"
+    },
+    {
+        "id": 108,
+        "name": "Winnifred Troxell",
+        "start_stop": "Borek Fałęcki I 01",
+        "end_stop": "Bronowice 02",
+        "line": "8",
+        "time": 533,
+        "direction": "END_START"
+    },
+    {
+        "id": 109,
+        "name": "Rachelle Felice Idalia",
+        "start_stop": "Dworzec Główny Tunel 02",
+        "end_stop": "Borek Fałęcki 01",
+        "line": "19",
+        "time": 535,
+        "direction": "START_END"
+    },
+    {
+        "id": 110,
+        "name": "Merrile Laroy",
+        "start_stop": "Rondo Mogilskie 02",
+        "end_stop": "Gromadzka 02",
+        "line": "49",
+        "time": 537,
+        "direction": "START_END"
+    },
+    {
+        "id": 111,
+        "name": "Jolynn Savina",
+        "start_stop": "Kleeberga 02",
+        "end_stop": "Dunikowskiego 02",
+        "line": "52",
+        "time": 538,
+        "direction": "END_START"
+    },
+    {
+        "id": 112,
+        "name": "Lexie Hank Brewer",
+        "start_stop": "Hala Targowa 01",
+        "end_stop": "Francesco Nullo 01",
+        "line": "1",
+        "time": 540,
+        "direction": "END_START"
+    },
+    {
+        "id": 113,
+        "name": "Ilyssa Kirkpatrick",
+        "start_stop": "Kuźnicy Kołłątajowskiej 01",
+        "end_stop": "Kuklińskiego 02",
+        "line": "50",
+        "time": 543,
+        "direction": "END_START"
+    },
+    {
+        "id": 114,
+        "name": "Ginelle Saum",
+        "start_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 03",
+        "end_stop": "Cystersów 01",
+        "line": "5",
+        "time": 546,
+        "direction": "END_START"
+    },
+    {
+        "id": 115,
+        "name": "Orelia Ranger",
+        "start_stop": "Grota-Roweckiego 02",
+        "end_stop": "Łagiewniki 04",
+        "line": "11",
+        "time": 547,
+        "direction": "END_START"
+    },
+    {
+        "id": 116,
+        "name": "Allyce Fee",
+        "start_stop": "Rzebika 01",
+        "end_stop": "Kabel 02",
+        "line": "11",
+        "time": 548,
+        "direction": "END_START"
+    },
+    {
+        "id": 118,
+        "name": "Diane Ark",
+        "start_stop": "Stradom 01",
+        "end_stop": "Os. Kolorowe 01",
+        "line": "22",
+        "time": 550,
+        "direction": "START_END"
+    },
+    {
+        "id": 119,
+        "name": "Collete Alford Burnham",
+        "start_stop": "UJ / AST 02",
+        "end_stop": "Teatr Ludowy 02",
+        "line": "1",
+        "time": 550,
+        "direction": "END_START"
+    },
+    {
+        "id": 120,
+        "name": "Odilia Tonina",
+        "start_stop": "Szwedzka 02",
+        "end_stop": "Łagiewniki 05",
+        "line": "22",
+        "time": 552,
+        "direction": "START_END"
+    },
+    {
+        "id": 121,
+        "name": "Aurelea Reel",
+        "start_stop": "Łagiewniki 05",
+        "end_stop": "Kabel 01",
+        "line": "11",
+        "time": 553,
+        "direction": "START_END"
+    },
+    {
+        "id": 122,
+        "name": "Pierette Crawford Caria",
+        "start_stop": "Ruczaj 02",
+        "end_stop": "Łagiewniki 02",
+        "line": "17",
+        "time": 554,
+        "direction": "START_END"
+    },
+    {
+        "id": 123,
+        "name": "Anastassia Triny",
+        "start_stop": "Starowiślna 04",
+        "end_stop": "TAURON Arena Kraków al. Pokoju 02",
+        "line": "1",
+        "time": 556,
+        "direction": "START_END"
+    },
+    {
+        "id": 124,
+        "name": "Noell Lucien",
+        "start_stop": "Cichy Kącik 01",
+        "end_stop": "Teatr Bagatela 01",
+        "line": "20",
+        "time": 557,
+        "direction": "END_START"
+    },
+    {
+        "id": 125,
+        "name": "Deonne Vanya Licko",
+        "start_stop": "Wańkowicza 01",
+        "end_stop": "Dworzec Towarowy 01",
+        "line": "5",
+        "time": 558,
+        "direction": "START_END"
+    },
+    {
+        "id": 127,
+        "name": "Britta Adriane",
+        "start_stop": "Lubicz 02",
+        "end_stop": "Os. Kolorowe 01",
+        "line": "4",
+        "time": 562,
+        "direction": "END_START"
+    },
+    {
+        "id": 128,
+        "name": "Zilvia Goltz",
+        "start_stop": "Cmentarz Podgórski 02",
+        "end_stop": "Podgórze SKA 02",
+        "line": "24",
+        "time": 563,
+        "direction": "START_END"
+    },
+    {
+        "id": 130,
+        "name": "Audy Eloisa",
+        "start_stop": "Struga 02",
+        "end_stop": "Orzeszkowej 01",
+        "line": "22",
+        "time": 567,
+        "direction": "END_START"
+    },
+    {
+        "id": 131,
+        "name": "Lynette Amorete",
+        "start_stop": "TAURON Arena Kraków al. Pokoju 02",
+        "end_stop": "Biprostal 01",
+        "line": "14",
+        "time": 569,
+        "direction": "START_END"
+    },
+    {
+        "id": 132,
+        "name": "Kettie Tanner Eldreeda",
+        "start_stop": "św. Wawrzyńca 01",
+        "end_stop": "Korona 02",
+        "line": "17",
+        "time": 570,
+        "direction": "END_START"
+    },
+    {
+        "id": 133,
+        "name": "Faina Moreen",
+        "start_stop": "Plac Inwalidów 02",
+        "end_stop": "Cystersów 01",
+        "line": "4",
+        "time": 570,
+        "direction": "END_START"
+    },
+    {
+        "id": 134,
+        "name": "Ingeberg Ambler",
+        "start_stop": "Dworzec Towarowy 02",
+        "end_stop": "Dworzec Główny Zachód 01",
+        "line": "3",
+        "time": 571,
+        "direction": "END_START"
+    },
+    {
+        "id": 135,
+        "name": "Reggi Alanson",
+        "start_stop": "Pędzichów 01",
+        "end_stop": "Dworzec Towarowy 01",
+        "line": "18",
+        "time": 571,
+        "direction": "START_END"
+    },
+    {
+        "id": 136,
+        "name": "Aleda Rex Kalle",
+        "start_stop": "Lubicz 02",
+        "end_stop": "Plac Centralny im. R.Reagana 04",
+        "line": "10",
+        "time": 572,
+        "direction": "END_START"
+    },
+    {
+        "id": 137,
+        "name": "Anallise Ferdinana",
+        "start_stop": "Brama nr 5 02",
+        "end_stop": "Smolki 01",
+        "line": "10",
+        "time": 573,
+        "direction": "START_END"
+    },
+    {
+        "id": 139,
+        "name": "Eunice Rooney",
+        "start_stop": "Białucha 01",
+        "end_stop": "Teatr Słowackiego 03",
+        "line": "10",
+        "time": 575,
+        "direction": "END_START"
+    },
+    {
+        "id": 140,
+        "name": "Mirabella Piderit",
+        "start_stop": "Czerwone Maki P+R 01",
+        "end_stop": "Stella-Sawickiego 01",
+        "line": "52",
+        "time": 576,
+        "direction": "START_END"
+    },
+    {
+        "id": 141,
+        "name": "Teodora Audsley",
+        "start_stop": "Głowackiego 02",
+        "end_stop": "Teatr Słowackiego 02",
+        "line": "14",
+        "time": 576,
+        "direction": "END_START"
+    },
+    {
+        "id": 142,
+        "name": "Stacie Gelasius",
+        "start_stop": "Borek Fałęcki I 01",
+        "end_stop": "Starowiślna 04",
+        "line": "19",
+        "time": 577,
+        "direction": "END_START"
+    },
+    {
+        "id": 143,
+        "name": "Ayn Maurie Sidonius",
+        "start_stop": "Kleeberga 01",
+        "end_stop": "Kapelanka 02",
+        "line": "52",
+        "time": 577,
+        "direction": "START_END"
+    },
+    {
+        "id": 144,
+        "name": "Kanya Felicity",
+        "start_stop": "Borek Fałęcki I 02",
+        "end_stop": "Bronowice SKA 01",
+        "line": "8",
+        "time": 579,
+        "direction": "START_END"
+    },
+    {
+        "id": 145,
+        "name": "Deb Husch",
+        "start_stop": "Os. Piastów 01",
+        "end_stop": "Brama nr 4 01",
+        "line": "21",
+        "time": 580,
+        "direction": "END_START"
+    },
+    {
+        "id": 146,
+        "name": "Starlene Lani",
+        "start_stop": "Miśnieńska 01",
+        "end_stop": "Bronowice 01",
+        "line": "14",
+        "time": 580,
+        "direction": "END_START"
+    },
+    {
+        "id": 147,
+        "name": "Eachelle Ave",
+        "start_stop": "UJ / AST 01",
+        "end_stop": "Fabryczna 02",
+        "line": "1",
+        "time": 580,
+        "direction": "START_END"
+    },
+    {
+        "id": 149,
+        "name": "Kalie Keisling",
+        "start_stop": "AWF 02",
+        "end_stop": "Kopiec Wandy 02",
+        "line": "44",
+        "time": 582,
+        "direction": "START_END"
+    },
+    {
+        "id": 150,
+        "name": "Cymbre Mayworm",
+        "start_stop": "Gromadzka 02",
+        "end_stop": "Lipska 02",
+        "line": "20",
+        "time": 582,
+        "direction": "START_END"
+    },
+    {
+        "id": 151,
+        "name": "Vivyan Artus",
+        "start_stop": "Stradom 01",
+        "end_stop": "Słomiana 02",
+        "line": "52",
+        "time": 583,
+        "direction": "START_END"
+    },
+    {
+        "id": 153,
+        "name": "Dorothee Oni",
+        "start_stop": "Bieńczycka 02",
+        "end_stop": "Ćwiklińskiej 02",
+        "line": "9",
+        "time": 585,
+        "direction": "END_START"
+    },
+    {
+        "id": 154,
+        "name": "Felipa Collie",
+        "start_stop": "Klimeckiego 01",
+        "end_stop": "Dworzec Płaszów Estakada 02",
+        "line": "49",
+        "time": 585,
+        "direction": "END_START"
+    },
+    {
+        "id": 155,
+        "name": "Gianina Scotty",
+        "start_stop": "Piasta Kołodzieja 02",
+        "end_stop": "Fort Mogiła 01",
+        "line": "21",
+        "time": 586,
+        "direction": "END_START"
+    },
+    {
+        "id": 156,
+        "name": "Marje Tremayne",
+        "start_stop": "Łagiewniki SKA 05",
+        "end_stop": "Starowiślna 04",
+        "line": "19",
+        "time": 589,
+        "direction": "END_START"
+    },
+    {
+        "id": 157,
+        "name": "Valery Trager",
+        "start_stop": "Kapelanka 01",
+        "end_stop": "Norymberska 01",
+        "line": "52",
+        "time": 591,
+        "direction": "END_START"
+    },
+    {
+        "id": 158,
+        "name": "Niki Haywood",
+        "start_stop": "Rondo Grzegórzeckie 01",
+        "end_stop": "Hala Targowa 01",
+        "line": "1",
+        "time": 591,
+        "direction": "END_START"
+    },
+    {
+        "id": 159,
+        "name": "Channa Hyozo",
+        "start_stop": "Kuźnicy Kołłątajowskiej 02",
+        "end_stop": "Łagiewniki SKA 01",
+        "line": "50",
+        "time": 592,
+        "direction": "START_END"
+    },
+    {
+        "id": 160,
+        "name": "Justinn Brookner",
+        "start_stop": "Rzebika 01",
+        "end_stop": "Chmieleniec 02",
+        "line": "11",
+        "time": 593,
+        "direction": "END_START"
+    },
+    {
+        "id": 161,
+        "name": "Nancee Phare",
+        "start_stop": "Plac Inwalidów 01",
+        "end_stop": "Urzędnicza 01",
+        "line": "8",
+        "time": 596,
+        "direction": "START_END"
+    },
+    {
+        "id": 162,
+        "name": "Iseabal Gilbertine",
+        "start_stop": "Centralna 01",
+        "end_stop": "Rondo Grunwaldzkie 02",
+        "line": "22",
+        "time": 596,
+        "direction": "START_END"
+    },
+    {
+        "id": 163,
+        "name": "Gabrielle Del",
+        "start_stop": "Łagiewniki SKA 03",
+        "end_stop": "Meksyk 02",
+        "line": "10",
+        "time": 596,
+        "direction": "START_END"
+    },
+    {
+        "id": 164,
+        "name": "Marthe Leeanne",
+        "start_stop": "Urzędnicza 01",
+        "end_stop": "Uniwersytet Pedagogiczny 01",
+        "line": "8",
+        "time": 598,
+        "direction": "START_END"
+    },
+    {
+        "id": 165,
+        "name": "Henka Schuyler Leo",
+        "start_stop": "Teatr Variété 01",
+        "end_stop": "Lubicz 02",
+        "line": "14",
+        "time": 598,
+        "direction": "END_START"
+    },
+    {
+        "id": 166,
+        "name": "Ericka Boycey",
+        "start_stop": "Głowackiego 01",
+        "end_stop": "Bronowice 03",
+        "line": "8",
+        "time": 598,
+        "direction": "START_END"
+    },
+    {
+        "id": 167,
+        "name": "Stephi Beker",
+        "start_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 03",
+        "end_stop": "Białucha 01",
+        "line": "5",
+        "time": 601,
+        "direction": "END_START"
+    },
+    {
+        "id": 169,
+        "name": "Yetty Gage Wachtel",
+        "start_stop": "Teatr Ludowy 01",
+        "end_stop": "Bieńczycka 01",
+        "line": "5",
+        "time": 604,
+        "direction": "START_END"
+    },
+    {
+        "id": 171,
+        "name": "Jasmin Driskill",
+        "start_stop": "Bieżanowska 01",
+        "end_stop": "Poczta Główna 01",
+        "line": "3",
+        "time": 605,
+        "direction": "END_START"
+    },
+    {
+        "id": 172,
+        "name": "Joelle Brawley",
+        "start_stop": "Nowy Kleparz 02",
+        "end_stop": "Filharmonia 03",
+        "line": "18",
+        "time": 605,
+        "direction": "END_START"
+    },
+    {
+        "id": 173,
+        "name": "Barry Bohannon",
+        "start_stop": "Fort Mogiła 02",
+        "end_stop": "Teatr Słowackiego 01",
+        "line": "10",
+        "time": 606,
+        "direction": "START_END"
+    },
+    {
+        "id": 174,
+        "name": "Gayla Hubie",
+        "start_stop": "Słomiana 02",
+        "end_stop": "Piasta Kołodzieja 01",
+        "line": "52",
+        "time": 606,
+        "direction": "START_END"
+    },
+    {
+        "id": 175,
+        "name": "Elena Laius",
+        "start_stop": "Cichy Kącik 01",
+        "end_stop": "Teatr Variété 01",
+        "line": "1",
+        "time": 608,
+        "direction": "END_START"
+    },
+    {
+        "id": 176,
+        "name": "Fina Norman",
+        "start_stop": "Wawel 01",
+        "end_stop": "Stradom 04",
+        "line": "8",
+        "time": 608,
+        "direction": "START_END"
+    },
+    {
+        "id": 177,
+        "name": "Blondell Ki",
+        "start_stop": "Teatr Słowackiego 04",
+        "end_stop": "Cmentarz Podgórski 01",
+        "line": "3",
+        "time": 610,
+        "direction": "END_START"
+    },
+    {
+        "id": 179,
+        "name": "Chandal Darn Man",
+        "start_stop": "TAURON Arena Kraków Wieczysta 02",
+        "end_stop": "Plac Centralny im. R.Reagana 01",
+        "line": "44",
+        "time": 612,
+        "direction": "START_END"
+    },
+    {
+        "id": 180,
+        "name": "Daveen Borman",
+        "start_stop": "Głowackiego 02",
+        "end_stop": "Biprostal 02",
+        "line": "8",
+        "time": 612,
+        "direction": "END_START"
+    },
+    {
+        "id": 181,
+        "name": "Marion Hilly",
+        "start_stop": "Zabłocie 01",
+        "end_stop": "Prokocim Szpital 01",
+        "line": "49",
+        "time": 613,
+        "direction": "END_START"
+    },
+    {
+        "id": 182,
+        "name": "Arlyne Firestone",
+        "start_stop": "Rondo Czyżyńskie 01",
+        "end_stop": "Fabryczna 01",
+        "line": "22",
+        "time": 616,
+        "direction": "START_END"
+    },
+    {
+        "id": 183,
+        "name": "Sheeree Garrick",
+        "start_stop": "Dąbie 02",
+        "end_stop": "Hala Targowa 02",
+        "line": "22",
+        "time": 618,
+        "direction": "END_START"
+    },
+    {
+        "id": 184,
+        "name": "Mariska Knorring",
+        "start_stop": "Cmentarz Podgórski 01",
+        "end_stop": "Bronowice 02",
+        "line": "24",
+        "time": 620,
+        "direction": "END_START"
+    },
+    {
+        "id": 186,
+        "name": "Gerri Per",
+        "start_stop": "TAURON Arena Kraków al. Pokoju 01",
+        "end_stop": "Bieńczycka 02",
+        "line": "14",
+        "time": 622,
+        "direction": "END_START"
+    },
+    {
+        "id": 188,
+        "name": "Dulcine Shotton",
+        "start_stop": "Ofiar Dąbia 02",
+        "end_stop": "Plac Wszystkich Świętych 01",
+        "line": "1",
+        "time": 624,
+        "direction": "START_END"
+    },
+    {
+        "id": 189,
+        "name": "Dorothy Tabor",
+        "start_stop": "Meksyk 02",
+        "end_stop": "Brama nr 5 02",
+        "line": "21",
+        "time": 624,
+        "direction": "START_END"
+    },
+    {
+        "id": 190,
+        "name": "Ros Bjorn Orlov",
+        "start_stop": "Nowy Prokocim 01",
+        "end_stop": "Prokocim Szpital 01",
+        "line": "49",
+        "time": 625,
+        "direction": "END_START"
+    },
+    {
+        "id": 191,
+        "name": "Faun Inge",
+        "start_stop": "Poczta Główna 03",
+        "end_stop": "Teatr Słowackiego 03",
+        "line": "10",
+        "time": 626,
+        "direction": "END_START"
+    },
+    {
+        "id": 192,
+        "name": "Ardene Wivinia",
+        "start_stop": "Łagiewniki SKA 03",
+        "end_stop": "Plac Centralny im. R.Reagana 01",
+        "line": "10",
+        "time": 629,
+        "direction": "START_END"
+    },
+    {
+        "id": 194,
+        "name": "Donella Owena",
+        "start_stop": "Kabel 02",
+        "end_stop": "Cystersów 01",
+        "line": "49",
+        "time": 632,
+        "direction": "START_END"
+    },
+    {
+        "id": 196,
+        "name": "Maddalena Jeaz",
+        "start_stop": "Cystersów 02",
+        "end_stop": "Dworzec Płaszów Estakada 02",
+        "line": "49",
+        "time": 637,
+        "direction": "END_START"
+    },
+    {
+        "id": 197,
+        "name": "Claire Finnegan",
+        "start_stop": "Rondo Grzegórzeckie 02",
+        "end_stop": "Smolki 01",
+        "line": "17",
+        "time": 638,
+        "direction": "END_START"
+    },
+    {
+        "id": 198,
+        "name": "Alex Violet",
+        "start_stop": "Bieńczycka 02",
+        "end_stop": "Rondo Hipokratesa 01",
+        "line": "9",
+        "time": 638,
+        "direction": "END_START"
+    },
+    {
+        "id": 199,
+        "name": "Thia Thorncombe",
+        "start_stop": "Podgórze SKA 02",
+        "end_stop": "Stradom 04",
+        "line": "13",
+        "time": 639,
+        "direction": "START_END"
+    },
+    {
+        "id": 200,
+        "name": "Laurene Ruthie",
+        "start_stop": "św. Wawrzyńca 02",
+        "end_stop": "Solvay 02",
+        "line": "19",
+        "time": 640,
+        "direction": "START_END"
+    },
+    {
+        "id": 202,
+        "name": "Amy Schlessel",
+        "start_stop": "Starowiślna 03",
+        "end_stop": "Politechnika 03",
+        "line": "19",
+        "time": 642,
+        "direction": "START_END"
+    },
+    {
+        "id": 203,
+        "name": "Nellie Hitoshi",
+        "start_stop": "Rondo Mogilskie 02",
+        "end_stop": "Dworzec Płaszów Estakada 01",
+        "line": "49",
+        "time": 643,
+        "direction": "START_END"
+    },
+    {
+        "id": 205,
+        "name": "Alfi Tristis",
+        "start_stop": "Szwedzka 01",
+        "end_stop": "Solvay 01",
+        "line": "22",
+        "time": 645,
+        "direction": "END_START"
+    },
+    {
+        "id": 206,
+        "name": "Siana Guimond",
+        "start_stop": "Rondo Piastowskie 01",
+        "end_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 01",
+        "line": "9",
+        "time": 646,
+        "direction": "END_START"
+    },
+    {
+        "id": 208,
+        "name": "Cheryl Cherie",
+        "start_stop": "Kurdwanów P+R 10",
+        "end_stop": "Piaski Nowe 01",
+        "line": "11",
+        "time": 647,
+        "direction": "START_END"
+    },
+    {
+        "id": 209,
+        "name": "Kaitlyn Reddin",
+        "start_stop": "Teatr Słowackiego 02",
+        "end_stop": "Kombinat 01",
+        "line": "44",
+        "time": 648,
+        "direction": "END_START"
+    },
+    {
+        "id": 210,
+        "name": "Trish Sigmund Spancake",
+        "start_stop": "Poczta Główna 01",
+        "end_stop": "AWF 02",
+        "line": "10",
+        "time": 649,
+        "direction": "START_END"
+    },
+    {
+        "id": 211,
+        "name": "Thomasine Franzen",
+        "start_stop": "Chmieleniec 01",
+        "end_stop": "Filharmonia 03",
+        "line": "18",
+        "time": 651,
+        "direction": "END_START"
+    },
+    {
+        "id": 212,
+        "name": "Roshelle Leslie Cohbert",
+        "start_stop": "Rondo Matecznego 01",
+        "end_stop": "Łagiewniki 01",
+        "line": "17",
+        "time": 651,
+        "direction": "END_START"
+    },
+    {
+        "id": 213,
+        "name": "Anastasia Jewelle",
+        "start_stop": "Kuklińskiego 02",
+        "end_stop": "Muzeum Narodowe 01",
+        "line": "20",
+        "time": 652,
+        "direction": "START_END"
+    },
+    {
+        "id": 214,
+        "name": "Rozella Garner Broeker",
+        "start_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 01",
+        "end_stop": "Bieńczycka 02",
+        "line": "52",
+        "time": 654,
+        "direction": "START_END"
+    },
+    {
+        "id": 215,
+        "name": "Latrena Leilah",
+        "start_stop": "Bieńczycka 02",
+        "end_stop": "Rondo Grzegórzeckie 01",
+        "line": "1",
+        "time": 654,
+        "direction": "END_START"
+    },
+    {
+        "id": 216,
+        "name": "Sindee Fabrianne",
+        "start_stop": "Ruczaj 01",
+        "end_stop": "Plac Wszystkich Świętych 02",
+        "line": "18",
+        "time": 656,
+        "direction": "END_START"
+    },
+    {
+        "id": 217,
+        "name": "Sidoney Adelina",
+        "start_stop": "Cichy Kącik 01",
+        "end_stop": "Oleandry 02",
+        "line": "20",
+        "time": 656,
+        "direction": "END_START"
+    },
+    {
+        "id": 218,
+        "name": "Drusi Stesha",
+        "start_stop": "Szpital Narutowicza 01",
+        "end_stop": "Rondo Czyżyńskie 02",
+        "line": "5",
+        "time": 657,
+        "direction": "START_END"
+    },
+    {
+        "id": 219,
+        "name": "Hildegarde Hallerson",
+        "start_stop": "Reymana 02",
+        "end_stop": "Rondo Mogilskie 03",
+        "line": "20",
+        "time": 658,
+        "direction": "END_START"
+    },
+    {
+        "id": 221,
+        "name": "Manon Garrik Christi",
+        "start_stop": "Kurdwanów P+R 01",
+        "end_stop": "Wesele 01",
+        "line": "24",
+        "time": 660,
+        "direction": "START_END"
+    },
+    {
+        "id": 222,
+        "name": "Mina Carlynn",
+        "start_stop": "Nowy Bieżanów P+R 01",
+        "end_stop": "Plac Wszystkich Świętych 01",
+        "line": "13",
+        "time": 663,
+        "direction": "START_END"
+    },
+    {
+        "id": 223,
+        "name": "Jewel Audrye",
+        "start_stop": "Miśnieńska 02",
+        "end_stop": "Os. Złotego Wieku 02",
+        "line": "14",
+        "time": 663,
+        "direction": "START_END"
+    },
+    {
+        "id": 224,
+        "name": "Vonni Richmound Petronilla",
+        "start_stop": "Teatr Ludowy 01",
+        "end_stop": "Muzeum Lotnictwa Polskiego 02",
+        "line": "5",
+        "time": 664,
+        "direction": "START_END"
+    },
+    {
+        "id": 225,
+        "name": "Dory Westberg",
+        "start_stop": "Bieńczycka 02",
+        "end_stop": "Teatr Słowackiego 02",
+        "line": "14",
+        "time": 664,
+        "direction": "END_START"
+    },
+    {
+        "id": 226,
+        "name": "Faunie Nikolas Gussman",
+        "start_stop": "Białoprądnicka 02",
+        "end_stop": "Kobierzyńska 02",
+        "line": "18",
+        "time": 666,
+        "direction": "START_END"
+    },
+    {
+        "id": 228,
+        "name": "Jess Seward",
+        "start_stop": "św. Wawrzyńca 02",
+        "end_stop": "Teligi 02",
+        "line": "3",
+        "time": 668,
+        "direction": "START_END"
+    },
+    {
+        "id": 229,
+        "name": "Sophronia Sheila",
+        "start_stop": "Os. Kolorowe 01",
+        "end_stop": "Brama nr 5 01",
+        "line": "10",
+        "time": 669,
+        "direction": "END_START"
+    },
+    {
+        "id": 230,
+        "name": "Ofelia Delia",
+        "start_stop": "Prokocim 02",
+        "end_stop": "Podgórze SKA 02",
+        "line": "3",
+        "time": 670,
+        "direction": "START_END"
+    },
+    {
+        "id": 231,
+        "name": "Papagena Valerio",
+        "start_stop": "Chmieleniec 02",
+        "end_stop": "Filharmonia 01",
+        "line": "18",
+        "time": 675,
+        "direction": "START_END"
+    },
+    {
+        "id": 233,
+        "name": "Lainey Wagner",
+        "start_stop": "Struga 01",
+        "end_stop": "Rondo Mogilskie 02",
+        "line": "4",
+        "time": 677,
+        "direction": "END_START"
+    },
+    {
+        "id": 234,
+        "name": "Ellen Eisenhart",
+        "start_stop": "Korona 02",
+        "end_stop": "Prokocim 02",
+        "line": "13",
+        "time": 677,
+        "direction": "START_END"
+    },
+    {
+        "id": 235,
+        "name": "Delora Malone",
+        "start_stop": "Wańkowicza 01",
+        "end_stop": "Muzeum Lotnictwa Polskiego 02",
+        "line": "5",
+        "time": 678,
+        "direction": "START_END"
+    },
+    {
+        "id": 236,
+        "name": "Denyse Thamos",
+        "start_stop": "Kapelanka 02",
+        "end_stop": "Stradom 01",
+        "line": "22",
+        "time": 679,
+        "direction": "START_END"
+    },
+    {
+        "id": 237,
+        "name": "Libbie Dav",
+        "start_stop": "Bratysławska 01",
+        "end_stop": "św. Wawrzyńca 02",
+        "line": "19",
+        "time": 679,
+        "direction": "START_END"
+    },
+    {
+        "id": 239,
+        "name": "Zelda Eudoca",
+        "start_stop": "UJ / AST 02",
+        "end_stop": "Rondo Mogilskie 03",
+        "line": "20",
+        "time": 681,
+        "direction": "END_START"
+    },
+    {
+        "id": 240,
+        "name": "Donica James Pasahow",
+        "start_stop": "Mistrzejowice 01",
+        "end_stop": "Rondo Czyżyńskie 02",
+        "line": "9",
+        "time": 682,
+        "direction": "START_END"
+    },
+    {
+        "id": 241,
+        "name": "Monika Briny",
+        "start_stop": "Nowy Bieżanów P+R 01",
+        "end_stop": "Prokocim 02",
+        "line": "49",
+        "time": 685,
+        "direction": "START_END"
+    },
+    {
+        "id": 242,
+        "name": "Laryssa Bigner",
+        "start_stop": "Plac Wolnica 02",
+        "end_stop": "Kabel 02",
+        "line": "13",
+        "time": 688,
+        "direction": "START_END"
+    },
+    {
+        "id": 243,
+        "name": "Rochell Vanda",
+        "start_stop": "Stary Kleparz 02",
+        "end_stop": "Park Jordana 02",
+        "line": "20",
+        "time": 689,
+        "direction": "END_START"
+    },
+    {
+        "id": 245,
+        "name": "Torrie Luckin",
+        "start_stop": "Reymana 02",
+        "end_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 03",
+        "line": "1",
+        "time": 696,
+        "direction": "END_START"
+    },
+    {
+        "id": 247,
+        "name": "Filide Barram",
+        "start_stop": "Słomiana 02",
+        "end_stop": "św. Gertrudy 01",
+        "line": "18",
+        "time": 697,
+        "direction": "START_END"
+    },
+    {
+        "id": 248,
+        "name": "Carree Juline",
+        "start_stop": "Plac Wolnica 02",
+        "end_stop": "Uniwersytet Pedagogiczny 01",
+        "line": "13",
+        "time": 698,
+        "direction": "START_END"
+    },
+    {
+        "id": 251,
+        "name": "Chloette Calhoun",
+        "start_stop": "Górnickiego 02",
+        "end_stop": "Kuźnicy Kołłątajowskiej 01",
+        "line": "50",
+        "time": 700,
+        "direction": "END_START"
+    },
+    {
+        "id": 252,
+        "name": "Jobie Drooff",
+        "start_stop": "Łagiewniki 01",
+        "end_stop": "Kampus UJ 01",
+        "line": "17",
+        "time": 704,
+        "direction": "END_START"
+    },
+    {
+        "id": 253,
+        "name": "Milicent Caves",
+        "start_stop": "Nowy Kleparz 01",
+        "end_stop": "AWF 02",
+        "line": "44",
+        "time": 704,
+        "direction": "START_END"
+    },
+    {
+        "id": 254,
+        "name": "Antonella Lauree",
+        "start_stop": "Stradom 02",
+        "end_stop": "Meksyk 02",
+        "line": "10",
+        "time": 706,
+        "direction": "START_END"
+    },
+    {
+        "id": 255,
+        "name": "Avril Hightower",
+        "start_stop": "Lipska 02",
+        "end_stop": "Rondo Mogilskie 05",
+        "line": "50",
+        "time": 707,
+        "direction": "END_START"
+    },
+    {
+        "id": 256,
+        "name": "Robinette Elodia",
+        "start_stop": "Podgórze SKA 01",
+        "end_stop": "Bieżanowska 01",
+        "line": "13",
+        "time": 710,
+        "direction": "END_START"
+    },
+    {
+        "id": 257,
+        "name": "Kelly Mic Schwab",
+        "start_stop": "Dworcowa 02",
+        "end_stop": "Plac Inwalidów 01",
+        "line": "24",
+        "time": 711,
+        "direction": "START_END"
+    },
+    {
+        "id": 260,
+        "name": "Dulce Eldwin",
+        "start_stop": "Starowiślna 04",
+        "end_stop": "Łagiewniki SKA 05",
+        "line": "19",
+        "time": 715,
+        "direction": "END_START"
+    },
+    {
+        "id": 261,
+        "name": "Daphna Mallina",
+        "start_stop": "Papierni Prądnickich 02",
+        "end_stop": "Bociana 02",
+        "line": "50",
+        "time": 716,
+        "direction": "START_END"
+    },
+    {
+        "id": 262,
+        "name": "Natalee Laurena",
+        "start_stop": "TAURON Arena Kraków Wieczysta 03",
+        "end_stop": "Kuklińskiego 01",
+        "line": "49",
+        "time": 719,
+        "direction": "END_START"
+    },
+    {
+        "id": 263,
+        "name": "Veronike Cordier",
+        "start_stop": "Dąbie 01",
+        "end_stop": "Rondo 308. Dywizjonu 01",
+        "line": "14",
+        "time": 720,
+        "direction": "END_START"
+    },
+    {
+        "id": 264,
+        "name": "Berta Rheinlander",
+        "start_stop": "Teligi 01",
+        "end_stop": "Kabel 01",
+        "line": "9",
+        "time": 726,
+        "direction": "START_END"
+    },
+    {
+        "id": 265,
+        "name": "Tanitansy Tasha",
+        "start_stop": "Sanktuarium Bożego Miłosierdzia 02",
+        "end_stop": "Klimeckiego 01",
+        "line": "50",
+        "time": 727,
+        "direction": "START_END"
+    },
+    {
+        "id": 266,
+        "name": "Sande Meehan",
+        "start_stop": "Gromadzka 01",
+        "end_stop": "Nowy Prokocim 01",
+        "line": "49",
+        "time": 728,
+        "direction": "END_START"
+    },
+    {
+        "id": 267,
+        "name": "Saloma Fadden",
+        "start_stop": "Korona 02",
+        "end_stop": "Krowodrza Górka P+R 03",
+        "line": "19",
+        "time": 729,
+        "direction": "END_START"
+    },
+    {
+        "id": 268,
+        "name": "Raeann Arnst",
+        "start_stop": "Starowiślna 04",
+        "end_stop": "Norymberska 01",
+        "line": "17",
+        "time": 729,
+        "direction": "END_START"
+    },
+    {
+        "id": 269,
+        "name": "Gabey Derward",
+        "start_stop": "Nowy Kleparz 02",
+        "end_stop": "Rondo Czyżyńskie 01",
+        "line": "44",
+        "time": 731,
+        "direction": "END_START"
+    },
+    {
+        "id": 270,
+        "name": "Roberta Kev",
+        "start_stop": "Borsucza 02",
+        "end_stop": "Kampus UJ 01",
+        "line": "17",
+        "time": 731,
+        "direction": "END_START"
+    },
+    {
+        "id": 271,
+        "name": "Pauline Chesnut",
+        "start_stop": "Kurdwanów P+R 08",
+        "end_stop": "Dauna 01",
+        "line": "11",
+        "time": 732,
+        "direction": "START_END"
+    },
+    {
+        "id": 273,
+        "name": "Marissa Ruff",
+        "start_stop": "Rondo Czyżyńskie 02",
+        "end_stop": "Białucha 02",
+        "line": "4",
+        "time": 734,
+        "direction": "START_END"
+    },
+    {
+        "id": 274,
+        "name": "Sena Latreshia",
+        "start_stop": "TAURON Arena Kraków Wieczysta 01",
+        "end_stop": "Stella-Sawickiego 01",
+        "line": "52",
+        "time": 735,
+        "direction": "START_END"
+    },
+    {
+        "id": 275,
+        "name": "Carmella Eddina",
+        "start_stop": "Stradom 03",
+        "end_stop": "Kapelanka 01",
+        "line": "52",
+        "time": 736,
+        "direction": "END_START"
+    },
+    {
+        "id": 276,
+        "name": "Wileen Cavanagh",
+        "start_stop": "Korona 01",
+        "end_stop": "Suche Stawy 01",
+        "line": "10",
+        "time": 737,
+        "direction": "END_START"
+    },
+    {
+        "id": 277,
+        "name": "Dierdre Fagaly",
+        "start_stop": "Uniwersytet Pedagogiczny 02",
+        "end_stop": "Wawel 02",
+        "line": "8",
+        "time": 737,
+        "direction": "END_START"
+    },
+    {
+        "id": 278,
+        "name": "Sybil Yorick",
+        "start_stop": "Kurdwanów P+R 08",
+        "end_stop": "Bieżanowska 03",
+        "line": "11",
+        "time": 738,
+        "direction": "START_END"
+    },
+    {
+        "id": 280,
+        "name": "Megen Fronia",
+        "start_stop": "Rzemieślnicza 02",
+        "end_stop": "Korona 01",
+        "line": "17",
+        "time": 740,
+        "direction": "START_END"
+    },
+    {
+        "id": 281,
+        "name": "Nettie Susan",
+        "start_stop": "Sanktuarium Bożego Miłosierdzia 01",
+        "end_stop": "Krowodrza Górka P+R 01",
+        "line": "50",
+        "time": 740,
+        "direction": "END_START"
+    },
+    {
+        "id": 282,
+        "name": "Gayleen Trust",
+        "start_stop": "Rondo 308. Dywizjonu 01",
+        "end_stop": "Rondo Grzegórzeckie 01",
+        "line": "14",
+        "time": 741,
+        "direction": "END_START"
+    },
+    {
+        "id": 285,
+        "name": "Madonna Lydie",
+        "start_stop": "Czerwone Maki P+R 01",
+        "end_stop": "Grota-Roweckiego 02",
+        "line": "11",
+        "time": 745,
+        "direction": "END_START"
+    },
+    {
+        "id": 287,
+        "name": "Juieta Ode",
+        "start_stop": "Białoprądnicka 02",
+        "end_stop": "Kapelanka 02",
+        "line": "18",
+        "time": 745,
+        "direction": "START_END"
+    },
+    {
+        "id": 288,
+        "name": "Eleonora Hugibert Gatias",
+        "start_stop": "Brożka 02",
+        "end_stop": "Łagiewniki SKA 02",
+        "line": "11",
+        "time": 748,
+        "direction": "START_END"
+    },
+    {
+        "id": 289,
+        "name": "Jori Wyndham Tillo",
+        "start_stop": "Nowy Prokocim 01",
+        "end_stop": "Prokocim 01",
+        "line": "49",
+        "time": 750,
+        "direction": "END_START"
+    },
+    {
+        "id": 291,
+        "name": "Jillayne Hillier",
+        "start_stop": "Nowy Bieżanów P+R 01",
+        "end_stop": "Cystersów 01",
+        "line": "49",
+        "time": 757,
+        "direction": "START_END"
+    },
+    {
+        "id": 292,
+        "name": "Maddalena Ignace",
+        "start_stop": "Lipska 03",
+        "end_stop": "Gromadzka 01",
+        "line": "49",
+        "time": 759,
+        "direction": "END_START"
+    },
+    {
+        "id": 293,
+        "name": "Cleo Marney",
+        "start_stop": "Starowiślna 01",
+        "end_stop": "Ćwiklińskiej 02",
+        "line": "3",
+        "time": 760,
+        "direction": "START_END"
+    },
+    {
+        "id": 294,
+        "name": "Corliss Elexa",
+        "start_stop": "Centralna 02",
+        "end_stop": "Hala Targowa 02",
+        "line": "22",
+        "time": 762,
+        "direction": "END_START"
+    },
+    {
+        "id": 295,
+        "name": "Sibilla Cown",
+        "start_stop": "Teatr Słowackiego 02",
+        "end_stop": "Wesele 02",
+        "line": "24",
+        "time": 764,
+        "direction": "END_START"
+    },
+    {
+        "id": 296,
+        "name": "Felice Ab",
+        "start_stop": "Miodowa 01",
+        "end_stop": "Solvay 01",
+        "line": "19",
+        "time": 774,
+        "direction": "END_START"
+    },
+    {
+        "id": 297,
+        "name": "Robinette Peterec",
+        "start_stop": "Rzemieślnicza 01",
+        "end_stop": "Brama nr 5 02",
+        "line": "10",
+        "time": 776,
+        "direction": "START_END"
+    },
+    {
+        "id": 298,
+        "name": "Anstice Butterworth",
+        "start_stop": "Lipińskiego 02",
+        "end_stop": "Kleeberga 01",
+        "line": "52",
+        "time": 778,
+        "direction": "START_END"
+    },
+    {
+        "id": 300,
+        "name": "Zuzana Mittel",
+        "start_stop": "Kabel 01",
+        "end_stop": "Plac Bohaterów Getta 01",
+        "line": "24",
+        "time": 783,
+        "direction": "END_START"
+    },
+    {
+        "id": 301,
+        "name": "Ursola Zachariah",
+        "start_stop": "TAURON Arena Kraków Wieczysta 02",
+        "end_stop": "Czyżyny 02",
+        "line": "44",
+        "time": 784,
+        "direction": "START_END"
+    },
+    {
+        "id": 302,
+        "name": "Vonny Saxe",
+        "start_stop": "Kurdwanów P+R 03",
+        "end_stop": "Witosa 02",
+        "line": "11",
+        "time": 784,
+        "direction": "END_START"
+    },
+    {
+        "id": 303,
+        "name": "Teresita Gerius",
+        "start_stop": "Francesco Nullo 01",
+        "end_stop": "Rondo Grzegórzeckie 01",
+        "line": "14",
+        "time": 788,
+        "direction": "END_START"
+    },
+    {
+        "id": 304,
+        "name": "Zola Myrt",
+        "start_stop": "Klimeckiego 02",
+        "end_stop": "UJ / AST 01",
+        "line": "20",
+        "time": 789,
+        "direction": "START_END"
+    },
+    {
+        "id": 305,
+        "name": "Laurette Jan Woolson",
+        "start_stop": "Os. Kolorowe 01",
+        "end_stop": "Struga 01",
+        "line": "4",
+        "time": 789,
+        "direction": "END_START"
+    },
+    {
+        "id": 306,
+        "name": "Kylila Anjali",
+        "start_stop": "Kombinat 03",
+        "end_stop": "Dunikowskiego 01",
+        "line": "21",
+        "time": 791,
+        "direction": "START_END"
+    },
+    {
+        "id": 307,
+        "name": "Harriett Dorin",
+        "start_stop": "Brama nr 4 01",
+        "end_stop": "Turowicza 02",
+        "line": "10",
+        "time": 802,
+        "direction": "END_START"
+    },
+    {
+        "id": 308,
+        "name": "Eba Tom Drobman",
+        "start_stop": "Brama nr 5 02",
+        "end_stop": "Dunikowskiego 01",
+        "line": "21",
+        "time": 806,
+        "direction": "START_END"
+    },
+    {
+        "id": 309,
+        "name": "Evonne Emerald",
+        "start_stop": "Łagiewniki SKA 01",
+        "end_stop": "Szpital Narutowicza 02",
+        "line": "50",
+        "time": 806,
+        "direction": "START_END"
+    },
+    {
+        "id": 310,
+        "name": "Giustina Benson",
+        "start_stop": "Bronowice SKA 02",
+        "end_stop": "św. Wawrzyńca 01",
+        "line": "24",
+        "time": 807,
+        "direction": "END_START"
+    },
+    {
+        "id": 311,
+        "name": "Melli Ambrosine",
+        "start_stop": "Kombinat 01",
+        "end_stop": "Dunikowskiego 02",
+        "line": "21",
+        "time": 812,
+        "direction": "END_START"
+    },
+    {
+        "id": 312,
+        "name": "Jackelyn Shultz",
+        "start_stop": "Muzeum Lotnictwa Polskiego 01",
+        "end_stop": "Wawel 01",
+        "line": "10",
+        "time": 813,
+        "direction": "END_START"
+    },
+    {
+        "id": 313,
+        "name": "Latisha Wanyen",
+        "start_stop": "Bronowice SKA 01",
+        "end_stop": "Dauna 02",
+        "line": "24",
+        "time": 815,
+        "direction": "START_END"
+    },
+    {
+        "id": 314,
+        "name": "Lorette Bayless",
+        "start_stop": "Teatr Ludowy 01",
+        "end_stop": "Wańkowicza 01",
+        "line": "1",
+        "time": 819,
+        "direction": "START_END"
+    },
+    {
+        "id": 315,
+        "name": "Dione Gwyneth",
+        "start_stop": "Bronowice SKA 02",
+        "end_stop": "Plac Inwalidów 02",
+        "line": "8",
+        "time": 819,
+        "direction": "END_START"
+    },
+    {
+        "id": 316,
+        "name": "Frieda Devi",
+        "start_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 01",
+        "end_stop": "Koksochemia 02",
+        "line": "21",
+        "time": 821,
+        "direction": "START_END"
+    },
+    {
+        "id": 317,
+        "name": "Reyna Ellie",
+        "start_stop": "Struga 02",
+        "end_stop": "AWF 02",
+        "line": "4",
+        "time": 822,
+        "direction": "START_END"
+    },
+    {
+        "id": 318,
+        "name": "Brianna Junie",
+        "start_stop": "Mistrzejowice 01",
+        "end_stop": "Prokocim Szpital 01",
+        "line": "9",
+        "time": 824,
+        "direction": "START_END"
+    },
+    {
+        "id": 319,
+        "name": "Danica Giuditta",
+        "start_stop": "Krowodrza Górka P+R 02",
+        "end_stop": "Gromadzka 01",
+        "line": "50",
+        "time": 824,
+        "direction": "START_END"
+    },
+    {
+        "id": 320,
+        "name": "Hilliary Eradis",
+        "start_stop": "Łagiewniki 02",
+        "end_stop": "Poczta Główna 03",
+        "line": "10",
+        "time": 825,
+        "direction": "END_START"
+    },
+    {
+        "id": 321,
+        "name": "Gweneth Allin Leesen",
+        "start_stop": "DH Wanda 02",
+        "end_stop": "Brama nr 5 01",
+        "line": "21",
+        "time": 826,
+        "direction": "END_START"
+    },
+    {
+        "id": 323,
+        "name": "Nanci Latoye",
+        "start_stop": "Grota-Roweckiego 02",
+        "end_stop": "Kuźnicy Kołłątajowskiej 01",
+        "line": "18",
+        "time": 826,
+        "direction": "START_END"
+    },
+    {
+        "id": 325,
+        "name": "Bethany Lotta",
+        "start_stop": "Szwedzka 01",
+        "end_stop": "Stella-Sawickiego 02",
+        "line": "52",
+        "time": 827,
+        "direction": "END_START"
+    },
+    {
+        "id": 326,
+        "name": "Iris Greenebaum",
+        "start_stop": "Bieżanowska 01",
+        "end_stop": "Plac Wszystkich Świętych 02",
+        "line": "13",
+        "time": 827,
+        "direction": "END_START"
+    },
+    {
+        "id": 328,
+        "name": "Virgie Housum",
+        "start_stop": "św. Gertrudy 01",
+        "end_stop": "Głowackiego 01",
+        "line": "8",
+        "time": 830,
+        "direction": "START_END"
+    },
+    {
+        "id": 329,
+        "name": "Amie Roxanne",
+        "start_stop": "Smolki 02",
+        "end_stop": "Ruczaj 02",
+        "line": "17",
+        "time": 831,
+        "direction": "START_END"
+    },
+    {
+        "id": 331,
+        "name": "Fernanda Valora",
+        "start_stop": "Rondo Grunwaldzkie 02",
+        "end_stop": "Rondo Czyżyńskie 03",
+        "line": "52",
+        "time": 832,
+        "direction": "START_END"
+    },
+    {
+        "id": 332,
+        "name": "Rosamond Elaina",
+        "start_stop": "Bardosa 02",
+        "end_stop": "Plac Centralny im. R.Reagana 01",
+        "line": "10",
+        "time": 832,
+        "direction": "START_END"
+    },
+    {
+        "id": 333,
+        "name": "Kassey Adachi",
+        "start_stop": "Plac Wolnica 01",
+        "end_stop": "Biprostal 02",
+        "line": "8",
+        "time": 833,
+        "direction": "END_START"
+    },
+    {
+        "id": 334,
+        "name": "Sephira Seve",
+        "start_stop": "Plac Wszystkich Świętych 01",
+        "end_stop": "Bronowice 03",
+        "line": "8",
+        "time": 833,
+        "direction": "START_END"
+    },
+    {
+        "id": 335,
+        "name": "Ede Cornia",
+        "start_stop": "Bieżanowska 02",
+        "end_stop": "Plac Wolnica 02",
+        "line": "13",
+        "time": 837,
+        "direction": "START_END"
+    },
+    {
+        "id": 338,
+        "name": "Vinni Novak",
+        "start_stop": "Kurdwanów P+R 08",
+        "end_stop": "Kampus UJ 01",
+        "line": "11",
+        "time": 842,
+        "direction": "START_END"
+    },
+    {
+        "id": 339,
+        "name": "Cherianne Esra",
+        "start_stop": "Park Jordana 02",
+        "end_stop": "Rondo 308. Dywizjonu 01",
+        "line": "1",
+        "time": 845,
+        "direction": "END_START"
+    },
+    {
+        "id": 341,
+        "name": "Angelique Jerrold",
+        "start_stop": "Rondo Mogilskie 03",
+        "end_stop": "Teligi 01",
+        "line": "9",
+        "time": 846,
+        "direction": "START_END"
+    },
+    {
+        "id": 342,
+        "name": "Margot Cchaddie",
+        "start_stop": "Nowy Prokocim 02",
+        "end_stop": "Gromadzka 02",
+        "line": "49",
+        "time": 849,
+        "direction": "START_END"
+    },
+    {
+        "id": 343,
+        "name": "Brigida Nibbs",
+        "start_stop": "Reymana 01",
+        "end_stop": "Park Jordana 01",
+        "line": "20",
+        "time": 850,
+        "direction": "START_END"
+    },
+    {
+        "id": 344,
+        "name": "Fae Francisco",
+        "start_stop": "Bieńczycka 01",
+        "end_stop": "Teatr Ludowy 01",
+        "line": "5",
+        "time": 851,
+        "direction": "START_END"
+    },
+    {
+        "id": 345,
+        "name": "Kari Valer",
+        "start_stop": "Kopiec Wandy 01",
+        "end_stop": "Koksochemia 01",
+        "line": "21",
+        "time": 853,
+        "direction": "END_START"
+    },
+    {
+        "id": 346,
+        "name": "Anabal Barbaraanne",
+        "start_stop": "Słomiana 02",
+        "end_stop": "Szpital Narutowicza 01",
+        "line": "18",
+        "time": 856,
+        "direction": "START_END"
+    },
+    {
+        "id": 348,
+        "name": "Emalia Dewey",
+        "start_stop": "Krowodrza Górka P+R 02",
+        "end_stop": "Rondo Czyżyńskie 03",
+        "line": "5",
+        "time": 860,
+        "direction": "END_START"
+    },
+    {
+        "id": 349,
+        "name": "Alex Azalea",
+        "start_stop": "Czerwone Maki P+R 01",
+        "end_stop": "Czyżyny 01",
+        "line": "52",
+        "time": 863,
+        "direction": "START_END"
+    },
+    {
+        "id": 350,
+        "name": "Sonny Winola",
+        "start_stop": "Rondo Matecznego 02",
+        "end_stop": "Kurdwanów P+R 10",
+        "line": "10",
+        "time": 867,
+        "direction": "END_START"
+    },
+    {
+        "id": 351,
+        "name": "Maridel Moses",
+        "start_stop": "Brama nr 5 02",
+        "end_stop": "Stradom 02",
+        "line": "10",
+        "time": 871,
+        "direction": "START_END"
+    },
+    {
+        "id": 353,
+        "name": "Bride Swetiana",
+        "start_stop": "Struga 02",
+        "end_stop": "Centralna 02",
+        "line": "22",
+        "time": 874,
+        "direction": "END_START"
+    },
+    {
+        "id": 354,
+        "name": "Gwynne Lumbard",
+        "start_stop": "Teatr Słowackiego 02",
+        "end_stop": "Struga 01",
+        "line": "4",
+        "time": 877,
+        "direction": "END_START"
+    },
+    {
+        "id": 355,
+        "name": "Cher Ardeth",
+        "start_stop": "Filharmonia 03",
+        "end_stop": "Kapelanka 01",
+        "line": "18",
+        "time": 878,
+        "direction": "END_START"
+    },
+    {
+        "id": 356,
+        "name": "Bernie Selby Bert",
+        "start_stop": "Krowodrza Górka P+R 02",
+        "end_stop": "Łagiewniki 01",
+        "line": "19",
+        "time": 878,
+        "direction": "END_START"
+    },
+    {
+        "id": 357,
+        "name": "Farica Darsey",
+        "start_stop": "Muzeum Narodowe 01",
+        "end_stop": "Klimeckiego 02",
+        "line": "20",
+        "time": 879,
+        "direction": "START_END"
+    },
+    {
+        "id": 359,
+        "name": "Mamie Wiskind",
+        "start_stop": "Oleandry 01",
+        "end_stop": "Filharmonia 01",
+        "line": "1",
+        "time": 882,
+        "direction": "START_END"
+    },
+    {
+        "id": 360,
+        "name": "Avie Haddad",
+        "start_stop": "Bieńczycka 02",
+        "end_stop": "Starowiślna 01",
+        "line": "52",
+        "time": 885,
+        "direction": "START_END"
+    },
+    {
+        "id": 361,
+        "name": "Tabitha Richardson",
+        "start_stop": "Centralna 02",
+        "end_stop": "Rondo Mogilskie 04",
+        "line": "14",
+        "time": 886,
+        "direction": "START_END"
+    },
+    {
+        "id": 362,
+        "name": "Gleda Buhler",
+        "start_stop": "Kopiec Wandy 01",
+        "end_stop": "Os. Piastów 01",
+        "line": "21",
+        "time": 889,
+        "direction": "END_START"
+    },
+    {
+        "id": 363,
+        "name": "Donica O'Mahony",
+        "start_stop": "Rondo Matecznego 01",
+        "end_stop": "Dworzec Główny Tunel 01",
+        "line": "19",
+        "time": 889,
+        "direction": "END_START"
+    },
+    {
+        "id": 364,
+        "name": "Kaitlyn Bromleigh",
+        "start_stop": "Teatr Słowackiego 03",
+        "end_stop": "Os. Kolorowe 01",
+        "line": "10",
+        "time": 890,
+        "direction": "END_START"
+    },
+    {
+        "id": 365,
+        "name": "Alaine Viens",
+        "start_stop": "Lipska 02",
+        "end_stop": "Klimeckiego 02",
+        "line": "50",
+        "time": 891,
+        "direction": "END_START"
+    },
+    {
+        "id": 366,
+        "name": "Georgeanne Skipton Byrdie",
+        "start_stop": "Rondo Czyżyńskie 04",
+        "end_stop": "Francesco Nullo 02",
+        "line": "1",
+        "time": 892,
+        "direction": "START_END"
+    },
+    {
+        "id": 367,
+        "name": "Erinn Frederick",
+        "start_stop": "Dunikowskiego 02",
+        "end_stop": "DH Wanda 02",
+        "line": "52",
+        "time": 898,
+        "direction": "END_START"
+    },
+    {
+        "id": 368,
+        "name": "Fidela Allwein",
+        "start_stop": "Uniwersytet Pedagogiczny 02",
+        "end_stop": "Plac Inwalidów 02",
+        "line": "24",
+        "time": 898,
+        "direction": "END_START"
+    },
+    {
+        "id": 369,
+        "name": "Elane Muffin",
+        "start_stop": "Dąbie 02",
+        "end_stop": "Plac Wszystkich Świętych 01",
+        "line": "1",
+        "time": 899,
+        "direction": "START_END"
+    },
+    {
+        "id": 370,
+        "name": "Winonah Ephrem Livy",
+        "start_stop": "Cmentarz Podgórski 01",
+        "end_stop": "Urzędnicza 02",
+        "line": "24",
+        "time": 899,
+        "direction": "END_START"
+    },
+    {
+        "id": 371,
+        "name": "Eleen Dupaix",
+        "start_stop": "Filharmonia 03",
+        "end_stop": "Lipińskiego 01",
+        "line": "18",
+        "time": 904,
+        "direction": "END_START"
+    },
+    {
+        "id": 373,
+        "name": "Yasmeen Penelope",
+        "start_stop": "Zabłocie 02",
+        "end_stop": "Kabel 02",
+        "line": "50",
+        "time": 909,
+        "direction": "END_START"
+    },
+    {
+        "id": 374,
+        "name": "Dotti Andree",
+        "start_stop": "Dworzec Towarowy 01",
+        "end_stop": "Lipińskiego 02",
+        "line": "18",
+        "time": 913,
+        "direction": "START_END"
+    },
+    {
+        "id": 375,
+        "name": "Lucky Squire",
+        "start_stop": "Grota-Roweckiego 02",
+        "end_stop": "św. Wawrzyńca 02",
+        "line": "17",
+        "time": 917,
+        "direction": "START_END"
+    },
+    {
+        "id": 376,
+        "name": "Easter Bernadene",
+        "start_stop": "Szpital Narutowicza 01",
+        "end_stop": "Białoprądnicka 02",
+        "line": "18",
+        "time": 918,
+        "direction": "START_END"
+    },
+    {
+        "id": 377,
+        "name": "Kathleen Nuriel",
+        "start_stop": "Głowackiego 02",
+        "end_stop": "Batorego 02",
+        "line": "14",
+        "time": 918,
+        "direction": "END_START"
+    },
+    {
+        "id": 379,
+        "name": "Bernadine Soinski",
+        "start_stop": "Solvay 02",
+        "end_stop": "Borek Fałęcki I 02",
+        "line": "22",
+        "time": 920,
+        "direction": "START_END"
+    },
+    {
+        "id": 380,
+        "name": "Ninetta Grubb",
+        "start_stop": "Centralna 01",
+        "end_stop": "Ofiar Dąbia 01",
+        "line": "1",
+        "time": 920,
+        "direction": "END_START"
+    },
+    {
+        "id": 381,
+        "name": "Coral Amedeo",
+        "start_stop": "Centralna 01",
+        "end_stop": "Teatr Bagatela 03",
+        "line": "14",
+        "time": 922,
+        "direction": "END_START"
+    },
+    {
+        "id": 382,
+        "name": "Casey Heyes",
+        "start_stop": "Białoprądnicka 01",
+        "end_stop": "Dworzec Towarowy 02",
+        "line": "50",
+        "time": 923,
+        "direction": "START_END"
+    },
+    {
+        "id": 384,
+        "name": "Trixy Dierolf",
+        "start_stop": "Poczta Główna 01",
+        "end_stop": "Witosa 01",
+        "line": "24",
+        "time": 925,
+        "direction": "END_START"
+    },
+    {
+        "id": 386,
+        "name": "Olwen Sawyor",
+        "start_stop": "Plac Wszystkich Świętych 01",
+        "end_stop": "Borek Fałęcki I 02",
+        "line": "8",
+        "time": 928,
+        "direction": "START_END"
+    },
+    {
+        "id": 387,
+        "name": "Merridie Brear",
+        "start_stop": "Lipska 03",
+        "end_stop": "Nowosądecka 01",
+        "line": "50",
+        "time": 930,
+        "direction": "START_END"
+    },
+    {
+        "id": 388,
+        "name": "Linnet Madalena",
+        "start_stop": "Dąbie 01",
+        "end_stop": "Hala Targowa 01",
+        "line": "22",
+        "time": 933,
+        "direction": "START_END"
+    },
+    {
+        "id": 390,
+        "name": "Ede Lucille",
+        "start_stop": "Stella-Sawickiego 01",
+        "end_stop": "Rondo Czyżyńskie 03",
+        "line": "5",
+        "time": 934,
+        "direction": "END_START"
+    },
+    {
+        "id": 391,
+        "name": "Tove Chrisoula",
+        "start_stop": "M1 al. Pokoju 01",
+        "end_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 01",
+        "line": "14",
+        "time": 935,
+        "direction": "END_START"
+    },
+    {
+        "id": 392,
+        "name": "Daisie McFerren",
+        "start_stop": "Oleandry 02",
+        "end_stop": "Rondo Grzegórzeckie 01",
+        "line": "1",
+        "time": 937,
+        "direction": "END_START"
+    },
+    {
+        "id": 393,
+        "name": "Daryn Fu",
+        "start_stop": "Miodowa 01",
+        "end_stop": "Borsucza 02",
+        "line": "17",
+        "time": 937,
+        "direction": "END_START"
+    },
+    {
+        "id": 394,
+        "name": "Alicia Ruprecht",
+        "start_stop": "Łagiewniki SKA 01",
+        "end_stop": "Kurdwanów P+R 08",
+        "line": "50",
+        "time": 937,
+        "direction": "START_END"
+    },
+    {
+        "id": 395,
+        "name": "Korella Aurelea",
+        "start_stop": "Cichy Kącik 01",
+        "end_stop": "UJ / AST 02",
+        "line": "20",
+        "time": 938,
+        "direction": "END_START"
+    },
+    {
+        "id": 396,
+        "name": "Randee Baillie",
+        "start_stop": "Bieżanowska 01",
+        "end_stop": "Prokocim 01",
+        "line": "13",
+        "time": 939,
+        "direction": "END_START"
+    },
+    {
+        "id": 398,
+        "name": "Francoise Eada",
+        "start_stop": "Muzeum Lotnictwa Polskiego 02",
+        "end_stop": "Stary Kleparz 01",
+        "line": "44",
+        "time": 939,
+        "direction": "START_END"
+    },
+    {
+        "id": 399,
+        "name": "Guendolen Ryley",
+        "start_stop": "Park Jordana 01",
+        "end_stop": "Plac Wszystkich Świętych 01",
+        "line": "1",
+        "time": 940,
+        "direction": "START_END"
+    },
+    {
+        "id": 400,
+        "name": "Cathy Somerset",
+        "start_stop": "Słomiana 01",
+        "end_stop": "Starowiślna 02",
+        "line": "52",
+        "time": 940,
+        "direction": "END_START"
+    },
+    {
+        "id": 401,
+        "name": "Jacquenette Shuler",
+        "start_stop": "Stradom 04",
+        "end_stop": "Wesele 01",
+        "line": "8",
+        "time": 941,
+        "direction": "START_END"
+    },
+    {
+        "id": 402,
+        "name": "Wilow Gaelan Fellner",
+        "start_stop": "Bieńczycka 01",
+        "end_stop": "Fabryczna 02",
+        "line": "1",
+        "time": 944,
+        "direction": "START_END"
+    },
+    {
+        "id": 403,
+        "name": "Stafani Renault",
+        "start_stop": "Fort Mogiła 01",
+        "end_stop": "Lubicz 02",
+        "line": "10",
+        "time": 944,
+        "direction": "END_START"
+    },
+    {
+        "id": 404,
+        "name": "Leola Farrel",
+        "start_stop": "Os. Na Skarpie 01",
+        "end_stop": "Meksyk 01",
+        "line": "10",
+        "time": 944,
+        "direction": "END_START"
+    },
+    {
+        "id": 405,
+        "name": "Opalina Stepha",
+        "start_stop": "Lipska 03",
+        "end_stop": "Zabłocie 01",
+        "line": "49",
+        "time": 947,
+        "direction": "END_START"
+    },
+    {
+        "id": 406,
+        "name": "Allie Harewood",
+        "start_stop": "Plac Wolnica 01",
+        "end_stop": "Urzędnicza 02",
+        "line": "13",
+        "time": 948,
+        "direction": "END_START"
+    },
+    {
+        "id": 407,
+        "name": "Editha Chatav",
+        "start_stop": "Klimeckiego 01",
+        "end_stop": "Bociana 02",
+        "line": "50",
+        "time": 948,
+        "direction": "START_END"
+    },
+    {
+        "id": 408,
+        "name": "Karrah Skricki",
+        "start_stop": "Filharmonia 03",
+        "end_stop": "Wlotowa 01",
+        "line": "13",
+        "time": 949,
+        "direction": "END_START"
+    },
+    {
+        "id": 409,
+        "name": "Gertie Addison",
+        "start_stop": "Starowiślna 04",
+        "end_stop": "Ofiar Dąbia 02",
+        "line": "1",
+        "time": 949,
+        "direction": "START_END"
+    },
+    {
+        "id": 410,
+        "name": "Mirilla Rollie",
+        "start_stop": "Politechnika 01",
+        "end_stop": "Podgórze SKA 02",
+        "line": "3",
+        "time": 949,
+        "direction": "START_END"
+    },
+    {
+        "id": 412,
+        "name": "Cindra Amatruda",
+        "start_stop": "Bardosa 01",
+        "end_stop": "Muzeum Lotnictwa Polskiego 01",
+        "line": "10",
+        "time": 954,
+        "direction": "END_START"
+    },
+    {
+        "id": 413,
+        "name": "Kettie Nich",
+        "start_stop": "Nowy Prokocim 01",
+        "end_stop": "Białucha 02",
+        "line": "9",
+        "time": 959,
+        "direction": "START_END"
+    },
+    {
+        "id": 414,
+        "name": "Ethelda Joed",
+        "start_stop": "Czerwone Maki P+R 01",
+        "end_stop": "Orzeszkowej 02",
+        "line": "52",
+        "time": 959,
+        "direction": "START_END"
+    },
+    {
+        "id": 415,
+        "name": "Margalit Dola",
+        "start_stop": "Nowy Kleparz 01",
+        "end_stop": "Rondo Grunwaldzkie 02",
+        "line": "18",
+        "time": 960,
+        "direction": "START_END"
+    },
+    {
+        "id": 416,
+        "name": "Amalia Gleeson",
+        "start_stop": "Park Jordana 02",
+        "end_stop": "Oleandry 02",
+        "line": "1",
+        "time": 961,
+        "direction": "END_START"
+    },
+    {
+        "id": 417,
+        "name": "Maddalena Wilt Tibbitts",
+        "start_stop": "DH Wanda 02",
+        "end_stop": "Urzędnicza 01",
+        "line": "14",
+        "time": 963,
+        "direction": "START_END"
+    },
+    {
+        "id": 418,
+        "name": "Cloris Bran",
+        "start_stop": "Starowiślna 02",
+        "end_stop": "Kampus UJ 01",
+        "line": "52",
+        "time": 964,
+        "direction": "END_START"
+    },
+    {
+        "id": 419,
+        "name": "Merrily Donavon",
+        "start_stop": "Giedroycia 02",
+        "end_stop": "DH Wanda 01",
+        "line": "21",
+        "time": 965,
+        "direction": "START_END"
+    },
+    {
+        "id": 422,
+        "name": "Abagail Scarrow",
+        "start_stop": "Kabel 01",
+        "end_stop": "Nowy Prokocim 01",
+        "line": "9",
+        "time": 968,
+        "direction": "START_END"
+    },
+    {
+        "id": 423,
+        "name": "Odille Livingstone",
+        "start_stop": "Kurdwanów P+R 03",
+        "end_stop": "Grota-Roweckiego 02",
+        "line": "11",
+        "time": 968,
+        "direction": "END_START"
+    },
+    {
+        "id": 425,
+        "name": "Elisa Rebak",
+        "start_stop": "Muzeum Narodowe 02",
+        "end_stop": "Dąbie 01",
+        "line": "1",
+        "time": 973,
+        "direction": "END_START"
+    },
+    {
+        "id": 426,
+        "name": "Ottilie Pelagia",
+        "start_stop": "Kabel 02",
+        "end_stop": "Borek Fałęcki I 02",
+        "line": "50",
+        "time": 974,
+        "direction": "END_START"
+    },
+    {
+        "id": 427,
+        "name": "Dee Ramsdell",
+        "start_stop": "św. Gertrudy 01",
+        "end_stop": "Uniwersytet Pedagogiczny 01",
+        "line": "8",
+        "time": 975,
+        "direction": "START_END"
+    },
+    {
+        "id": 428,
+        "name": "Candra Andrews",
+        "start_stop": "Cystersów 01",
+        "end_stop": "Klimeckiego 02",
+        "line": "9",
+        "time": 976,
+        "direction": "END_START"
+    },
+    {
+        "id": 429,
+        "name": "Renee Berk",
+        "start_stop": "Brama nr 4 01",
+        "end_stop": "Plac Centralny im. R.Reagana 03",
+        "line": "21",
+        "time": 976,
+        "direction": "END_START"
+    },
+    {
+        "id": 431,
+        "name": "Florry Jeanie",
+        "start_stop": "Starowiślna 01",
+        "end_stop": "Szpital Narutowicza 01",
+        "line": "3",
+        "time": 976,
+        "direction": "START_END"
+    },
+    {
+        "id": 432,
+        "name": "Lucy Wendall",
+        "start_stop": "Zabłocie 01",
+        "end_stop": "Siewna Wiadukt 02",
+        "line": "50",
+        "time": 977,
+        "direction": "START_END"
+    },
+    {
+        "id": 433,
+        "name": "Maryrose Meit",
+        "start_stop": "Bronowice SKA 02",
+        "end_stop": "Bronowice 02",
+        "line": "8",
+        "time": 978,
+        "direction": "END_START"
+    },
+    {
+        "id": 434,
+        "name": "Stephenie Julius",
+        "start_stop": "Piaski Nowe 01",
+        "end_stop": "Dworzec Płaszów Estakada 02",
+        "line": "11",
+        "time": 980,
+        "direction": "START_END"
+    },
+    {
+        "id": 435,
+        "name": "Frances Zadack",
+        "start_stop": "Dworzec Główny Zachód 02",
+        "end_stop": "Wlotowa 02",
+        "line": "3",
+        "time": 980,
+        "direction": "START_END"
+    },
+    {
+        "id": 436,
+        "name": "Asia Neddra",
+        "start_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 01",
+        "end_stop": "Biprostal 02",
+        "line": "14",
+        "time": 984,
+        "direction": "END_START"
+    },
+    {
+        "id": 437,
+        "name": "Brinna Garret",
+        "start_stop": "Łagiewniki 01",
+        "end_stop": "Sanktuarium Bożego Miłosierdzia 01",
+        "line": "10",
+        "time": 984,
+        "direction": "START_END"
+    },
+    {
+        "id": 438,
+        "name": "Terese Eden",
+        "start_stop": "Struga 01",
+        "end_stop": "Słomiana 02",
+        "line": "22",
+        "time": 985,
+        "direction": "START_END"
+    },
+    {
+        "id": 439,
+        "name": "Malinde Elata",
+        "start_stop": "Dworzec Główny Tunel 02",
+        "end_stop": "Dworzec Towarowy 01",
+        "line": "5",
+        "time": 988,
+        "direction": "START_END"
+    },
+    {
+        "id": 442,
+        "name": "Lynsey Barron Hadik",
+        "start_stop": "Miśnieńska 02",
+        "end_stop": "Rondo Hipokratesa 02",
+        "line": "16",
+        "time": 991,
+        "direction": "START_END"
+    },
+    {
+        "id": 444,
+        "name": "Danya Al Cassella",
+        "start_stop": "Politechnika 02",
+        "end_stop": "Bieżanowska 01",
+        "line": "3",
+        "time": 992,
+        "direction": "END_START"
+    },
+    {
+        "id": 445,
+        "name": "Luciana Wesla",
+        "start_stop": "Nowosądecka 01",
+        "end_stop": "Dauna 01",
+        "line": "11",
+        "time": 995,
+        "direction": "START_END"
+    },
+    {
+        "id": 446,
+        "name": "Kerrill Hjerpe",
+        "start_stop": "Oleandry 01",
+        "end_stop": "Klimeckiego 02",
+        "line": "20",
+        "time": 995,
+        "direction": "START_END"
+    },
+    {
+        "id": 447,
+        "name": "Leone Barnett",
+        "start_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 04",
+        "end_stop": "Koksochemia 01",
+        "line": "21",
+        "time": 996,
+        "direction": "END_START"
+    },
+    {
+        "id": 448,
+        "name": "Cory Mattheus",
+        "start_stop": "Górnickiego 01",
+        "end_stop": "Kabel 01",
+        "line": "50",
+        "time": 998,
+        "direction": "START_END"
+    },
+    {
+        "id": 449,
+        "name": "Shane Sylvanus",
+        "start_stop": "Łagiewniki 05",
+        "end_stop": "Dworzec Płaszów Estakada 02",
+        "line": "11",
+        "time": 999,
+        "direction": "START_END"
+    },
+    {
+        "id": 450,
+        "name": "Teresa Mischa",
+        "start_stop": "Stradom 02",
+        "end_stop": "Klasztorna 02",
+        "line": "10",
+        "time": 999,
+        "direction": "START_END"
+    },
+    {
+        "id": 452,
+        "name": "Cal Leede",
+        "start_stop": "Dunikowskiego 02",
+        "end_stop": "Kopiec Wandy 01",
+        "line": "21",
+        "time": 1001,
+        "direction": "END_START"
+    },
+    {
+        "id": 453,
+        "name": "Bernice Calia",
+        "start_stop": "Lipińskiego 02",
+        "end_stop": "Rzebika 01",
+        "line": "11",
+        "time": 1001,
+        "direction": "END_START"
+    },
+    {
+        "id": 455,
+        "name": "Cherish Jaquelyn",
+        "start_stop": "Politechnika 04",
+        "end_stop": "Starowiślna 04",
+        "line": "19",
+        "time": 1003,
+        "direction": "END_START"
+    },
+    {
+        "id": 456,
+        "name": "Adela Minne",
+        "start_stop": "Fort Mogiła 02",
+        "end_stop": "Brama nr 4 02",
+        "line": "21",
+        "time": 1004,
+        "direction": "START_END"
+    },
+    {
+        "id": 458,
+        "name": "Madelin Yorgos",
+        "start_stop": "Rondo Grunwaldzkie 01",
+        "end_stop": "Górnickiego 01",
+        "line": "18",
+        "time": 1005,
+        "direction": "END_START"
+    },
+    {
+        "id": 459,
+        "name": "Sal Norton",
+        "start_stop": "TAURON Arena Kraków Wieczysta 03",
+        "end_stop": "Kuklińskiego 01",
+        "line": "49",
+        "time": 1005,
+        "direction": "END_START"
+    },
+    {
+        "id": 460,
+        "name": "Dorise Edge",
+        "start_stop": "Dąbie 02",
+        "end_stop": "Słomiana 01",
+        "line": "22",
+        "time": 1007,
+        "direction": "END_START"
+    },
+    {
+        "id": 461,
+        "name": "Dulcine Noam Helban",
+        "start_stop": "Park Jordana 01",
+        "end_stop": "Lubicz 01",
+        "line": "20",
+        "time": 1007,
+        "direction": "START_END"
+    },
+    {
+        "id": 462,
+        "name": "Gabriellia Farr",
+        "start_stop": "Stradom 02",
+        "end_stop": "Brama nr 4 02",
+        "line": "10",
+        "time": 1007,
+        "direction": "START_END"
+    },
+    {
+        "id": 463,
+        "name": "Nert Cowley",
+        "start_stop": "Os. Piastów 01",
+        "end_stop": "Kobierzyńska 01",
+        "line": "52",
+        "time": 1008,
+        "direction": "END_START"
+    },
+    {
+        "id": 464,
+        "name": "Laverne Jermain",
+        "start_stop": "Szwedzka 02",
+        "end_stop": "Grota-Roweckiego 02",
+        "line": "52",
+        "time": 1008,
+        "direction": "START_END"
+    },
+    {
+        "id": 465,
+        "name": "Celia Papagena",
+        "start_stop": "Fabryczna 01",
+        "end_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 03",
+        "line": "1",
+        "time": 1009,
+        "direction": "END_START"
+    },
+    {
+        "id": 466,
+        "name": "Flori Pizor",
+        "start_stop": "Bronowice Małe 01",
+        "end_stop": "Urzędnicza 02",
+        "line": "24",
+        "time": 1010,
+        "direction": "END_START"
+    },
+    {
+        "id": 467,
+        "name": "Amalee Bergmans",
+        "start_stop": "UJ / AST 01",
+        "end_stop": "Stary Kleparz 01",
+        "line": "20",
+        "time": 1012,
+        "direction": "START_END"
+    },
+    {
+        "id": 468,
+        "name": "Ailina Calesta",
+        "start_stop": "Czyżyny 01",
+        "end_stop": "TAURON Arena Kraków Wieczysta 01",
+        "line": "5",
+        "time": 1014,
+        "direction": "END_START"
+    },
+    {
+        "id": 469,
+        "name": "Giustina Gallard Mongeau",
+        "start_stop": "Miśnieńska 01",
+        "end_stop": "Rondo Mogilskie 02",
+        "line": "9",
+        "time": 1018,
+        "direction": "END_START"
+    },
+    {
+        "id": 471,
+        "name": "Kayley Wasson",
+        "start_stop": "Nowy Bieżanów P+R 01",
+        "end_stop": "Teatr Słowackiego 03",
+        "line": "3",
+        "time": 1022,
+        "direction": "START_END"
+    },
+    {
+        "id": 472,
+        "name": "Shandee Maybelle",
+        "start_stop": "Nowy Kleparz 02",
+        "end_stop": "Siewna Wiadukt 02",
+        "line": "18",
+        "time": 1023,
+        "direction": "END_START"
+    },
+    {
+        "id": 474,
+        "name": "Allissa Cath",
+        "start_stop": "TAURON Arena Kraków Wieczysta 01",
+        "end_stop": "Meksyk 01",
+        "line": "10",
+        "time": 1026,
+        "direction": "END_START"
+    },
+    {
+        "id": 475,
+        "name": "Mahalia Vickey",
+        "start_stop": "Dworzec Główny Tunel 01",
+        "end_stop": "św. Wawrzyńca 01",
+        "line": "17",
+        "time": 1028,
+        "direction": "END_START"
+    },
+    {
+        "id": 477,
+        "name": "Sena Gunilla",
+        "start_stop": "Bronowice SKA 01",
+        "end_stop": "Borek Fałęcki 01",
+        "line": "8",
+        "time": 1029,
+        "direction": "START_END"
+    },
+    {
+        "id": 478,
+        "name": "Lynnette Mahla",
+        "start_stop": "Kombinat 03",
+        "end_stop": "Meksyk 02",
+        "line": "21",
+        "time": 1030,
+        "direction": "START_END"
+    },
+    {
+        "id": 479,
+        "name": "Mari Abigael",
+        "start_stop": "Wlotowa 01",
+        "end_stop": "Plac Wszystkich Świętych 02",
+        "line": "13",
+        "time": 1033,
+        "direction": "END_START"
+    },
+    {
+        "id": 481,
+        "name": "Barbabra Bevash",
+        "start_stop": "Rondo Mogilskie 04",
+        "end_stop": "Bieńczycka 01",
+        "line": "14",
+        "time": 1050,
+        "direction": "START_END"
+    },
+    {
+        "id": 483,
+        "name": "Arlette Leandra",
+        "start_stop": "Os. Piastów 01",
+        "end_stop": "Orzeszkowej 01",
+        "line": "52",
+        "time": 1052,
+        "direction": "END_START"
+    },
+    {
+        "id": 485,
+        "name": "Vanni Fennell",
+        "start_stop": "Białoprądnicka 02",
+        "end_stop": "Dworzec Płaszów Estakada 01",
+        "line": "50",
+        "time": 1055,
+        "direction": "END_START"
+    },
+    {
+        "id": 486,
+        "name": "Gena Melville",
+        "start_stop": "Górnickiego 01",
+        "end_stop": "Nowy Kleparz 02",
+        "line": "18",
+        "time": 1056,
+        "direction": "END_START"
+    },
+    {
+        "id": 487,
+        "name": "Jolee Lazare",
+        "start_stop": "Zabłocie 02",
+        "end_stop": "Ćwiklińskiej 02",
+        "line": "9",
+        "time": 1061,
+        "direction": "END_START"
+    },
+    {
+        "id": 488,
+        "name": "Mitzi Cecile",
+        "start_stop": "TAURON Arena Kraków Wieczysta 03",
+        "end_stop": "TAURON Arena Kraków Wieczysta 02",
+        "line": "49",
+        "time": 1065,
+        "direction": "END_START"
+    },
+    {
+        "id": 489,
+        "name": "Kathlin Alta",
+        "start_stop": "Rondo 308. Dywizjonu 02",
+        "end_stop": "Teatr Variété 02",
+        "line": "22",
+        "time": 1071,
+        "direction": "END_START"
+    },
+    {
+        "id": 490,
+        "name": "Maddalena Opal",
+        "start_stop": "Orzeszkowej 01",
+        "end_stop": "Kobierzyńska 01",
+        "line": "22",
+        "time": 1071,
+        "direction": "END_START"
+    },
+    {
+        "id": 491,
+        "name": "Sibylla Trelu",
+        "start_stop": "Kabel 01",
+        "end_stop": "Limanowskiego 01",
+        "line": "13",
+        "time": 1072,
+        "direction": "END_START"
+    },
+    {
+        "id": 492,
+        "name": "Sharona Bowrah",
+        "start_stop": "Teatr Słowackiego 02",
+        "end_stop": "Bronowice Małe 01",
+        "line": "4",
+        "time": 1073,
+        "direction": "END_START"
+    },
+    {
+        "id": 493,
+        "name": "Cassondra Thesda",
+        "start_stop": "Muzeum Narodowe 01",
+        "end_stop": "Rondo Czyżyńskie 04",
+        "line": "1",
+        "time": 1075,
+        "direction": "START_END"
+    },
+    {
+        "id": 494,
+        "name": "Jobyna Quincy Alithia",
+        "start_stop": "Korona 02",
+        "end_stop": "Rondo Grzegórzeckie 02",
+        "line": "19",
+        "time": 1076,
+        "direction": "END_START"
+    },
+    {
+        "id": 495,
+        "name": "Grete Sukhum",
+        "start_stop": "Biprostal 01",
+        "end_stop": "Francesco Nullo 02",
+        "line": "14",
+        "time": 1076,
+        "direction": "START_END"
+    },
+    {
+        "id": 496,
+        "name": "Cayla Bork",
+        "start_stop": "Bociana 02",
+        "end_stop": "Filharmonia 03",
+        "line": "18",
+        "time": 1077,
+        "direction": "END_START"
+    },
+    {
+        "id": 497,
+        "name": "Fidela Mayor",
+        "start_stop": "Dworzec Główny Tunel 02",
+        "end_stop": "Korona 01",
+        "line": "19",
+        "time": 1079,
+        "direction": "START_END"
+    },
+    {
+        "id": 499,
+        "name": "Noelani Niccolo",
+        "start_stop": "Meksyk 02",
+        "end_stop": "Rondo Hipokratesa 01",
+        "line": "21",
+        "time": 1082,
+        "direction": "START_END"
+    },
+    {
+        "id": 500,
+        "name": "Eolande Born",
+        "start_stop": "Rondo Piastowskie 02",
+        "end_stop": "Dunikowskiego 02",
+        "line": "14",
+        "time": 1083,
+        "direction": "START_END"
+    },
+    {
+        "id": 502,
+        "name": "Helsa Jensen",
+        "start_stop": "Rondo Grzegórzeckie 01",
+        "end_stop": "Dunikowskiego 01",
+        "line": "14",
+        "time": 1083,
+        "direction": "END_START"
+    },
+    {
+        "id": 503,
+        "name": "Cristabel Bridget",
+        "start_stop": "Plac Wolnica 01",
+        "end_stop": "Rzemieślnicza 01",
+        "line": "8",
+        "time": 1084,
+        "direction": "END_START"
+    },
+    {
+        "id": 504,
+        "name": "Dayle Giza",
+        "start_stop": "Lubicz 02",
+        "end_stop": "Rondo Czyżyńskie 01",
+        "line": "4",
+        "time": 1085,
+        "direction": "END_START"
+    },
+    {
+        "id": 505,
+        "name": "Emmie Philemon",
+        "start_stop": "Rondo 308. Dywizjonu 01",
+        "end_stop": "Plac Wszystkich Świętych 02",
+        "line": "1",
+        "time": 1087,
+        "direction": "END_START"
+    },
+    {
+        "id": 506,
+        "name": "Carrie Karlan",
+        "start_stop": "Rondo Piastowskie 01",
+        "end_stop": "Prokocim Szpital 02",
+        "line": "9",
+        "time": 1088,
+        "direction": "END_START"
+    },
+    {
+        "id": 507,
+        "name": "Cordi Hourihan",
+        "start_stop": "Reymana 02",
+        "end_stop": "Rzebika 01",
+        "line": "20",
+        "time": 1088,
+        "direction": "END_START"
+    },
+    {
+        "id": 508,
+        "name": "Clari Rickey",
+        "start_stop": "Solvay 01",
+        "end_stop": "Os. Kolorowe 02",
+        "line": "22",
+        "time": 1090,
+        "direction": "END_START"
+    },
+    {
+        "id": 509,
+        "name": "Gabrielle Joh",
+        "start_stop": "Zajezdnia Nowa Huta 01",
+        "end_stop": "Batorego 01",
+        "line": "4",
+        "time": 1090,
+        "direction": "START_END"
+    },
+    {
+        "id": 510,
+        "name": "Hedy Hilten",
+        "start_stop": "Wańkowicza 01",
+        "end_stop": "Rondo Grzegórzeckie 02",
+        "line": "1",
+        "time": 1091,
+        "direction": "START_END"
+    },
+    {
+        "id": 511,
+        "name": "Francisca Tice",
+        "start_stop": "Czerwone Maki P+R 01",
+        "end_stop": "Brożka 01",
+        "line": "11",
+        "time": 1092,
+        "direction": "END_START"
+    },
+    {
+        "id": 512,
+        "name": "Phyllys Iong",
+        "start_stop": "Dworzec Płaszów Estakada 02",
+        "end_stop": "Dworzec Towarowy 02",
+        "line": "50",
+        "time": 1092,
+        "direction": "START_END"
+    },
+    {
+        "id": 513,
+        "name": "Kamillah Astera",
+        "start_stop": "Teatr Variété 01",
+        "end_stop": "Kobierzyńska 02",
+        "line": "22",
+        "time": 1094,
+        "direction": "START_END"
+    },
+    {
+        "id": 514,
+        "name": "Xenia Harwin",
+        "start_stop": "Os. Na Skarpie 02",
+        "end_stop": "DH Wanda 01",
+        "line": "16",
+        "time": 1095,
+        "direction": "END_START"
+    },
+    {
+        "id": 515,
+        "name": "Kerstin Emlynn",
+        "start_stop": "Bardosa 01",
+        "end_stop": "Suche Stawy 01",
+        "line": "10",
+        "time": 1095,
+        "direction": "END_START"
+    },
+    {
+        "id": 516,
+        "name": "Elianora Kassandra",
+        "start_stop": "Borsucza 02",
+        "end_stop": "Łagiewniki 01",
+        "line": "17",
+        "time": 1095,
+        "direction": "END_START"
+    },
+    {
+        "id": 517,
+        "name": "Louella Evelina",
+        "start_stop": "Nowosądecka 02",
+        "end_stop": "Dworcowa 02",
+        "line": "24",
+        "time": 1095,
+        "direction": "START_END"
+    },
+    {
+        "id": 519,
+        "name": "Alena Spears",
+        "start_stop": "Łagiewniki 01",
+        "end_stop": "Batorego 02",
+        "line": "8",
+        "time": 1100,
+        "direction": "END_START"
+    },
+    {
+        "id": 520,
+        "name": "Marisa Clementine",
+        "start_stop": "Słomiana 02",
+        "end_stop": "M1 al. Pokoju 01",
+        "line": "22",
+        "time": 1101,
+        "direction": "START_END"
+    },
+    {
+        "id": 521,
+        "name": "Alice Maguire",
+        "start_stop": "Fort Mogiła 01",
+        "end_stop": "Brama nr 5 01",
+        "line": "21",
+        "time": 1101,
+        "direction": "END_START"
+    },
+    {
+        "id": 524,
+        "name": "Rosalia Pasquale",
+        "start_stop": "Dauna 02",
+        "end_stop": "Sanktuarium Bożego Miłosierdzia 01",
+        "line": "50",
+        "time": 1105,
+        "direction": "END_START"
+    },
+    {
+        "id": 525,
+        "name": "Faith Gomer",
+        "start_stop": "Muzeum Lotnictwa Polskiego 02",
+        "end_stop": "Łagiewniki SKA 03",
+        "line": "10",
+        "time": 1105,
+        "direction": "START_END"
+    },
+    {
+        "id": 526,
+        "name": "Jocelyne Knobloch",
+        "start_stop": "TAURON Arena Kraków al. Pokoju 01",
+        "end_stop": "Łagiewniki SKA 02",
+        "line": "22",
+        "time": 1108,
+        "direction": "START_END"
+    },
+    {
+        "id": 527,
+        "name": "Ida Stewardson",
+        "start_stop": "AWF 02",
+        "end_stop": "Lubicz 01",
+        "line": "44",
+        "time": 1109,
+        "direction": "START_END"
+    },
+    {
+        "id": 528,
+        "name": "Cherilynn Berni",
+        "start_stop": "Dworzec Główny Tunel 02",
+        "end_stop": "Rondo Mogilskie 05",
+        "line": "17",
+        "time": 1109,
+        "direction": "START_END"
+    },
+    {
+        "id": 530,
+        "name": "Vitia Treat",
+        "start_stop": "Kuklińskiego 02",
+        "end_stop": "Rondo Grzegórzeckie 03",
+        "line": "50",
+        "time": 1110,
+        "direction": "END_START"
+    },
+    {
+        "id": 531,
+        "name": "Alena Julian",
+        "start_stop": "Koksochemia 01",
+        "end_stop": "Dunikowskiego 02",
+        "line": "21",
+        "time": 1111,
+        "direction": "END_START"
+    },
+    {
+        "id": 532,
+        "name": "Harlie Gladys",
+        "start_stop": "Park Jordana 02",
+        "end_stop": "Kuklińskiego 01",
+        "line": "20",
+        "time": 1111,
+        "direction": "END_START"
+    },
+    {
+        "id": 534,
+        "name": "Valaria Radbun",
+        "start_stop": "Bieżanowska 03",
+        "end_stop": "Lipska 03",
+        "line": "11",
+        "time": 1113,
+        "direction": "START_END"
+    },
+    {
+        "id": 535,
+        "name": "Camilla Hildagarde",
+        "start_stop": "M1 al. Pokoju 01",
+        "end_stop": "Rondo Czyżyńskie 03",
+        "line": "14",
+        "time": 1115,
+        "direction": "END_START"
+    },
+    {
+        "id": 537,
+        "name": "Alla Lait",
+        "start_stop": "Filharmonia 03",
+        "end_stop": "Ofiar Dąbia 01",
+        "line": "1",
+        "time": 1120,
+        "direction": "END_START"
+    },
+    {
+        "id": 538,
+        "name": "Corrina Arnuad",
+        "start_stop": "Rondo Matecznego 01",
+        "end_stop": "Borek Fałęcki I 01",
+        "line": "8",
+        "time": 1120,
+        "direction": "END_START"
+    },
+    {
+        "id": 539,
+        "name": "Elberta Toby Seafowl",
+        "start_stop": "Borek Fałęcki 01",
+        "end_stop": "Wawel 01",
+        "line": "8",
+        "time": 1121,
+        "direction": "START_END"
+    },
+    {
+        "id": 540,
+        "name": "Faith Alethea",
+        "start_stop": "Batorego 02",
+        "end_stop": "Łagiewniki SKA 05",
+        "line": "8",
+        "time": 1123,
+        "direction": "END_START"
+    },
+    {
+        "id": 541,
+        "name": "Mariam Sutton",
+        "start_stop": "Dworzec Główny Zachód 01",
+        "end_stop": "Cmentarz Podgórski 01",
+        "line": "3",
+        "time": 1124,
+        "direction": "END_START"
+    },
+    {
+        "id": 542,
+        "name": "Celestina Konstantin",
+        "start_stop": "DH Wanda 02",
+        "end_stop": "Bieńczycka 01",
+        "line": "14",
+        "time": 1125,
+        "direction": "START_END"
+    },
+    {
+        "id": 543,
+        "name": "Kameko McHail",
+        "start_stop": "Teatr Ludowy 01",
+        "end_stop": "Wańkowicza 01",
+        "line": "1",
+        "time": 1126,
+        "direction": "START_END"
+    },
+    {
+        "id": 544,
+        "name": "Buffy Pearson",
+        "start_stop": "Plac Inwalidów 01",
+        "end_stop": "Borek Fałęcki I 02",
+        "line": "8",
+        "time": 1127,
+        "direction": "START_END"
+    },
+    {
+        "id": 545,
+        "name": "Sisely Freddie Hanus",
+        "start_stop": "Teligi 01",
+        "end_stop": "Mistrzejowice 01",
+        "line": "9",
+        "time": 1128,
+        "direction": "START_END"
+    },
+    {
+        "id": 546,
+        "name": "Kerianne Gemina",
+        "start_stop": "Brama nr 5 01",
+        "end_stop": "AWF 01",
+        "line": "10",
+        "time": 1130,
+        "direction": "END_START"
+    },
+    {
+        "id": 547,
+        "name": "Sacha Cati",
+        "start_stop": "Prokocim Szpital 01",
+        "end_stop": "Politechnika 02",
+        "line": "3",
+        "time": 1130,
+        "direction": "END_START"
+    },
+    {
+        "id": 548,
+        "name": "Ambur Sibeal",
+        "start_stop": "Kuźnicy Kołłątajowskiej 01",
+        "end_stop": "Filharmonia 01",
+        "line": "18",
+        "time": 1133,
+        "direction": "START_END"
+    },
+    {
+        "id": 549,
+        "name": "Bambi Mandle",
+        "start_stop": "Kapelanka 01",
+        "end_stop": "Bociana 02",
+        "line": "18",
+        "time": 1137,
+        "direction": "END_START"
+    },
+    {
+        "id": 550,
+        "name": "Mavis Saied",
+        "start_stop": "Dworzec Główny Tunel 01",
+        "end_stop": "Politechnika 04",
+        "line": "17",
+        "time": 1139,
+        "direction": "END_START"
+    },
+    {
+        "id": 551,
+        "name": "Ariana Trust",
+        "start_stop": "Politechnika 03",
+        "end_stop": "Stella-Sawickiego 02",
+        "line": "5",
+        "time": 1140,
+        "direction": "START_END"
+    },
+    {
+        "id": 552,
+        "name": "Risa Webster",
+        "start_stop": "Bratysławska 02",
+        "end_stop": "Cienista 02",
+        "line": "5",
+        "time": 1145,
+        "direction": "END_START"
+    },
+    {
+        "id": 553,
+        "name": "Kinna Hughie",
+        "start_stop": "Chmieleniec 02",
+        "end_stop": "Starowiślna 03",
+        "line": "17",
+        "time": 1145,
+        "direction": "START_END"
+    },
+    {
+        "id": 554,
+        "name": "Catherina Evadne",
+        "start_stop": "Zabłocie 02",
+        "end_stop": "Kuklińskiego 02",
+        "line": "20",
+        "time": 1149,
+        "direction": "START_END"
+    },
+    {
+        "id": 556,
+        "name": "Annaliese Bencion",
+        "start_stop": "Politechnika 02",
+        "end_stop": "Starowiślna 02",
+        "line": "3",
+        "time": 1154,
+        "direction": "END_START"
+    },
+    {
+        "id": 557,
+        "name": "Johna Antrim",
+        "start_stop": "Wesele 02",
+        "end_stop": "Stella-Sawickiego 01",
+        "line": "4",
+        "time": 1159,
+        "direction": "END_START"
+    },
+    {
+        "id": 558,
+        "name": "Malanie Francoise",
+        "start_stop": "Kabel 02",
+        "end_stop": "Pachońskiego P+R 01",
+        "line": "50",
+        "time": 1160,
+        "direction": "END_START"
+    },
+    {
+        "id": 559,
+        "name": "Alexandrina Camey",
+        "start_stop": "Plac Wolnica 02",
+        "end_stop": "Stradom 04",
+        "line": "13",
+        "time": 1160,
+        "direction": "START_END"
+    },
+    {
+        "id": 560,
+        "name": "Nisse Mazel",
+        "start_stop": "Rondo Piastowskie 02",
+        "end_stop": "Urzędnicza 01",
+        "line": "14",
+        "time": 1161,
+        "direction": "START_END"
+    },
+    {
+        "id": 562,
+        "name": "Clio Stover",
+        "start_stop": "Dworzec Płaszów Estakada 02",
+        "end_stop": "Prokocim Szpital 01",
+        "line": "49",
+        "time": 1163,
+        "direction": "END_START"
+    },
+    {
+        "id": 563,
+        "name": "Carlyn Favin",
+        "start_stop": "Miodowa 02",
+        "end_stop": "Szpital Narutowicza 01",
+        "line": "19",
+        "time": 1165,
+        "direction": "START_END"
+    },
+    {
+        "id": 564,
+        "name": "Bria Ernest Lena",
+        "start_stop": "Solvay 02",
+        "end_stop": "Stradom 01",
+        "line": "22",
+        "time": 1166,
+        "direction": "START_END"
+    },
+    {
+        "id": 565,
+        "name": "Gisela Gregory",
+        "start_stop": "Bronowice Małe 01",
+        "end_stop": "TAURON Arena Kraków Wieczysta 01",
+        "line": "4",
+        "time": 1168,
+        "direction": "END_START"
+    },
+    {
+        "id": 566,
+        "name": "Lyssa Schaefer",
+        "start_stop": "Stary Kleparz 01",
+        "end_stop": "Plac Centralny im. R.Reagana 01",
+        "line": "44",
+        "time": 1168,
+        "direction": "START_END"
+    },
+    {
+        "id": 567,
+        "name": "Odelle Havstad",
+        "start_stop": "Sanktuarium Bożego Miłosierdzia 01",
+        "end_stop": "Koksochemia 02",
+        "line": "10",
+        "time": 1170,
+        "direction": "START_END"
+    },
+    {
+        "id": 568,
+        "name": "Vivyanne Cenac",
+        "start_stop": "Rondo Grunwaldzkie 02",
+        "end_stop": "Kleeberga 01",
+        "line": "52",
+        "time": 1172,
+        "direction": "START_END"
+    },
+    {
+        "id": 569,
+        "name": "Clarine Leupold",
+        "start_stop": "św. Gertrudy 01",
+        "end_stop": "Limanowskiego 02",
+        "line": "13",
+        "time": 1172,
+        "direction": "START_END"
+    },
+    {
+        "id": 570,
+        "name": "Dennie Ignacia",
+        "start_stop": "Rondo Grzegórzeckie 01",
+        "end_stop": "Rondo Mogilskie 03",
+        "line": "14",
+        "time": 1174,
+        "direction": "END_START"
+    },
+    {
+        "id": 571,
+        "name": "Myrilla Birch Bonns",
+        "start_stop": "Giedroycia 02",
+        "end_stop": "Piasta Kołodzieja 01",
+        "line": "21",
+        "time": 1176,
+        "direction": "START_END"
+    },
+    {
+        "id": 572,
+        "name": "Bobine Hermy",
+        "start_stop": "Kurdwanów P+R 10",
+        "end_stop": "Suche Stawy 01",
+        "line": "10",
+        "time": 1176,
+        "direction": "END_START"
+    },
+    {
+        "id": 573,
+        "name": "Manda Corotto",
+        "start_stop": "Szwedzka 01",
+        "end_stop": "Borek Fałęcki I 01",
+        "line": "22",
+        "time": 1178,
+        "direction": "END_START"
+    },
+    {
+        "id": 574,
+        "name": "Valry Dilisio",
+        "start_stop": "Nowy Prokocim 01",
+        "end_stop": "Prokocim 01",
+        "line": "9",
+        "time": 1179,
+        "direction": "START_END"
+    },
+    {
+        "id": 575,
+        "name": "Joela Middlesworth",
+        "start_stop": "Nowy Kleparz 02",
+        "end_stop": "Dworzec Towarowy 03",
+        "line": "44",
+        "time": 1179,
+        "direction": "END_START"
+    },
+    {
+        "id": 576,
+        "name": "Kiri Delamare",
+        "start_stop": "Lubicz 02",
+        "end_stop": "Bronowice 02",
+        "line": "4",
+        "time": 1180,
+        "direction": "END_START"
+    },
+    {
+        "id": 577,
+        "name": "Briana Shanleigh",
+        "start_stop": "Fabryczna 02",
+        "end_stop": "Rondo Grzegórzeckie 02",
+        "line": "1",
+        "time": 1181,
+        "direction": "START_END"
+    },
+    {
+        "id": 578,
+        "name": "Janeczka Denice",
+        "start_stop": "Pędzichów 01",
+        "end_stop": "Bratysławska 01",
+        "line": "18",
+        "time": 1182,
+        "direction": "START_END"
+    },
+    {
+        "id": 579,
+        "name": "Eustacia Wilmer",
+        "start_stop": "Piaski Nowe 02",
+        "end_stop": "Uniwersytet Pedagogiczny 01",
+        "line": "24",
+        "time": 1184,
+        "direction": "START_END"
+    },
+    {
+        "id": 581,
+        "name": "Thomasin Adaline",
+        "start_stop": "Os. Zgody 01",
+        "end_stop": "Rondo Hipokratesa 02",
+        "line": "16",
+        "time": 1186,
+        "direction": "START_END"
+    },
+    {
+        "id": 582,
+        "name": "Issie Kopp",
+        "start_stop": "św. Wawrzyńca 01",
+        "end_stop": "Norymberska 01",
+        "line": "17",
+        "time": 1186,
+        "direction": "END_START"
+    },
+    {
+        "id": 583,
+        "name": "Stormi Dessma",
+        "start_stop": "Borek Fałęcki I 02",
+        "end_stop": "Plac Inwalidów 01",
+        "line": "8",
+        "time": 1186,
+        "direction": "START_END"
+    },
+    {
+        "id": 586,
+        "name": "Waneta Gerrie",
+        "start_stop": "Kobierzyńska 01",
+        "end_stop": "Stradom 02",
+        "line": "18",
+        "time": 1188,
+        "direction": "END_START"
+    },
+    {
+        "id": 587,
+        "name": "Dulcea Ruby",
+        "start_stop": "Os. Piastów 01",
+        "end_stop": "Koksochemia 01",
+        "line": "21",
+        "time": 1190,
+        "direction": "END_START"
+    },
+    {
+        "id": 588,
+        "name": "Joleen Dulce",
+        "start_stop": "Muzeum Narodowe 02",
+        "end_stop": "Oleandry 02",
+        "line": "1",
+        "time": 1190,
+        "direction": "END_START"
+    },
+    {
+        "id": 589,
+        "name": "Maxy Averi",
+        "start_stop": "Kabel 02",
+        "end_stop": "Miodowa 02",
+        "line": "24",
+        "time": 1191,
+        "direction": "START_END"
+    },
+    {
+        "id": 590,
+        "name": "Oralle Bubalo",
+        "start_stop": "Kopiec Wandy 01",
+        "end_stop": "Meksyk 01",
+        "line": "21",
+        "time": 1191,
+        "direction": "END_START"
+    },
+    {
+        "id": 591,
+        "name": "Gale Obla",
+        "start_stop": "Borek Fałęcki 01",
+        "end_stop": "Pachońskiego P+R 01",
+        "line": "50",
+        "time": 1192,
+        "direction": "END_START"
+    },
+    {
+        "id": 592,
+        "name": "Addia Autum",
+        "start_stop": "Wlotowa 02",
+        "end_stop": "Rondo Czyżyńskie 03",
+        "line": "9",
+        "time": 1193,
+        "direction": "END_START"
+    },
+    {
+        "id": 594,
+        "name": "Abigael Rawley",
+        "start_stop": "Struga 02",
+        "end_stop": "Os. Kolorowe 02",
+        "line": "44",
+        "time": 1193,
+        "direction": "START_END"
+    },
+    {
+        "id": 595,
+        "name": "Aaren Fiora",
+        "start_stop": "Brama nr 4 01",
+        "end_stop": "Koksochemia 01",
+        "line": "21",
+        "time": 1193,
+        "direction": "END_START"
+    },
+    {
+        "id": 596,
+        "name": "Alison Bilski",
+        "start_stop": "Os. Kolorowe 02",
+        "end_stop": "Kopiec Wandy 02",
+        "line": "22",
+        "time": 1194,
+        "direction": "END_START"
+    },
+    {
+        "id": 597,
+        "name": "Carree Riorsson",
+        "start_stop": "Rondo Kocmyrzowskie im. Ks. Gorzelanego 03",
+        "end_stop": "Bieńczycka 02",
+        "line": "1",
+        "time": 1196,
+        "direction": "END_START"
+    },
+    {
+        "id": 598,
+        "name": "Tamera Solly Mick",
+        "start_stop": "Kampus UJ 02",
+        "end_stop": "Dauna 02",
+        "line": "11",
+        "time": 1196,
+        "direction": "END_START"
+    },
+    {
+        "id": 599,
+        "name": "Elizabeth Isador Stultz",
+        "start_stop": "Zabłocie 01",
+        "end_stop": "Rondo Mogilskie 03",
+        "line": "49",
+        "time": 1196,
+        "direction": "END_START"
+    },
+    {
+        "id": 600,
+        "name": "Imogene Schilt",
+        "start_stop": "Szwedzka 01",
+        "end_stop": "Bratysławska 02",
+        "line": "18",
+        "time": 1197,
+        "direction": "END_START"
+    },
+    {
+        "id": 601,
+        "name": "Adoree Orban",
+        "start_stop": "Dworzec Główny Zachód 02",
+        "end_stop": "Cmentarz Podgórski 02",
+        "line": "3",
+        "time": 1198,
+        "direction": "START_END"
+    },
+    {
+        "id": 602,
+        "name": "Delia Percival",
+        "start_stop": "Podgórze SKA 02",
+        "end_stop": "Batorego 01",
+        "line": "24",
+        "time": 1199,
+        "direction": "START_END"
+    }
+]
