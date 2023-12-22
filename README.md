@@ -77,6 +77,19 @@ Program następnie zbierze i stworzy odpowiednie dane:
 
 #### Przetwarzanie danych
 
+Aby wygenerować własny plik zawierający informacje o pasażerach symulacji linii tramwajowych należy
+
+1. Uruchomić następujący program
+```bash
+python .\src\ktl\model\simulate_people.py 
+```
+Wygenerowany zostanie plik people.json na podstawie ustalonych parametrów w folderze ./data/generated/json
+
+Można zwizualizować funkcję generacji programem
+```bash
+python .\src\ktl\model\probability.py 
+```
+
 ### Instrukcja symulacji
    Projekt symulacji znajduje się w folderze src/ktl/visualisation/ktl-godot. Odpalony w środowisku Godot 4 można podejrzeć projekt od podszewki. W samym projekcie, w folderze Data znajdują się pliki json, będące kopią tych z poprzedniego kroku. Można je podmienić, jeśli ktoś chce wykorzystać inne dane. Sama aplikacja znajduje się w folderze _______. Należy pobrać całą zawartość tego folderu i odpalić element krakow-tram-line.exe.
 
