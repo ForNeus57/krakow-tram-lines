@@ -18,6 +18,8 @@ Symulacja została stworzona w środowisku Godot 4, za pomocą zebranych wcześn
 
 ## Instrukcja instalacji
 
+### Instrukcja generacji danych
+
 Podstawą naszego backendu jest python (**3.12**), w związku z czym stworzyliśmy paczkę `ktl`. Komenty muszą być użyte w głównym working directory projektu.
 
 1.   Instalacja dependency pythona.
@@ -52,7 +54,7 @@ sphinx-apidoc -o docs/source src/ktl
 sphinx-build -M html docs/source/ docs/build/
 ```
 
-### Instrukcja generacji danych
+#### Zbieranie danych
 
 Aby zbudować wszyskie dane wejściowe modelu należy:
 
@@ -68,14 +70,19 @@ gdzie:
 
 Wszyskie dane są już umieszczone w repozytorium, także w przypadku niepowodzenia w instalacji jes możliwość odtworzenia jak działał program.
 
-Program następnie zbierze i stworzy odpowiednie dane:
-...
-
-#### Zbieranie danych
-
-
+Program następnie zbierze i stworzy odpowiednie dane w poodanym folderze.
 
 #### Przetwarzanie danych
+
+Stworzy dane dotyczące konkretnych pojezdów oraz ich rozkładów.
+```bash
+python ./src/ktl/aggregation/merge/tram_data_mergere.py
+```
+
+Stworzy informacje dotyczące obróbki pozycji przystanków.
+```bash
+python ./src/ktl/aggregation/create_json_lines.py
+```
 
 Aby wygenerować własny plik zawierający informacje o pasażerach symulacji linii tramwajowych należy
 
@@ -91,9 +98,7 @@ python .\src\ktl\model\probability.py
 ```
 
 ### Instrukcja symulacji
-   Projekt symulacji znajduje się w folderze src/ktl/visualisation/ktl-godot. Odpalony w środowisku Godot 4 można podejrzeć projekt od podszewki. W samym projekcie, w folderze Data znajdują się pliki json, będące kopią tych z poprzedniego kroku. Można je podmienić, jeśli ktoś chce wykorzystać inne dane. Sama aplikacja znajduje się w folderze _______. Należy pobrać całą zawartość tego folderu i odpalić element krakow-tram-line.exe.
-
-
+   Projekt symulacji znajduje się w folderze src/ktl/visualisation/ktl-godot. Odpalony w środowisku Godot 4 można podejrzeć projekt od podszewki. W samym projekcie, w folderze Data znajdują się pliki json, będące kopią tych z poprzedniego kroku. Można je podmienić, jeśli ktoś chce wykorzystać inne dane. Sama aplikacja znajduje się w GITHUB REALISES. Należy pobrać całą zawartość tego folderu i odpalić element krakow-tram-line.exe.
 
 ## Autorzy
 - Robert Barcik, robertbarcik32@gmail.com
