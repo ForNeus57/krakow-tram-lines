@@ -85,7 +85,7 @@ python .\src\ktl\model\simulate_people.py
 ```
 Wygenerowany zostanie plik people.json na podstawie ustalonych parametrów w folderze ./data/generated/json
 
-Można zwizualizować funkcję generacji programem
+2. Można zwizualizować funkcję generacji programem
 ```bash
 python .\src\ktl\model\probability.py 
 ```
